@@ -118,14 +118,42 @@ $(document).ready(function() {
 
 
 	//CLICK MENU ANIMATIONS INIT
+	function visitPortfolio(){
+		window.location.href = 'https://www.google.com.mx/';
+	}
+
 	function goPortfolio(){
-		$('#menu-mandala').addClass('bye-menu-portafolio');
+		$('#menu-portafolio').addClass('bye-menu-portafolio');
+		$('.menu-ring1').addClass('bye-ring1-portafolio');
+		$('.menu-ring2').addClass('bye-ring2-portafolio');
+	}
+
+	function goComienzo(){
+		$('#menu-comienzo').addClass('bye-comienzo-portafolio');
+	}
+
+	function goRing3(){
+		$('.menu-ring3').addClass('bye-ring3-portafolio');
+	}
+
+	function goPilares(){
+		$('#menu-pilares').addClass('bye-pilares-portafolio');
 	}
 
 	$('#menu-portafolio').on('click', function() {
 		$('body').prepend('<div class="glass-menu"></div>');
 		$('#menu-portafolio').addClass('click-menu-portafolio');
-		setTimeout(goPortfolio,2000);
+		$('.menu-ring4').addClass('bye-ring4-portafolio');
+
+		setTimeout(visitPortfolio,2000);
+
+		setTimeout(goPortfolio,1800);
+
+		setTimeout(goComienzo,250);
+		setTimeout(goRing3,500);
+		setTimeout(goPilares,750);
+
+
 	
 	});
 

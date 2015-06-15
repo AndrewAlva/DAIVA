@@ -220,8 +220,8 @@ textarea {
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
 
-    -webkit-transition: width 0.8s, height 0.8s, transform 5s; /* Safari */
-    transition: width 0.8s, height 0.8s, transform 5s;
+    -webkit-transition: width 0.8s, height 0.8s, transform 5s, opacity 0.7s; /* Safari */
+    transition: width 0.8s, height 0.8s, transform 5s, opacity 0.7s;
 
     -webkit-transition-timing-function: cubic-bezier(.5,-1,.5,2) ; /* Safari and Chrome */
     transition-timing-function: cubic-bezier(.5,-1,.5,2) ;
@@ -397,16 +397,68 @@ textarea {
     height: 18vh;
 }
 
+
+
+
 .click-menu-portafolio{
-    width: 50% !important;
-    height: 50% !important;
+    width: 72vh !important;
+    height: 72vh !important;
+
+    opacity: 1;
+
+
+}
+
+.bye-ring1-portafolio{
+    width: 120%;
+    height: 120%;
+
+    opacity: 0;
 }
 
 .bye-menu-portafolio{
-    width: 500vh !important;
-    height: 500vh !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    opacity: 0;
 }
 
+.bye-ring2-portafolio{
+    width: 90%;
+    height: 90%;
+
+    opacity: 0;
+}
+
+
+
+.bye-pilares-portafolio{
+    width: 20% !important;
+    height: 20% !important;
+
+    opacity: 0;
+}
+
+.bye-ring3-portafolio{
+    width: 14% !important;
+    height: 14% !important;
+
+    opacity: 0;
+}
+
+.bye-comienzo-portafolio{
+    width: 10% !important;
+    height: 10% !important;
+
+    opacity: 0;
+}
+
+.bye-ring4-portafolio{
+    width: 4% !important;
+    height: 4% !important;
+
+    opacity: 0;
+}
 
 
 
