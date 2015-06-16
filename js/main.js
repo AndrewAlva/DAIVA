@@ -118,44 +118,163 @@ $(document).ready(function() {
 
 
 	//CLICK MENU ANIMATIONS INIT
+
+		//CLICK PORTFOLIO INIT
+	
 	function visitPortfolio(){
-		window.location.href = 'https://www.google.com.mx/';
+		//window.location.href = 'https://www.google.com.mx/';
 	}
 
-	function goPortfolio(){
-		$('#menu-portafolio').addClass('bye-menu-portafolio');
+	function clickPortfolioRing1(){
 		$('.menu-ring1').addClass('bye-ring1-portafolio');
+	}
+
+	function clickPortfolioPortfolio(){
+		$('#menu-portafolio').addClass('bye-menu-portafolio');
+	}
+
+	function clickPortfolioRing2(){
 		$('.menu-ring2').addClass('bye-ring2-portafolio');
 	}
 
-	function goComienzo(){
+	function clickPortfolioComienzo(){
 		$('#menu-comienzo').addClass('bye-comienzo-portafolio');
 	}
 
-	function goRing3(){
+	function clickPortfolioRing3(){
 		$('.menu-ring3').addClass('bye-ring3-portafolio');
 	}
 
-	function goPilares(){
+	function clickPortfolioPilares(){
 		$('#menu-pilares').addClass('bye-pilares-portafolio');
 	}
 
 	$('#menu-portafolio').on('click', function() {
 		$('body').prepend('<div class="glass-menu"></div>');
-		$('#menu-portafolio').addClass('click-menu-portafolio');
+		
 		$('.menu-ring4').addClass('bye-ring4-portafolio');
 
-		setTimeout(visitPortfolio,2000);
+		setTimeout(visitPortfolio,2250);
 
-		setTimeout(goPortfolio,1800);
+		setTimeout(clickPortfolioRing2,2200);
+		setTimeout(clickPortfolioPortfolio,2100);
+		setTimeout(clickPortfolioRing1,1900);
 
-		setTimeout(goComienzo,250);
-		setTimeout(goRing3,500);
-		setTimeout(goPilares,750);
+		setTimeout(clickPortfolioComienzo,250);
+		setTimeout(clickPortfolioRing3,500);
+		setTimeout(clickPortfolioPilares,750);
 
 
 	
 	});
+
+		//CLICK PORTFOLIO END
+
+
+
+
+
+
+		//CLICK PILARES INIT
+	function visitPilares(){
+		//window.location.href = 'https://www.facebook.com/';
+	}
+
+	function clickPilaresRing1(){
+		$('.menu-ring1').addClass('bye-ring1-pilares');
+	}
+
+	function clickPilaresPortfolio(){
+		$('#menu-portafolio').addClass('bye-menu-pilares');
+	}
+
+	function clickPilaresRing2(){
+		$('.menu-ring2').addClass('bye-ring2-pilares');
+	}
+
+	function clickPilaresPilares(){
+		$('#menu-pilares').addClass('bye-pilares-pilares');
+	}
+
+	function clickPilaresRing3(){
+		$('.menu-ring3').addClass('bye-ring3-pilares');
+	}
+
+	function clickPilaresComienzo(){
+		$('#menu-comienzo').addClass('bye-comienzo-pilares');
+	}
+
+
+	$('#menu-pilares').on('click', function() {
+		$('body').prepend('<div class="glass-menu"></div>');
+		
+		$('.menu-ring4').addClass('bye-ring4-pilares');
+
+		setTimeout(clickPilaresComienzo,250);
+		setTimeout(clickPilaresPortfolio,750);
+		setTimeout(clickPilaresRing1,1000);
+
+		setTimeout(clickPilaresRing2,1900);
+		setTimeout(clickPilaresPilares,2100);
+		setTimeout(clickPilaresRing3,2200);
+
+		setTimeout(visitPilares,2250);
+	});
+
+		//CLICK PILARES END
+
+
+		//CLICK COMIENZO INIT
+	function visitComienzo(){
+		//window.location.href = 'https://www.youtube.com/';
+	}
+
+	function clickComienzoRing1(){
+		$('.menu-ring1').addClass('bye-ring1-comienzo');
+	}
+
+	function clickComienzoPortfolio(){
+		$('#menu-portafolio').addClass('bye-menu-comienzo');
+	}
+
+	function clickComienzoRing2(){
+		$('.menu-ring2').addClass('bye-ring2-comienzo');
+	}
+
+	function clickComienzoPilares(){
+		$('#menu-pilares').addClass('bye-pilares-comienzo');
+	}
+
+	function clickComienzoRing3(){
+		$('.menu-ring3').addClass('bye-ring3-comienzo');
+	}
+
+	function clickComienzoComienzo(){
+		$('#menu-comienzo').addClass('bye-comienzo-comienzo');
+	}
+
+	function clickComienzoRing4(){
+		$('.menu-ring4').addClass('bye-ring4-comienzo');
+	}
+
+
+	$('#menu-comienzo').on('click', function() {
+		$('body').prepend('<div class="glass-menu"></div>');
+		
+		$('#menu-pilares').addClass('bye-pilares-comienzo');
+
+		setTimeout(clickComienzoRing2,250);
+		setTimeout(clickComienzoPortfolio,500);
+		setTimeout(clickComienzoRing1,750);
+		setTimeout(clickComienzoRing3,1900);
+		setTimeout(clickComienzoComienzo,2100);
+		setTimeout(clickComienzoRing4,2200);
+
+		setTimeout(visitComienzo,2250);
+	});
+
+		//CLICK COMIENZO END
+		
 
 
 	//CLICK MENU ANIMATIONS END

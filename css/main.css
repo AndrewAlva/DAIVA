@@ -399,15 +399,7 @@ textarea {
 
 
 
-
-.click-menu-portafolio{
-    width: 72vh !important;
-    height: 72vh !important;
-
-    opacity: 1;
-
-
-}
+/*Animation Transition Menu -> Portafolio*/
 
 .bye-ring1-portafolio{
     width: 120%;
@@ -433,8 +425,8 @@ textarea {
 
 
 .bye-pilares-portafolio{
-    width: 20% !important;
-    height: 20% !important;
+    width: 40vh !important;
+    height: 40vh !important;
 
     opacity: 0;
 }
@@ -456,6 +448,120 @@ textarea {
 .bye-ring4-portafolio{
     width: 4% !important;
     height: 4% !important;
+
+    opacity: 0;
+}
+
+
+
+/*Animation Transition Menu -> Pilares*/
+
+.bye-ring1-pilares{
+    width: 90%;
+    height: 90%;
+
+    opacity: 0;
+}
+
+.bye-menu-pilares{
+    width: 80% !important;
+    height: 80% !important;
+
+    opacity: 0;
+}
+
+
+
+.bye-ring2-pilares{
+    width: 90%;
+    height: 90%;
+
+    opacity: 0;
+}
+
+.bye-pilares-pilares{
+    width: 75% !important;
+    height: 75% !important;
+
+    opacity: 0;
+}
+
+.bye-ring3-pilares{
+    width: 50% !important;
+    height: 50% !important;
+
+    opacity: 0;
+}
+
+
+
+.bye-comienzo-pilares{
+    width: 10% !important;
+    height: 10% !important;
+
+    opacity: 0;
+}
+
+.bye-ring4-pilares{
+    width: 4% !important;
+    height: 4% !important;
+
+    opacity: 0;
+}
+
+
+
+/*Animation Transition Menu -> Comienzo*/
+
+.bye-ring1-comienzo{
+    width: 65%;
+    height: 65%;
+
+    opacity: 0;
+}
+
+.bye-menu-comienzo{
+    width: 77% !important;
+    height: 77% !important;
+
+    opacity: 0;
+}
+
+
+
+.bye-ring2-comienzo{
+    width: 55%;
+    height: 55%;
+
+    opacity: 0;
+}
+
+.bye-pilares-comienzo{
+    width: 60vh !important;
+    height: 60vh !important;
+
+    opacity: 0;
+}
+
+.bye-ring3-comienzo{
+    width: 60% !important;
+    height: 60% !important;
+
+    opacity: 0;
+}
+
+
+
+.bye-comienzo-comienzo{
+    width: 47% !important;
+    height: 47% !important;
+
+    opacity: 0;
+}
+
+.bye-ring4-comienzo{
+    width: 26% !important;
+    height: 26% !important;
 
     opacity: 0;
 }
