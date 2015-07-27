@@ -97,477 +97,406 @@ textarea {
    DAIVA's custom styles
    ========================================================================== */
 
-
-
-
-
-/* =======================================
-   MENÚ MANDALA
-   ======================================= */
-
-#menuwrapper{
-    position: fixed;
-    width: 100%;
-    height: 100%;
+body{
     background-color: #202020;
+    
 }
 
-#menu-mandala{
-    /*background-color: orange;*/
-    position: relative;
-    width: 100vh;
-    height: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    -webkit-transition: width 2s, height 2s; /* Safari */
-    transition: width 2s, height 2s;
-
-    -webkit-transition-timing-function: ease-in-out ; /* Safari and Chrome */
-    transition-timing-function: ease-in-out ;
-}
-
-.menu-ring1{
-    background-image: url('../img/menu/ring1-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 82.5%;
-    height: 82.5%;
-    /*background-color: turquoise;*/
-}
-
-
-#menu-portafolio{
-    background-image: url('../img/menu/portafolio-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 77%;
-    height: 77%;
-    /*background-color: pink;*/
-}
-
-.menu-ring2{
-    background-image: url('../img/menu/ring2-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 65%;
-    height: 65%;
-    /*background-color: purple;*/
-}
-
-#menu-pilares{
-    background-image: url('../img/menu/pilares-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 60%;
-    height: 60%;
-    /*background-color: turquoise;*/
-}
-
-.menu-ring3{
-    background-image: url('../img/menu/ring3-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 45.3%;
-    height: 45.3%;
-    /*background-color: pink;*/
-}
-
-#menu-comienzo{
-    background-image: url('../img/menu/comienzo-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 39%;
-    height: 39%;
-    /*background-color: purple;*/
-}
-
-.menu-ring4{
-    background-image: url('../img/menu/ring4-menu.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    width: 26.66%;
-    height: 26.66%;
-    /*background-color: orange;*/
-}
-
-
-.menu-circles{
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    border-radius: 50%;
-
-}
-
-
-.menu-spin{
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-
-    -webkit-transition: width 0.8s, height 0.8s, transform 5s, opacity 0.7s; /* Safari */
-    transition: width 0.8s, height 0.8s, transform 5s, opacity 0.7s;
-
-    -webkit-transition-timing-function: cubic-bezier(.5,-1,.5,2) ; /* Safari and Chrome */
-    transition-timing-function: cubic-bezier(.5,-1,.5,2) ;
-}
-
-.spin-left{
-    animation-name: spinleft;
-    -webkit-animation-name: spinleft;
-}
-
-.spin-right{
-    animation-name: spinright;
-    -webkit-animation-name: spinright;
-}
-
-.speed1{
-    animation-duration: 80s;
-    -webkit-animation-duration: 80s;
-}
-
-.speed2{
-    animation-duration: 50s;
-    -webkit-animation-duration: 50s;
-}
-
-.speed3{
-    animation-duration: 40s;
-    -webkit-animation-duration: 40s;
-}
-
-.speed4{
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
-}
-
-
-@keyframes spinleft{
-    0%{-ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-    transform: rotate(0deg);}
+/*/// INIT MENU MANDALA ///*/
+
+    #windowWrapper{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        background: #101010; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #101010 0%, #202020 100%); /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#101010), color-stop(100%,#202020)); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover, #101010 0%,#202020 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(center, ellipse cover, #101010 0%,#202020 100%); /* Opera 12+ */
+        background: -ms-radial-gradient(center, ellipse cover, #101010 0%,#202020 100%); /* IE10+ */
+        background: radial-gradient(ellipse at center, #101010 0%,#202020 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+    #menuWrapper{
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
+    #Mandala{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    /*/// INIT Maqueta Anillos por Secciones ///*/
+
+        #portafolioStage{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.6;
+
+            border-radius: 50%;
+
+            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+
+        }
+
+        #pilaresStage{
+            position: absolute;
+            width: 72%;
+            height: 72%;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.6;
+
+            border-radius: 50%;
+
+            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+        }
+
+        #comienzoStage{
+            position: absolute;
+            width: 45%;
+            height: 45%;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.6;
+
+            border-radius: 50%;
+
+            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+        }
+
+        #voidStage{
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.6;
 
-    100%{-ms-transform: rotate(-360deg); /* IE 9 */
-    -webkit-transform: rotate(-360deg); /* Chrome, Safari, Opera */
-    transform: rotate(-360deg);}
-}
+            border-radius: 50%;
 
-@keyframes spinright{
-    0%{-ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-    transform: rotate(0deg);}
+            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+        }
 
-    100%{-ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-    transform: rotate(360deg);}
-}
+    /*/// END Maqueta Anillos por Secciones ///*/
 
-/*.menu-ring1:hover, .menu-ring2:hover, .menu-ring3:hover, .menu-ring4:hover, #menu-portafolio:hover, #menu-pilares:hover, #menu-comienzo:hover{
-    width: 20vh;
-    height: 20vh;
-    transform: rotate(-10deg);
-}*/
 
-.menu-ring1-lvl1{
-    width: 90vh;
-    height: 90vh;
-}
 
-.menu-portafolio-lvl1{
-    width: 75vh !important;
-    height: 75vh !important;
-}
-
-.menu-ring2-lvl1{
-    width: 55vh;
-    height: 55vh;
-}
 
-.menu-pilares-lvl1{
-    width: 48vh !important;
-    height: 48vh !important;
-}
+    /*/// INIT Animación Hover de Anillos Principales ///*/
+        #portafolioStage:hover {
+            -webkit-transform: scale(1.05,1.05);
+               -moz-transform: scale(1.05,1.05);
+                -ms-transform: scale(1.05,1.05);
+                 -o-transform: scale(1.05,1.05);
+                    transform: scale(1.05,1.05);
 
-.menu-ring3-lvl1{
-    width: 35vh;
-    height: 35vh;
-}
+            opacity: 1;
+        }
 
-.menu-comienzo-lvl1{
-    width: 29vh !important;
-    height: 29vh !important;
-}
+        #pilaresStage:hover {
+            -webkit-transform: scale(1.06,1.06);
+               -moz-transform: scale(1.06,1.06);
+                -ms-transform: scale(1.06,1.06);
+                 -o-transform: scale(1.06,1.06);
+                    transform: scale(1.06,1.06);
 
-.menu-ring4-lvl1{
-    width: 18vh;
-    height: 18vh;
-}
+            opacity: 1;
+        }
 
+        #comienzoStage:hover {
+            -webkit-transform: scale(1.08,1.08);
+               -moz-transform: scale(1.08,1.08);
+                -ms-transform: scale(1.08,1.08);
+                 -o-transform: scale(1.08,1.08);
+                    transform: scale(1.08,1.08);
 
+            opacity: 1;
+        }
 
+    /*/// END Animación Hover de Anillos Principales ///*/
 
-.menu-ring1-lvl2{
-    width: 97vh;
-    height: 97vh;
-}
 
-.menu-portafolio-lvl2{
-    width: 90vh !important;
-    height: 90vh !important;
-}
 
-.menu-ring2-lvl2{
-    width: 75vh;
-    height: 75vh;
-}
 
-.menu-pilares-lvl2{
-    width: 60vh !important;
-    height: 60vh !important;
-}
+    /*/// INIT Tamaño de los Anillos con el nombre de la sección a la que te llevan ///*/
 
-.menu-ring3-lvl2{
-    width: 40vh;
-    height: 40vh;
-}
+        #portafolioStage .sectionMandala{
+            width: 90%;
+            height: 90%;
+        }
 
-.menu-comienzo-lvl2{
-    width: 34vh !important;
-    height: 34vh !important;
-}
+        #pilaresStage .sectionMandala{
+            width: 88%;
+            height: 88%;
+        }
 
-.menu-ring4-lvl2{
-    width: 23vh;
-    height: 23vh;
-}
+        #comienzoStage .sectionMandala{
+            width: 80%;
+            height: 80%;
+        }
 
+        #voidStage .sectionMandala{
+            width: 75%;
+            height: 75%;
+        }
 
+        .sectionMandala{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
 
+            border-radius: 50%;
+        }
 
+    /*/// END Tamaño de los Anillos con el nombre de la sección a la que te llevan ///*/
 
 
-.menu-ring1-lvl3{
-    width: 95vh;
-    height: 95vh;
-}
 
-.menu-portafolio-lvl3{
-    width: 89vh !important;
-    height: 89vh !important;
-}
+    /*/// INIT Outline Ring Decoration (Maqueta y Bg's) ///*/
 
-.menu-ring2-lvl3{
-    width: 76vh;
-    height: 76vh;
-}
+        .outlineRing{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
 
-.menu-pilares-lvl3{
-    width: 69vh !important;
-    height: 69vh !important;
-}
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
 
-.menu-ring3-lvl3{
-    width: 52vh;
-    height: 52vh;
-}
+            -webkit-animation: rotateLeft linear infinite;
+               -moz-animation: rotateLeft linear infinite;
+                -ms-animation: rotateLeft linear infinite;
+                 -o-animation: rotateLeft linear infinite;
+                    animation: rotateLeft linear infinite;
+        }
 
-.menu-comienzo-lvl3{
-    width: 39vh !important;
-    height: 39vh !important;
-}
 
-.menu-ring4-lvl3{
-    width: 18vh;
-    height: 18vh;
-}
 
+        #portafolioStage .outlineRing {
+            background-image: url('../img/menu/ring1-menu.svg');
+        }
 
+        #pilaresStage .outlineRing {
+            background-image: url('../img/menu/ring2-menu.svg');
+        }
 
-/*Animation Transition Menu -> Portafolio*/
+        #comienzoStage .outlineRing {
+            background-image: url('../img/menu/ring3-menu.svg');
+        }
 
-.bye-ring1-portafolio{
-    width: 120%;
-    height: 120%;
+        #voidStage .outlineRing {
+            background-image: url('../img/menu/ring4-menu.svg');
+        }
 
-    opacity: 0;
-}
+    /*/// END Outline Ring Decoration (Maqueta y Bg's) ///*/
 
-.bye-menu-portafolio{
-    width: 100% !important;
-    height: 100% !important;
 
-    opacity: 0;
-}
 
-.bye-ring2-portafolio{
-    width: 90%;
-    height: 90%;
+    /*/// INIT Bg Image de Niveles (Portafolio, Pilares, Comienzo), Animation Duration también ///*/
 
-    opacity: 0;
-}
-
-
-
-.bye-pilares-portafolio{
-    width: 40vh !important;
-    height: 40vh !important;
-
-    opacity: 0;
-}
-
-.bye-ring3-portafolio{
-    width: 14% !important;
-    height: 14% !important;
-
-    opacity: 0;
-}
-
-.bye-comienzo-portafolio{
-    width: 10% !important;
-    height: 10% !important;
-
-    opacity: 0;
-}
-
-.bye-ring4-portafolio{
-    width: 4% !important;
-    height: 4% !important;
-
-    opacity: 0;
-}
-
-
-
-/*Animation Transition Menu -> Pilares*/
-
-.bye-ring1-pilares{
-    width: 90%;
-    height: 90%;
-
-    opacity: 0;
-}
-
-.bye-menu-pilares{
-    width: 80% !important;
-    height: 80% !important;
-
-    opacity: 0;
-}
-
-
-
-.bye-ring2-pilares{
-    width: 90%;
-    height: 90%;
-
-    opacity: 0;
-}
-
-.bye-pilares-pilares{
-    width: 75% !important;
-    height: 75% !important;
-
-    opacity: 0;
-}
-
-.bye-ring3-pilares{
-    width: 50% !important;
-    height: 50% !important;
-
-    opacity: 0;
-}
-
-
-
-.bye-comienzo-pilares{
-    width: 10% !important;
-    height: 10% !important;
-
-    opacity: 0;
-}
-
-.bye-ring4-pilares{
-    width: 4% !important;
-    height: 4% !important;
-
-    opacity: 0;
-}
-
-
-
-/*Animation Transition Menu -> Comienzo*/
-
-.bye-ring1-comienzo{
-    width: 65%;
-    height: 65%;
-
-    opacity: 0;
-}
-
-.bye-menu-comienzo{
-    width: 77% !important;
-    height: 77% !important;
-
-    opacity: 0;
-}
-
-
-
-.bye-ring2-comienzo{
-    width: 55%;
-    height: 55%;
-
-    opacity: 0;
-}
-
-.bye-pilares-comienzo{
-    width: 60vh !important;
-    height: 60vh !important;
-
-    opacity: 0;
-}
-
-.bye-ring3-comienzo{
-    width: 60% !important;
-    height: 60% !important;
-
-    opacity: 0;
-}
-
-
-
-.bye-comienzo-comienzo{
-    width: 47% !important;
-    height: 47% !important;
-
-    opacity: 0;
-}
-
-.bye-ring4-comienzo{
-    width: 26% !important;
-    height: 26% !important;
-
-    opacity: 0;
-}
-
-
-
+        #portafolio{
+            background-image: url('../img/menu/portafolio-menu.svg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #pilares{
+            background-image: url('../img/menu/pilares-menu.svg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #comienzo{
+            background-image: url('../img/menu/comienzo-menu.svg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    /*/// END Bg Image de Niveles (Portafolio, Pilares, Comienzo), Animation Duration también ///*/
+
+
+
+
+
+    /*/// INIT Rotation Function Classes ///*/
+
+
+        .rotateLeft{
+            -webkit-animation: rotateLeft linear infinite;
+               -moz-animation: rotateLeft linear infinite;
+                -ms-animation: rotateLeft linear infinite;
+                 -o-animation: rotateLeft linear infinite;
+                    animation: rotateLeft linear infinite;
+        }
+
+        @keyframes rotateLeft{
+            0%{
+                -webkit-transform: rotate(0deg);
+                   -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                     -o-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            }
+
+            100%{
+                -webkit-transform: rotate(-360deg);
+                   -moz-transform: rotate(-360deg);
+                    -ms-transform: rotate(-360deg);
+                     -o-transform: rotate(-360deg);
+                        transform: rotate(-360deg);
+            }
+        }
+
+        .rotateRight{
+            -webkit-animation: rotateRight linear infinite;
+               -moz-animation: rotateRight linear infinite;
+                -ms-animation: rotateRight linear infinite;
+                 -o-animation: rotateRight linear infinite;
+                    animation: rotateRight linear infinite;
+        }
+
+        @keyframes rotateRight{
+            0%{
+                -webkit-transform: rotate(0deg);
+                   -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                     -o-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            }
+
+            100%{
+                -webkit-transform: rotate(360deg);
+                   -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                     -o-transform: rotate(360deg);
+                        transform: rotate(360deg);
+            }
+        }
+
+
+        .rotationSpeed20{
+            -webkit-animation-duration: 20s;
+               -moz-animation-duration: 20s;
+                -ms-animation-duration: 20s;
+                 -o-animation-duration: 20s;
+                    animation-duration: 20s;
+        }
+
+        .rotationSpeed40{
+            -webkit-animation-duration: 40s;
+               -moz-animation-duration: 40s;
+                -ms-animation-duration: 40s;
+                 -o-animation-duration: 40s;
+                    animation-duration: 40s;
+        }
+
+        .rotationSpeed60{
+            -webkit-animation-duration: 60s;
+               -moz-animation-duration: 60s;
+                -ms-animation-duration: 60s;
+                 -o-animation-duration: 60s;
+                    animation-duration: 60s;
+        }
+
+        .rotationSpeed80{
+            -webkit-animation-duration: 80s;
+               -moz-animation-duration: 80s;
+                -ms-animation-duration: 80s;
+                 -o-animation-duration: 80s;
+                    animation-duration: 80s;
+        }
+
+        .rotationSpeed100{
+            -webkit-animation-duration: 100s;
+               -moz-animation-duration: 100s;
+                -ms-animation-duration: 100s;
+                 -o-animation-duration: 100s;
+                    animation-duration: 100s;
+        }
+
+    /*/// END Rotation Function Classes ///*/
+
+
+    /*/// INIT Leave Menu JS Toggle Classes ///*/
+
+        .pullRing{
+            -webkit-transform: scale(1.2,1.2) !important;
+               -moz-transform: scale(1.2,1.2) !important;
+                -ms-transform: scale(1.2,1.2) !important;
+                 -o-transform: scale(1.2,1.2) !important;
+                    transform: scale(1.2,1.2) !important;
+            opacity: 0 !important;
+        }
+
+        .pushRing{
+            -webkit-transform: scale(0.8,0.8) !important;
+               -moz-transform: scale(0.8,0.8) !important;
+                -ms-transform: scale(0.8,0.8) !important;
+                 -o-transform: scale(0.8,0.8) !important;
+                    transform: scale(0.8,0.8) !important;
+            opacity: 0 !important;
+        }
+        
+    /*/// END Leave Menu JS Toggle Classes ///*/
+
+
+
+
+
+/*/// END MENU MANDALA ///*/
 
 
 
