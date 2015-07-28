@@ -507,6 +507,67 @@ body{
 
 
 
+/*/// MOBILE CSS DOCUMENT ///*/
+
+    /*/// MOBILE ALL STYLE///*/
+
+        @media (max-width: 767px){
+        /*/// INIT MENU MANDALA ///*/
+
+            #menuWrapper{
+                width: 400px;
+                height: 400px;
+            }
+
+        /*/// END MENU MANDALA ///*/
+        }
+
+    /*/// END MOBILE ALL STYLE///*/
+
+
+
+    /*/// MOBILE ORIENTATION STYLE///*/
+
+        /*/// MOBILE PORTRAIT STYLE///*/
+
+            @media (max-width: 767px) and (orientation: portrait){
+            /*/// INIT MENU MANDALA ///*/
+
+
+            /*/// END MENU MANDALA ///*/
+            }
+
+        /*/// END MOBILE PORTRAIT STYLE///*/
+
+
+
+
+        /*/// MOBILE LANDSCAPE STYLE///*/
+        
+            @media (max-width: 767px) and (orientation: landscape){
+            /*/// INIT MENU MANDALA ///*/
+
+
+            /*/// END MENU MANDALA ///*/
+            }
+
+        /*/// END MOBILE LANDSCAPE STYLE///*/
+
+
+
+    /*/// END MOBILE ORIENTATION STYLE///*/
+
+/*/// END MOBILE CSS DOCUMENT ///*/
+
+
+
+
+
+
+
+
+
+
 
 
 
