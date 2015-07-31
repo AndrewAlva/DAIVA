@@ -498,13 +498,218 @@ body{
 
 
 
+/*/// INIT MENU NAV ///*/
+    #menuNavWrapper{
+        position: fixed;
+        right: 60px;
+        top: 70px;
+        width: 110px;
+        height: 29px;
+        z-index: 1000000;
+    }
+
+    #menuNavWrapper ul, #menuNavWrapper ul li{
+        list-style-type: none;
+        float: left;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    #contactBox{
+        position: absolute;
+        left: 0px;
+        cursor: pointer;
+    }
+
+    #burguerBox{
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+    }
+
+/*/// END MENU NAV ///*/
+
+
+
+
+
 /*/// INIT HOME STYLE ///*/
 
-    #windowHomeWrapper{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+    
+    /*/// INIT HOME WRAPPERS STYLE ///*/
+        #windowHomeWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #homeWrapper{
+            position: absolute;
+            width: 100%;
+            height: 800vh;
+            min-height: 4800px;
+        }
+
+        .homeSections{
+            position: relative;
+            width: 100%;
+        }
+
+        #homeSection1{
+            height: 25%;
+        }
+
+        #homeSection2{
+            height: 25%;
+        }
+
+        #homeSection3{
+            height: 37.5%;
+        }
+
+        #homeSection4{
+            height: 12.5%;
+        }
+
+
+
+        /*#homeLandingWrapper{
+            background-color: red;
+        }*/
+
+        /*#homeTimelapseWrapper{
+            background-color: red;
+        }*/
+
+        /*#homeQuoteWrapper1{
+            background-color: red;
+        }*/
+
+        /*#homeQuoteWrapper2{
+            background-color: red;
+        }*/
+
+        /*#homeQuoteWrapper3{
+            background-color: red;
+        }*/
+
+        /*#homePortalWrapper{
+            background-color: red;
+        }*/
+
+
+
+        
+
+        /*/// INIT HOME SECTION DIVISIONS HELPER ///*/
+            .fullHomeSection{
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .halfHomeSection{
+                position: relative;
+                width: 100%;
+                height: 50%;
+            }
+
+            .thirdHomeSection{
+                position: relative;
+                width: 100%;
+                height: 33.33%;
+            }
+        /*/// END HOME SECTION DIVISIONS HELPER ///*/
+
+
+
+
+
+
+        /*/// INIT HOME LANDING WRAPPER ///*/
+            #svgHomeWrapper{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            #logoLanding{
+                position: absolute;
+                width: 284px;
+                height: 284px;
+
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            #scrollLanding{
+                position: absolute;
+                bottom: 10px;
+                width: 33px;
+                height: 80px;
+                margin: auto;
+                right: 0;
+                left: 0;
+            }
+
+
+        /*/// END HOME LANDING WRAPPER ///*/
+
+
+
+
+
+        /*/// INIT HOME TIMELAPSE WRAPPER ///*/
+
+            #homeSection2{
+                background-color: white;
+            }
+
+
+            #homeTimelapseWrapper{
+                background-color: #fff;
+                -webkit-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                   -moz-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                    -ms-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                     -o-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                        clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                top: -80px;
+                
+            }
+
+
+        /*/// END HOME TIMELAPSE WRAPPER ///*/
+
+
+
+
+
+        /*/// INIT HOME QUOTES WRAPPER ///*/
+
+            #homeSection3{
+                background-color: white;
+            }
+
+        /*/// END HOME QUOTES WRAPPER ///*/
+
+
+
+
+
+        /*/// INIT HOME PORTAL WRAPPER ///*/
+
+        /*/// END HOME PORTAL WRAPPER ///*/
+        
+
+
+    /*/// END HOME WRAPPERS STYLE ///*/
+
+
 
 /*/// END HOME STYLE ///*/
 
