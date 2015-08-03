@@ -628,6 +628,14 @@ body{
 
 
         /*/// INIT HOME LANDING WRAPPER ///*/
+
+            #homeSection1{
+                background: url('../img/jpegs/Daiva-Mano.jpg');
+                background-size: cover;
+                background-position: top center;
+                background-repeat: no-repeat;
+            }
+
             #svgHomeWrapper{
                 position: absolute;
                 width: 100%;
@@ -649,7 +657,7 @@ body{
 
             #scrollLanding{
                 position: absolute;
-                bottom: 10px;
+                bottom: 15px;
                 width: 33px;
                 height: 80px;
                 margin: auto;
@@ -725,17 +733,27 @@ body{
 
             #homeTimelapseSvg{
                 position: relative;
-                width: 412px;
+                width: 480px;
                 height: 30px;
                 margin: auto;
                 top: 300px;
                 right: 0;
                 left: 0;
+                margin-bottom: 15px;
             }
+
+                #homeTimelapseSvg img{
+                    width: 100%;
+                }
 
                 #leftArrow{
                     position: absolute;
-                    right: 221px;
+                    right: 260px;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    width: 215px;
+                    height: 24px;
                 }
 
                 #homeTimelapseRombo{
@@ -749,7 +767,12 @@ body{
 
                 #rightArrow{
                     position: absolute;
-                    left: 221px;
+                    left: 260px;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    width: 215px;
+                    height: 24px;
                 }
 
             #homeTimelapseProject{
@@ -766,6 +789,7 @@ body{
 
 
         /*/// END HOME TIMELAPSE WRAPPER ///*/
+            /*/// VIMEO VIDEO PENDIENTE ///*/
 
 
 
@@ -774,7 +798,7 @@ body{
         /*/// INIT HOME QUOTES WRAPPER ///*/
 
             #homeSection3{
-                background-color: orange;
+                background-color: #fff;
             }
 
             .quoteBoxCenter{
@@ -786,8 +810,113 @@ body{
                 bottom: 0;
                 right: 0;
                 left: 0;
+            }
 
-                background-color: purple;
+            .quoteBoxCenter img{
+                width: 100%;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+            }
+
+            .topQuoteDecoration{
+                position: absolute;
+                width: 320px;
+                height: 20px;
+                margin: auto;
+                top: 0;
+                right: 0;
+                left: 0;
+            }
+
+            .topQuoteDecoration .quoteLeftArrow{
+                position: absolute;
+                margin: auto;
+                right: 180px;
+                top: 0;
+                bottom: 0;
+                height: 20px;
+                width: 110px;
+            }
+
+            .topQuoteDecoration .quoteRightArrow{
+                position: absolute;
+                margin: auto;
+                left: 180px;
+                top: 0;
+                bottom: 0;
+                height: 20px;
+                width: 110px;
+            }
+
+            .quoteRombo{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+            }
+
+
+
+            .bottomQuoteDecoration{
+                position: absolute;
+                width: 742px;
+                height: 20px;
+                margin: auto;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+
+            .bottomQuoteDecoration .quoteLeftArrow{
+                position: absolute;
+                right: 390px;
+                height: 20px;
+                width: 351.8px;
+            }
+            
+            .bottomQuoteDecoration .quoteRightArrow{
+                position: absolute;
+                left: 390px;
+                height: 20px;
+                width: 351.8px;
+            }
+
+
+
+            .quoteTextWrapper{
+                position: absolute;
+                width: 100%;
+                height: 90px;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+                font-family: 'Noto Serif';
+                font-style: italic;
+                font-weight: 400 !important;
+                color: #b2b2b2;
+            }
+
+            #homeQuoteWrapper3 .quoteTextWrapper{
+                height: 55px !important;
+            }
+
+            .quoteScrollDown{
+                position: absolute;
+                margin: auto;
+                bottom: 15px;
+                right: 0;
+                left: 0;
+                width: 33px;
+                height: 80px;
             }
 
         /*/// END HOME QUOTES WRAPPER ///*/
