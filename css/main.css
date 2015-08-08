@@ -82,6 +82,7 @@ textarea {
     resize: vertical;
 }
 
+
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
@@ -93,6 +94,40 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
+/* ==========================================================================
+    INIT Browser Sizes
+========================================================================== */
+
+    @media screen (max-width: 767px){
+        #mobile{}
+    }
+
+    @media screen (min-width: 768px){
+        #tablet{}
+    }
+
+    @media screen (min-width: 992px){
+        #laptops{}
+    }
+
+    @media screen (min-width: 1200px){
+        #desktops{}
+    }
+
+/* ==========================================================================
+    END Browser Sizes
+========================================================================== */
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    DAIVA's custom styles
    ========================================================================== */
@@ -102,13 +137,46 @@ body{
     
 }
 
+/*/// INIT MENU NAV ///*/
+    #menuNavWrapper{
+        position: fixed;
+        right: 60px;
+        top: 70px;
+        width: 110px;
+        height: 29px;
+        z-index: 100000000;
+    }
+
+    #menuNavWrapper ul, #menuNavWrapper ul li{
+        list-style-type: none;
+        float: left;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    #contactBox{
+        position: absolute;
+        left: 0px;
+        cursor: pointer;
+    }
+
+    #burguerBox{
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+    }
+/*/// END MENU NAV ///*/
+
+
 /*/// INIT MENU MANDALA ///*/
 
     #windowMenuWrapper{
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         overflow: hidden;
+        z-index: 10000000;
 
         background: #101010; /* Old browsers */
         background: -moz-radial-gradient(center, ellipse cover, #101010 0%, #202020 100%); /* FF3.6+ */
@@ -491,47 +559,7 @@ body{
         }
         
     /*/// END Leave Menu JS Toggle Classes ///*/
-
 /*/// END MENU MANDALA ///*/
-
-
-
-
-
-/*/// INIT MENU NAV ///*/
-    #menuNavWrapper{
-        position: fixed;
-        right: 60px;
-        top: 70px;
-        width: 110px;
-        height: 29px;
-        z-index: 1000000;
-    }
-
-    #menuNavWrapper ul, #menuNavWrapper ul li{
-        list-style-type: none;
-        float: left;
-        display: inline-block;
-        padding: 0;
-        margin: 0;
-    }
-
-    #contactBox{
-        position: absolute;
-        left: 0px;
-        cursor: pointer;
-    }
-
-    #burguerBox{
-        position: absolute;
-        right: 0px;
-        cursor: pointer;
-    }
-
-/*/// END MENU NAV ///*/
-
-
-
 
 
 /*/// INIT HOME STYLE ///*/
@@ -547,8 +575,8 @@ body{
         #homeWrapper{
             position: absolute;
             width: 100%;
-            height: 800vh;
-            min-height: 4800px;
+            height: 500vh;
+            min-height: 3000px;
         }
 
         .homeSections{
@@ -557,781 +585,739 @@ body{
         }
 
         #homeSection1{
-            height: 25%;
+            height: 40%;
         }
 
         #homeSection2{
-            height: 25%;
+            height: 40%;
             min-height: 1500px;
             z-index: 100;
         }
 
         #homeSection3{
-            height: 37.5%;
+            height: 20%;
             z-index: 10;
         }
 
         #homeSection4{
-            height: 12.5%;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
             z-index: 10;
+        }
+    /*/// END HOME WRAPPERS STYLE ///*/
+
+
+    /*/// INIT HOME SECTIONS DIVISIONS HELPER ///*/
+        .fullHomeSection{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .halfHomeSection{
+            position: relative;
+            width: 100%;
+            height: 50%;
+        }
+
+        .thirdHomeSection{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    /*/// END HOME SECTIONS DIVISIONS HELPER ///*/
+
+
+
+
+    /*INIT LANDING BORDER CHANGER STYLE*/
+
+        #landingBorderChanger{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+
+        
+            .topBorder, .bottomBorder{
+               position: absolute;
+               width: 100%;
+               height: 40px;
+            }
+
+            .bottomBorder{
+                bottom: 0;
+            }
+
+            .leftBorder, .rightBorder{
+               position: absolute;
+               width: 43px;
+               height: 100%;
+            }
+
+            .rightBorder{
+                right: 0;
+            }
+
+            .rhombusChanger{
+                position: absolute;
+                margin: auto;
+                background-color: #ce9549;
+                width: 18.6px;
+                height: 18.6px;
+                -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
+            }
+        
+        /*INIT HORIZONTAL BORDERS*/
+
+            .horizontalBorderLeft, .horizontalBorderRight{
+                position: absolute;
+                width: 45%;
+                height: 100%;
+            }
+
+            .horizontalBorderLeft{
+                left: 38px;
+            }
+
+            .horizontalBorderRight{
+                right: 38px;
+            }
+
+            .horizontalBoxCenter{
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                width: 2%;
+                height: 100%;
+            }
+
+            .hTopLine{
+                position: absolute;
+                margin: auto;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 5px;
+                background-color: #ce9549;
+            }
+
+            .hBottomLine{
+                position: absolute;
+                margin: auto;
+                right: 0;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                background-color: #ce9549;
+            }
+
+            .topBorder .rhombusChanger{
+                bottom: -7px;
+                right: 0;
+                left: 0;
+            }
+
+            .bottomBorder .rhombusChanger{
+                top: -7px;
+                right: 0;
+                left: 0;
+            }
+
+        /*END HORIZONTAL BORDERS*/
+
+
+
+        /*INIT VERTICAL BORDER*/
+            .verticalBorderUp, .verticalBorderDown{
+                position: absolute;
+                width: 100%;
+                height: 42%;
+            }
+
+            .verticalBorderUp{
+                top: 35px;
+            }
+
+            .verticalBorderDown{
+                bottom: 35px;
+            }
+
+            .verticalBoxCenter{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3.5%;
+            }
+
+            .leftBorder .rhombusChanger{
+                right: -7px;
+                top: 0;
+                bottom: 0;
+            }
+
+            .rightBorder .rhombusChanger{
+                left: -7px;
+                top: 0;
+                bottom: 0;
+            }
+
+            .vLeftLine{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 5px;
+                height: 100%;
+                background-color: #ce9549;
+            }
+
+            .vRightLine{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 5px;
+                height: 100%;
+                background-color: #ce9549;
+            }
+
+        /*END VERTICAL BORDER*/
+    /*END LANDING BORDER CHANGER STYLE*/
+
+    /*INIT QUOTES BORDER CHANGER STYLE*/
+
+        #quotesBorderChanger{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+        }
+
+        #quotesBorderChanger .verticalBorderTop, #quotesBorderChanger .verticalBorderBottom{
+            position: absolute;
+            width: 100%;
+            height: 21.3%;
+        }
+
+        #quotesBorderChanger .verticalBorderBottom{
+            bottom: 0;
+        }
+
+        #quotesBorderChanger .verticalBorderSecondTop, #quotesBorderChanger .verticalBorderSecondBottom{
+            position: absolute;
+            width: 100%;
+            height: 15.3%;
+        }
+
+        #quotesBorderChanger .verticalBorderSecondTop{
+            top: 30%;
+        }
+
+        #quotesBorderChanger .verticalBorderSecondBottom{
+            bottom: 30%;
+        }
+
+        #quotesBorderChanger .verticalBoxTop{
+            position: absolute;
+            margin: auto;
+            top: 25%;
+            width: 100%;
+            height: 3.5%;
+        }
+
+        #quotesBorderChanger .verticalBoxBottom{
+            position: absolute;
+            margin: auto;
+            bottom: 22.5%;
+            width: 100%;
+            height: 3.5%;
+        }
+
+        .rhombusChangerBig{
+            position: absolute;
+            margin: auto;
+            background-color: #ce9549;
+            width: 31px;
+            height: 31px;
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                 -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+
+        .rhombusChangerSmall{
+            position: absolute;
+            margin: auto;
+            background-color: #ce9549;
+            width: 13px;
+            height: 13px;
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                 -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+
+        .leftBorder .rhombusChangerSmall{
+            right: -4px;
+        }
+
+        .leftBorder .rhombusChangerBig{
+            right: -13px;
+        }
+
+        .rightBorder .rhombusChangerSmall{
+            left: -4px;
+        }
+
+        .rightBorder .rhombusChangerBig{
+            left: -13px;
+        }
+    /*END QUOTES BORDER CHANGER STYLE*/
+
+
+
+
+
+
+
+    /*/// INIT HOME LANDING WRAPPER ///*/
+
+        #homeSection1{
+            background: url('../img/jpegs/Daiva-Mano.jpg');
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+
+        #logoLanding{
+            position: absolute;
+            width: 284px;
+            height: 284px;
+
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            z-index: 10;
+        }
+    /*/// END HOME LANDING WRAPPER ///*/
+
+
+    /*/// INIT HOME TIMELAPSE WRAPPER ///*/
+
+        #homeSection2{
+            background-color: #fff;
+        }
+
+
+        #homeTimelapseWrapper{
+            background-color: #fff;
+            -webkit-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+               -moz-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                -ms-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                 -o-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+                    clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
+            top: -80px;
+            z-index: 10;
+        }
+
+        #homeTimelapseInnerWrapper{
+            position: absolute;
+            margin-top: 20vw;
+            width: 100%;
+            height: 75%;
+        }
+
+        #homeTimelapseLogo{
+            position: relative;
+            width: 230px;
+            height: 230px;
+            margin: auto;
+            right: 0;
+            left: 0;
+            
+            z-index: 10;
+        }
+
+        #homeTimelapseMaskWrapper{
+            position: relative;
+            width: 100%;
+            height: 43.1vw;
+        }
+
+            /*#homeTimelapseMaskWrapper iframe{
+                position: absolute;
+                width: 99%;
+                height: 99%;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }*/
+
+            #vimeoPlayer{
+                position: absolute;
+                width: 98%;
+                height: 98%;
+                margin: auto;
+                top: 0;right: 0;bottom: 0;left: 0;
+                background-color: #202020;
+            }
+
+            #homeTimelapseMask{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            #homeTimelapseMask img{
+                width: 100%;
+                height: 100%;
+            }
+
+        #homeTimelapseSvg{
+            position: relative;
+            width: 480px;
+            height: 30px;
+            margin: auto;
+            
+            right: 0;
+            left: 0;
+            margin-bottom: 15px;
+        }
+
+            #homeTimelapseSvg img{
+                width: 100%;
+            }
+
+            #leftArrow{
+                position: absolute;
+                right: 260px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                width: 215px;
+                height: 24px;
+            }
+
+            #homeTimelapseRombo{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                margin: auto;
+                right: 0;
+                left: 0;
+            }
+
+            #rightArrow{
+                position: absolute;
+                left: 260px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                width: 215px;
+                height: 24px;
+            }
+
+        #homeTimelapseProject{
+            position: relative;
+            width: 412px;
+            height: 75px;
+            margin:auto;
+            
+            right: 0;
+            left: 0;
+        }
+
+        #scrollTimelapse{
+            position: relative;
+            width: 33px;
+            height: 80px;
+            margin: auto;
+            top: 100px;
+            right: 0;
+            left: 0;
+            z-index: 1000000;
+            cursor: pointer;
+        }
+
+        #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
+           height: 110%;
+        }
+    /*/// END HOME TIMELAPSE WRAPPER ///*/
+        /*/// VIMEO VIDEO PENDIENTE ///*/
+
+
+    /*/// INIT HOME QUOTES WRAPPER ///*/
+
+        #homeSection3{
+            background-color: #fff;
+        }
+
+        #cloudOver{
+            position: fixed;
+            z-index: 100;
+            width: 70%;
+            height: 50%;
+            margin: auto;
+            right: 0;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+            background: url('../img/pngs/cloud.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        #homeQuoteWrapper1, #homeQuoteWrapper2, #homeQuoteWrapper3{
+            z-index: 30;
+        }
+
+        .quoteBoxCenter{
+            position: absolute;
+            width: 600px;
+            height: 255px;
+            margin:auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .quoteBoxCenter img{
+            width: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+
+            z-index: 10;
+        }
+
+        .topQuoteDecoration{
+            position: absolute;
+            width: 320px;
+            height: 20px;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+
+            z-index: 1000000;
+        }
+
+        .topQuoteDecoration .quoteLeftArrow{
+            position: absolute;
+            margin: auto;
+            right: 180px;
+            top: 0;
+            bottom: 0;
+            height: 20px;
+            width: 110px;
+        }
+
+        .topQuoteDecoration .quoteRightArrow{
+            position: absolute;
+            margin: auto;
+            left: 180px;
+            top: 0;
+            bottom: 0;
+            height: 20px;
+            width: 110px;
+        }
+
+        .quoteRombo{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
         }
 
 
 
-        /*#homeLandingWrapper{
-            background-color: red;
-        }*/
+        .bottomQuoteDecoration{
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            margin: auto;
+            bottom: 0;
+            right: 0;
+            left: 0;
 
-        /*#homeTimelapseWrapper{
-            background-color: red;
-        }*/
+            z-index: 1000000;
+        }
 
-        /*#homeQuoteWrapper1{
-            background-color: red;
-        }*/
-
-        /*#homeQuoteWrapper2{
-            background-color: red;
-        }*/
-
-        /*#homeQuoteWrapper3{
-            background-color: red;
-        }*/
-
-        /*#homePortalWrapper{
-            background-color: red;
-        }*/
-
-
-
-
+        .bottomQuoteDecoration .quoteLeftArrow{
+            position: absolute;
+            right: 56%;
+            height: 20px;
+            width: 351.8px;
+        }
         
-
-        /*/// INIT HOME SECTION DIVISIONS HELPER ///*/
-            .fullHomeSection{
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-
-            .halfHomeSection{
-                position: relative;
-                width: 100%;
-                height: 50%;
-            }
-
-            .thirdHomeSection{
-                position: relative;
-                width: 100%;
-                height: 33.33%;
-            }
-        /*/// END HOME SECTION DIVISIONS HELPER ///*/
+        .bottomQuoteDecoration .quoteRightArrow{
+            position: absolute;
+            left: 56%;
+            height: 20px;
+            width: 351.8px;
+        }
 
 
 
-        /*INIT LANDING BORDER CHANGER STYLE*/
+        .quoteTextWrapper{
+            position: absolute;
+            width: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            font-family: 'Noto Serif';
+            font-style: italic;
+            font-weight: 400 !important;
+            color: #b2b2b2;
 
-            #landingBorderChanger{
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                z-index: 1;
-            }
+            z-index: 10;
+        }
 
+        #homeQuoteWrapper1 .quoteTextWrapper{
+            height: 60px;
+        }
+
+        #homeQuoteWrapper2 .quoteTextWrapper{
+            height: 110px;
+        }
+
+        #homeQuoteWrapper3 .quoteTextWrapper{
+            height: 55px;
+        }
+    /*/// END HOME QUOTES WRAPPER ///*/
+
+
+    /*/// INIT HOME PORTAL WRAPPER ///*/
+
+        #homePortalWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #1d1d1b;
+        }
+
+        .portalRings{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+               -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                 -o-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
             
-                .topBorder, .bottomBorder{
-                   position: absolute;
-                   width: 100%;
-                   height: 40px;
-                }
-
-                .bottomBorder{
-                    bottom: 0;
-                }
-
-                .leftBorder, .rightBorder{
-                   position: absolute;
-                   width: 43px;
-                   height: 100%;
-                }
-
-                .rightBorder{
-                    right: 0;
-                }
-
-                .rhombusChanger{
-                    position: absolute;
-                    margin: auto;
-                    background-color: #ce9549;
-                    width: 18.6px;
-                    height: 18.6px;
-                    -webkit-transform: rotate(45deg);
-                       -moz-transform: rotate(45deg);
-                        -ms-transform: rotate(45deg);
-                         -o-transform: rotate(45deg);
-                            transform: rotate(45deg);
-                }
-            
-            /*INIT HORIZONTAL BORDERS*/
-
-                .horizontalBorderLeft, .horizontalBorderRight{
-                    position: absolute;
-                    width: 45%;
-                    height: 100%;
-                }
-
-                .horizontalBorderLeft{
-                    left: 38px;
-                }
-
-                .horizontalBorderRight{
-                    right: 38px;
-                }
-
-                .horizontalBoxCenter{
-                    position: absolute;
-                    margin: auto;
-                    left: 0;
-                    right: 0;
-                    width: 2%;
-                    height: 100%;
-                }
-
-                .hTopLine{
-                    position: absolute;
-                    margin: auto;
-                    right: 0;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 5px;
-                    background-color: #ce9549;
-                }
-
-                .hBottomLine{
-                    position: absolute;
-                    margin: auto;
-                    right: 0;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 5px;
-                    background-color: #ce9549;
-                }
-
-                .topBorder .rhombusChanger{
-                    bottom: -6px;
-                    right: 0;
-                    left: 0;
-                }
-
-                .bottomBorder .rhombusChanger{
-                    top: -6px;
-                    right: 0;
-                    left: 0;
-                }
-
-            /*END HORIZONTAL BORDERS*/
-
-
-
-            /*INIT VERTICAL BORDER*/
-                .verticalBorderUp, .verticalBorderDown{
-                    position: absolute;
-                    width: 100%;
-                    height: 42%;
-                }
-
-                .verticalBorderUp{
-                    top: 35px;
-                }
-
-                .verticalBorderDown{
-                    bottom: 35px;
-                }
-
-                .verticalBoxCenter{
-                    position: absolute;
-                    margin: auto;
-                    top: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 3.5%;
-                }
-
-                .leftBorder .rhombusChanger{
-                    right: -6px;
-                    top: 0;
-                    bottom: 0;
-                }
-
-                .rightBorder .rhombusChanger{
-                    left: -6px;
-                    top: 0;
-                    bottom: 0;
-                }
-
-                .vLeftLine{
-                    position: absolute;
-                    margin: auto;
-                    top: 0;
-                    bottom: 0;
-                    right: 0;
-                    width: 5px;
-                    height: 100%;
-                    background-color: #ce9549;
-                }
-
-                .vRightLine{
-                    position: absolute;
-                    margin: auto;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    width: 5px;
-                    height: 100%;
-                    background-color: #ce9549;
-                }
-
-            /*END VERTICAL BORDER*/
-        /*END LANDING BORDER CHANGER STYLE*/
-
-
-        /*INIT QUOTES BORDER CHANGER STYLE*/
-
-            #quotesBorderChanger{
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                z-index: 11;
-            }
-
-            #quotesBorderChanger .verticalBorderTop, #quotesBorderChanger .verticalBorderBottom{
-                position: absolute;
-                width: 100%;
-                height: 21.3%;
-            }
-
-            #quotesBorderChanger .verticalBorderBottom{
-                bottom: 0;
-            }
-
-            #quotesBorderChanger .verticalBorderSecondTop, #quotesBorderChanger .verticalBorderSecondBottom{
-                position: absolute;
-                width: 100%;
-                height: 15.3%;
-            }
-
-            #quotesBorderChanger .verticalBorderSecondTop{
-                top: 30%;
-            }
-
-            #quotesBorderChanger .verticalBorderSecondBottom{
-                bottom: 30%;
-            }
-
-            #quotesBorderChanger .verticalBoxTop{
-                position: absolute;
-                margin: auto;
-                top: 25%;
-                width: 100%;
-                height: 3.5%;
-            }
-
-            #quotesBorderChanger .verticalBoxBottom{
-                position: absolute;
-                margin: auto;
-                bottom: 22.5%;
-                width: 100%;
-                height: 3.5%;
-            }
-
-            .rhombusChangerBig{
-                position: absolute;
-                margin: auto;
-                background-color: #ce9549;
-                width: 31px;
-                height: 31px;
-                -webkit-transform: rotate(45deg);
-                   -moz-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                     -o-transform: rotate(45deg);
-                        transform: rotate(45deg);
-            }
-
-            .rhombusChangerSmall{
-                position: absolute;
-                margin: auto;
-                background-color: #ce9549;
-                width: 13px;
-                height: 13px;
-                -webkit-transform: rotate(45deg);
-                   -moz-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                     -o-transform: rotate(45deg);
-                        transform: rotate(45deg);
-            }
-
-            .leftBorder .rhombusChangerSmall{
-                right: -4px;
-            }
-
-            .leftBorder .rhombusChangerBig{
-                right: -13px;
-            }
-
-            .rightBorder .rhombusChangerSmall{
-                left: -4px;
-            }
-
-            .rightBorder .rhombusChangerBig{
-                left: -13px;
-            }
-        /*END QUOTES BORDER CHANGER STYLE*/
-
-
-
-
-
-
-
-        /*/// INIT HOME LANDING WRAPPER ///*/
-
-            #homeSection1{
-                background: url('../img/jpegs/Daiva-Mano.jpg');
-                background-size: cover;
-                background-position: top center;
-                background-repeat: no-repeat;
-            }
-
-            #svgHomeWrapper{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-
-            }
-
-            #logoLanding{
-                position: absolute;
-                width: 284px;
-                height: 284px;
-
-                margin: auto;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-
-                z-index: 10;
-            }
-
-            #scrollLanding{
-                position: absolute;
-                bottom: 15px;
-                width: 33px;
-                height: 80px;
-                margin: auto;
-                right: 0;
-                left: 0;
-
-                z-index: 10;
-            }
-        /*/// END HOME LANDING WRAPPER ///*/
-
-
-
-
-
-        /*/// INIT HOME TIMELAPSE WRAPPER ///*/
-
-            #homeSection2{
-                background-color: #fff;
-            }
-
-
-            #homeTimelapseWrapper{
-                background-color: #fff;
-                -webkit-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
-                   -moz-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
-                    -ms-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
-                     -o-clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
-                        clip-path: polygon(0% 80px, 100% 0%, 100% 100%, 0% 100%);
-                top: -80px;
-                z-index: 10;
-            }
-
-            #homeTimelapseInnerWrapper{
-                position: absolute;
-                margin-top: 300px;
-                width: 100%;
-                height: 100%;
-            }
-
-            #homeTimelapseLogo{
-                position: relative;
-                width: 230px;
-                height: 230px;
-                margin: auto;
-                right: 0;
-                left: 0;
-                
-                z-index: 10;
-            }
-
-            #homeTimelapseMaskWrapper{
-                position: relative;
-                width: 100%;
-                height: 43.1vw;
-                min-height: 600px;
-                
-            }
-
-                /*#homeTimelapseMaskWrapper iframe{
-                    position: absolute;
-                    width: 99%;
-                    height: 99%;
-                    margin: auto;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                }*/
-
-                #vimeoPlayer{
-                    position: absolute;
-                    width: 98%;
-                    height: 98%;
-                    margin: auto;
-                    top: 0;right: 0;bottom: 0;left: 0;
-                    background-color: #202020;
-                }
-
-                #homeTimelapseMask{
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                }
-
-                #homeTimelapseMask img{
-                    width: 100%;
-                    height: 100%;
-                }
-
-            #homeTimelapseSvg{
-                position: relative;
-                width: 480px;
-                height: 30px;
-                margin: auto;
-                
-                right: 0;
-                left: 0;
-                margin-bottom: 15px;
-            }
-
-                #homeTimelapseSvg img{
-                    width: 100%;
-                }
-
-                #leftArrow{
-                    position: absolute;
-                    right: 260px;
-                    margin: auto;
-                    top: 0;
-                    bottom: 0;
-                    width: 215px;
-                    height: 24px;
-                }
-
-                #homeTimelapseRombo{
-                    position: absolute;
-                    width: 30px;
-                    height: 30px;
-                    margin: auto;
-                    right: 0;
-                    left: 0;
-                }
-
-                #rightArrow{
-                    position: absolute;
-                    left: 260px;
-                    margin: auto;
-                    top: 0;
-                    bottom: 0;
-                    width: 215px;
-                    height: 24px;
-                }
-
-            #homeTimelapseProject{
-                position: relative;
-                width: 412px;
-                height: 75px;
-                margin:auto;
-                
-                right: 0;
-                left: 0;
-            }
-        /*/// END HOME TIMELAPSE WRAPPER ///*/
-            /*/// VIMEO VIDEO PENDIENTE ///*/
-
-
-
-
-
-        /*/// INIT HOME QUOTES WRAPPER ///*/
-
-            #homeSection3{
-                background-color: #fff;
-            }
-
-            #cloudOver{
-                position: fixed;
-                z-index: 100;
-                width: 70%;
-                height: 50%;
-                margin: auto;
-                right: 0;
-                left: 0;
-                bottom: 0;
-
-                background: url('../img/pngs/cloud.png');
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: 70%;
-            }
-
-            .quoteBoxCenter{
-                position: absolute;
-                width: 742px;
-                height: 255px;
-                margin:auto;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-            }
-
-            .quoteBoxCenter img{
-                width: 100%;
-                position: absolute;
-                margin: auto;
-                top: 0;
-                bottom: 0;
-
-                z-index: 10;
-            }
-
-            .topQuoteDecoration{
-                position: absolute;
-                width: 320px;
-                height: 20px;
-                margin: auto;
-                top: 0;
-                right: 0;
-                left: 0;
-
-                z-index: 1000000;
-            }
-
-            .topQuoteDecoration .quoteLeftArrow{
-                position: absolute;
-                margin: auto;
-                right: 180px;
-                top: 0;
-                bottom: 0;
-                height: 20px;
-                width: 110px;
-            }
-
-            .topQuoteDecoration .quoteRightArrow{
-                position: absolute;
-                margin: auto;
-                left: 180px;
-                top: 0;
-                bottom: 0;
-                height: 20px;
-                width: 110px;
-            }
-
-            .quoteRombo{
-                position: absolute;
-                margin: auto;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                width: 20px;
-                height: 20px;
-            }
-
-
-
-            .bottomQuoteDecoration{
-                position: absolute;
-                width: 742px;
-                height: 20px;
-                margin: auto;
-                bottom: 0;
-                right: 0;
-                left: 0;
-
-                z-index: 1000000;
-            }
-
-            .bottomQuoteDecoration .quoteLeftArrow{
-                position: absolute;
-                right: 390px;
-                height: 20px;
-                width: 351.8px;
-            }
-            
-            .bottomQuoteDecoration .quoteRightArrow{
-                position: absolute;
-                left: 390px;
-                height: 20px;
-                width: 351.8px;
-            }
-
-
-
-            .quoteTextWrapper{
-                position: absolute;
-                width: 100%;
-                height: 90px;
-                margin: auto;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                text-align: center;
-                font-family: 'Noto Serif';
-                font-style: italic;
-                font-weight: 400 !important;
-                color: #b2b2b2;
-
-                z-index: 10;
-            }
-
-            #homeQuoteWrapper3 .quoteTextWrapper{
-                height: 55px !important;
-            }
-
-            .quoteScrollDown{
-                position: absolute;
-                margin: auto;
-                bottom: 15px;
-                right: 0;
-                left: 0;
-                width: 33px;
-                height: 80px;
-
-                z-index: 1000000;
-            }
-        /*/// END HOME QUOTES WRAPPER ///*/
-
-
-
-
-
-        /*/// INIT HOME PORTAL WRAPPER ///*/
-
-            #homePortalWrapper{
-                overflow: hidden;
-                background-color: #1d1d1b;
-            }
-
-            .portalRings{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                   -moz-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                     -o-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                
-            }
-
-            .portalRings:first-child{
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-7.png');
-                background-size: 41.5%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:nth-child(2){
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-6.png');
-                background-size: 68%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:nth-child(3){
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-5.png');
-                background-size: 94.5%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:nth-child(4){
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-4.png');
-                background-size: 121%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:nth-child(5){
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-3.png');
-                background-size: 147.5%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:nth-child(6){
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-2.png');
-                background-size: 174%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:nth-child(7){
-                width: 100%;
-                height: 100%;
-                background: url('../img/pngs/bg-portal-1.png');
-                background-size: 200%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-
-            .portalRings:last-child{
-                width: 50%;
-                height: 50%;
-                background-color: #070707;
-                z-index: 0;
-            }
-        /*/// END HOME PORTAL WRAPPER ///*/
-    /*/// END HOME WRAPPERS STYLE ///*/
-
-
-
+        }
+
+        .portalRings:first-child{
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-7.png');
+            background-size: 41.5%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:nth-child(2){
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-6.png');
+            background-size: 68%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:nth-child(3){
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-5.png');
+            background-size: 94.5%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:nth-child(4){
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-4.png');
+            background-size: 121%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:nth-child(5){
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-3.png');
+            background-size: 147.5%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:nth-child(6){
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-2.png');
+            background-size: 174%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:nth-child(7){
+            width: 100%;
+            height: 100%;
+            background: url('../img/pngs/bg-portal-1.png');
+            background-size: 200%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .portalRings:last-child{
+            width: 50%;
+            height: 50%;
+            background-color: #070707;
+            z-index: 0;
+        }
+    /*/// END HOME PORTAL WRAPPER ///*/
 /*/// END HOME STYLE ///*/
 
 
@@ -1345,7 +1331,137 @@ body{
 
 
 
+/*/// LAPTOP AND SMALL SCREENS CSS DOCUMENT ///*/
 
+    /*/// LAPTOP AND SMALL SCREENS ALL STYLE///*/
+
+        @media (min-width: 992px) and (max-width: 1199px){
+            .horizontalBorderLeft, .horizontalBorderRight {
+                width: 43%;
+            }
+
+            .verticalBorderUp, .verticalBorderDown{
+                height: 39%;
+            }
+
+            #quotesBorderChanger .verticalBorderSecondTop, #quotesBorderChanger .verticalBorderSecondBottom{
+                height: 13.5%;
+            }
+
+            .verticalBoxCenter{
+                height: 5.5%;
+            }
+
+        }
+
+    /*/// END LAPTOP AND SMALL SCREENS ALL STYLE///*/
+
+
+
+    /*/// LAPTOP AND SMALL SCREENS ORIENTATION STYLE///*/
+
+        /*/// LAPTOP AND SMALL SCREENS PORTRAIT STYLE///*/
+
+            @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait){
+                
+
+            }
+
+        /*/// END LAPTOP AND SMALL SCREENS PORTRAIT STYLE///*/
+
+
+
+
+        /*/// LAPTOP AND SMALL SCREENS LANDSCAPE STYLE///*/
+        
+            @media (min-width: 992px) and (max-width: 1199px) and (orientation: landscape){
+                
+
+            }
+
+        /*/// END LAPTOP AND SMALL SCREENS LANDSCAPE STYLE///*/
+
+
+
+    /*/// END LAPTOP AND SMALL SCREENS ORIENTATION STYLE///*/
+/*/// END LAPTOP AND SMALL SCREENS CSS DOCUMENT ///*/
+
+
+/*/// TABLET CSS DOCUMENT ///*/
+
+    /*/// TABLET ALL STYLE///*/
+
+        @media (min-width: 768px) and (max-width: 991px){
+            #homeTimelapseInnerWrapper{
+                margin-top: 30vw;
+            }
+
+        }
+    /*/// END TABLET ALL STYLE///*/
+
+
+
+    /*/// TABLET ORIENTATION STYLE///*/
+
+        /*/// TABLET PORTRAIT STYLE///*/
+
+            @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait){
+                #homeWrapper{
+                    height: 320vh;
+                    min-height: 1920px;
+                }
+
+                #homeSection1{
+                    height: 40%;
+                }
+
+                #homeSection2, #homeSection3 {
+                    height: 30%;
+                }
+
+                .halfHomeSection{
+                    height: 78%;
+                }
+
+                .horizontalBorderLeft, .horizontalBorderRight{
+                    width: 38%;
+                }
+
+                #homeTimelapseInnerWrapper{
+                    margin-top: 45vw;
+                }
+
+                .quoteBoxCenter{
+                    width: 530px;
+                }
+
+                .bottomQuoteDecoration .quoteLeftArrow{
+                    right: 52%;
+                    width: 250px;
+                }
+                
+                .bottomQuoteDecoration .quoteRightArrow{
+                    left: 52%;
+                    width: 250px;
+                }
+
+            }
+
+        /*/// END TABLET PORTRAIT STYLE///*/
+
+
+
+
+        /*/// TABLET LANDSCAPE STYLE///*/
+        
+            @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape){
+
+
+            }
+
+        /*/// END TABLET LANDSCAPE STYLE///*/
+    /*/// END TABLET ORIENTATION STYLE///*/
+/*/// END TABLET CSS DOCUMENT ///*/
 
 
 
@@ -1355,29 +1471,86 @@ body{
     /*/// MOBILE ALL STYLE///*/
 
         @media (max-width: 767px){
-        /*/// INIT MENU MANDALA ///*/
 
-            #menuWrapper{
-                width: 400px;
-                height: 400px;
-            }
+            /*/// INIT MENU MANDALA ///*/
+                #menuWrapper{
+                    width: 400px;
+                    height: 400px;
+                }
+            /*/// END MENU MANDALA ///*/
 
-        /*/// END MENU MANDALA ///*/
+
+
+            /*/// INIT GO TO MOBILE CLASSES ///*/
+                #desktopInMobile{
+                    position: absolute;
+                    width: 320px;
+                    height: 320px;
+                    margin: auto;
+                    top: 0;right: 0;bottom: 0;left: 0;
+                    font-family: 'Noto Serif', serif;
+                }
+
+                #logoWarning{
+                    position: relative;
+                    width: 100%;
+                    height: 70%;
+                }
+
+                #logoWarning img{
+                    position: absolute;
+                    width: 200px;
+                    margin: auto;
+                    left: 0;right: 0;
+                }
+
+                #textWarning{
+                    position: relative;
+                    width: 100%;
+                    height: 20%;
+                    text-align: center;
+                    color: #8c8c8c;
+                }
+
+                #linkWarning{
+                    position: relative;
+                    width: 100%;
+                    height: 10%;
+                    text-align: center;
+                }
+
+                #linkWarning a{
+                    font-size: 25px;
+                    font-style: italic;
+                    color: #ce9549;
+                }
+
+                #linkWarning a:visited{
+                    color: #ce9549;
+                }
+            /*/// END GO TO MOBILE CLASSES ///*/
+
+
+
+
+            /*/// INIT MOBILE HELPERS ///*/
+                .noMobile{
+                    display: none !important;
+                    visibility: hidden;
+                }
+            /*/// END MOBILE HELPERS ///*/
         }
-
     /*/// END MOBILE ALL STYLE///*/
 
 
 
-    /*/// MOBILE ORIENTATION STYLE///*/
+    /*/// MOBILE ORIENTATION STYLES ///*/
 
         /*/// MOBILE PORTRAIT STYLE///*/
 
             @media (max-width: 767px) and (orientation: portrait){
-            /*/// INIT MENU MANDALA ///*/
+                
 
-
-            /*/// END MENU MANDALA ///*/
             }
 
         /*/// END MOBILE PORTRAIT STYLE///*/
@@ -1388,53 +1561,13 @@ body{
         /*/// MOBILE LANDSCAPE STYLE///*/
         
             @media (max-width: 767px) and (orientation: landscape){
-            /*/// INIT MENU MANDALA ///*/
+                
 
-
-            /*/// END MENU MANDALA ///*/
             }
 
         /*/// END MOBILE LANDSCAPE STYLE///*/
-
-
-
-    /*/// END MOBILE ORIENTATION STYLE///*/
-
+    /*/// END MOBILE ORIENTATION STYLES ///*/
 /*/// END MOBILE CSS DOCUMENT ///*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1499,7 +1632,24 @@ body{
     background-position: center;*/
 }
 
+.scrollDown{
+    position: absolute;
+    width: 33px;
+    height: 80px;
+    margin: auto;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    z-index: 1000000;
+    cursor: pointer;
+}
 
+@media (min-width: 768px){
+    .onlyMobile{
+        display: none !important;
+        visibility: hidden;
+    }
+}
 
 
 

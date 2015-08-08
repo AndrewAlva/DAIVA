@@ -1,6 +1,12 @@
 $(document).ready(function() {
 	//// INIT MENU MANDALA INTERACTION
 
+		//// INIT OPEN MENU MANDALA
+			$('#burguerBox').click(function(){
+				$('#windowMenuWrapper').toggleClass('hidden');
+			});
+		//// END OPEN MENU MANDALA
+
 		//// INIT MANDALA MENU CLICK ANIMATION, GO TO NEXT LOCATION
 
 			$('#portafolioStage').click(function () {
@@ -43,8 +49,6 @@ $(document).ready(function() {
 					$('#voidStage').toggleClass('pushRing');
 				}, 0);
 			}
-
-
 		//// END MANDALA MENU CLICK ANIMATION, GO TO NEXT LOCATION
 
 	//// END MENU MANDALA INTERACTION
