@@ -120,7 +120,52 @@ textarea {
     END Browser Sizes
 ========================================================================== */
 
+/* ==========================================================================
+Helper classes
+========================================================================== */
 
+    .glass-menu{
+        position: fixed;
+        
+        width: 100%;
+        height: 100%;
+        z-index: 1000000000;
+
+        /*background-image: url('../img/animation/portal-mascaras.svg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;*/
+    }
+
+    .scrollDown{
+        position: absolute;
+        width: 33px;
+        height: 80px;
+        margin: auto;
+        bottom: 15px;
+        right: 0;
+        left: 0;
+        z-index: 1000000;
+        cursor: pointer;
+    }
+
+    @media (min-width: 768px){
+        .onlyMobile{
+            display: none !important;
+            visibility: hidden;
+        }
+    }
+
+    @media (max-width: 767px){
+        .onlyDesktop{
+            display: none !important;
+            visibility: hidden;
+        }
+    }
+
+/* ==========================================================================
+END Helper classes
+========================================================================== */
 
 
 
@@ -1479,6 +1524,229 @@ body{
                 }
             /*/// END MENU MANDALA ///*/
 
+            /*/// INIT HOME STYLES ///*/
+
+                #homeWrapper{
+                    height: 500vh;
+                    min-height: 2400px
+                }
+
+                #homeSection1, #homeSection2, #homeSection4{
+                    height: 20%;
+                }
+
+                #homeSection2{
+                    min-height: 480px;
+                }
+
+                #homeSection3{
+                    height: 40%;
+                }
+
+                #homeSection4{
+                    position: relative;
+                }
+
+                /*/// INIT LANDING HOME ///*/
+
+                    #homeSection1 .fullHomeSection, #landingBorderChanger {
+                        position: absolute;
+                        width: 320px;
+                        height: 480px;
+                        margin: auto;
+                        top: 0;right: 0;bottom: 0;left: 0;
+                    }
+
+                    .topBorder{
+                        height: 90px;
+                    }
+
+                    .leftBorder, .rightBorder{
+                        width: 15px;
+                    }
+
+                    .horizontalBoxCenter{
+                        width: 10%;
+                    }
+
+                    .rhombusChanger{
+                        width: 10px;
+                        height: 10px;
+                    }
+
+                    #logoLanding img{
+                        position: absolute;
+                        width: 251px;
+                        height: 251px;
+                        margin: auto;
+                        top: 0;right: 0;bottom: 0;left: 0;
+                    }
+                /*/// END LANDING HOME ///*/
+
+                /*/// INIT TIMELAPSE HOME ///*/
+                    #homeTimelapseLogo{
+                        width: 92px;
+                        height: 92px;
+                    }
+
+                    #homeTimelapseLogo img{
+                        width: 100%;
+                    }
+
+                    #homeTimelapseMaskWrapper{
+                        height: 72vw;
+                    }
+
+                    #homeTimelapseInnerWrapper{
+                        margin-top: 120px;
+                    }
+
+                    #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
+                       height: 120%;
+                    }
+
+                    .vRightLine, .vLeftLine{
+                        width: 2px;
+                    }
+
+                    #homeTimelapseSvg{
+                        width: 320px;
+                        height: 24px;
+                        margin-bottom: 5px;
+                    }
+
+                    #homeTimelapseRombo{
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    #homeTimelapseSvg #leftArrow{
+                        right: 170px;
+                        width: 100px;
+                    }
+
+                    #homeTimelapseSvg #rightArrow{
+                        left: 170px;
+                        width: 100px;
+                    }
+
+                    #homeTimelapseProject{
+                        width: 200px;
+                        height: 37px;
+                    }
+
+                    #homeTimelapseProject img{
+                        width: 100%;
+                    }
+
+                    #scrollTimelapse{
+                        top: 30px;
+                    }
+                /*/// END TIMELAPSE HOME ///*/
+
+                /*/// INIT QUOTES HOME ///*/
+                    .quoteBoxCenter{
+                        width: 300px;
+                    }
+
+                    .quoteTextWrapper{
+                        width: 70%;
+                    }
+
+                    #homeQuoteWrapper1 .quoteTextWrapper{
+                        height: 160px;
+                    }
+
+                    #homeQuoteWrapper2 .quoteTextWrapper{
+                        height: 290px;
+                    }
+
+                    .bottomQuoteDecoration .quoteLeftArrow, .bottomQuoteDecoration .quoteRightArrow{
+                        width: 115px;
+                    }
+
+                    .scrollDown{
+                        width: 35px;
+                    }
+
+
+
+                    #quotesBorderChanger{
+                        height: 50%;
+                    }
+
+                    #quotesBorderChanger2{
+                        position: absolute;
+                        width: 100%;
+                        height: 50%;
+                        top: 50%;
+                        z-index: 20;
+                    }
+
+                    .rhombusChangerBig{
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    .rhombusChangerSmall{
+                        width: 7px;
+                        height: 7px;
+                    }
+
+                    .rightBorder .rhombusChangerBig{
+                        left: -7px;
+                    }
+
+                    .leftBorder .rhombusChangerBig{
+                        right: -7px;
+                    }
+
+                    #quotesBorderChanger2 .verticalBorderTop, #quotesBorderChanger2 .verticalBorderBottom{
+                        position: absolute;
+                        width: 100%;
+                        height: 21.3%;
+                    }
+
+                    #quotesBorderChanger2 .verticalBorderBottom{
+                        bottom: 0;
+                    }
+
+                    #quotesBorderChanger2 .verticalBorderSecondTop, #quotesBorderChanger2 .verticalBorderSecondBottom{
+                        position: absolute;
+                        width: 100%;
+                        height: 15.3%;
+                    }
+
+                    #quotesBorderChanger2 .verticalBorderSecondTop{
+                        top: 30%;
+                    }
+
+                    #quotesBorderChanger2 .verticalBorderSecondBottom{
+                        bottom: 30%;
+                    }
+
+                    #quotesBorderChanger2 .verticalBoxTop{
+                        position: absolute;
+                        margin: auto;
+                        top: 25%;
+                        width: 100%;
+                        height: 3.5%;
+                    }
+
+                    #quotesBorderChanger2 .verticalBoxBottom{
+                        position: absolute;
+                        margin: auto;
+                        bottom: 22.5%;
+                        width: 100%;
+                        height: 3.5%;
+                    }
+
+                /*/// END QUOTES HOME ///*/
+
+            /*/// END HOME STYLES ///*/
+
+
+
 
 
             /*/// INIT GO TO MOBILE CLASSES ///*/
@@ -1491,20 +1759,20 @@ body{
                     font-family: 'Noto Serif', serif;
                 }
 
-                #logoWarning{
+                #desktopInMobile #logoWarning{
                     position: relative;
                     width: 100%;
                     height: 70%;
                 }
 
-                #logoWarning img{
+                #desktopInMobile #logoWarning img{
                     position: absolute;
                     width: 200px;
                     margin: auto;
                     left: 0;right: 0;
                 }
 
-                #textWarning{
+                #desktopInMobile #textWarning{
                     position: relative;
                     width: 100%;
                     height: 20%;
@@ -1512,26 +1780,23 @@ body{
                     color: #8c8c8c;
                 }
 
-                #linkWarning{
+                #desktopInMobile #linkWarning{
                     position: relative;
                     width: 100%;
                     height: 10%;
                     text-align: center;
                 }
 
-                #linkWarning a{
+                #desktopInMobile #linkWarning a{
                     font-size: 25px;
                     font-style: italic;
                     color: #ce9549;
                 }
 
-                #linkWarning a:visited{
+                #desktopInMobile #linkWarning a:visited{
                     color: #ce9549;
                 }
             /*/// END GO TO MOBILE CLASSES ///*/
-
-
-
 
             /*/// INIT MOBILE HELPERS ///*/
                 .noMobile{
@@ -1570,86 +1835,101 @@ body{
 /*/// END MOBILE CSS DOCUMENT ///*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.glass-menu{
-    position: fixed;
-    
-    width: 100%;
-    height: 100%;
-    z-index: 1000000000;
-
-    /*background-image: url('../img/animation/portal-mascaras.svg');
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;*/
-}
-
-.scrollDown{
-    position: absolute;
-    width: 33px;
-    height: 80px;
-    margin: auto;
-    bottom: 15px;
-    right: 0;
-    left: 0;
-    z-index: 1000000;
-    cursor: pointer;
-}
-
-@media (min-width: 768px){
-    .onlyMobile{
-        display: none !important;
-        visibility: hidden;
+/*/// INIT GO TO DESKTOP CLASSES ///*/
+    #mobileInDesktop{
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        margin: auto;
+        top: 0;right: 0;bottom: 0;left: 0;
+        font-family: 'Noto Serif', serif;
     }
-}
+
+    #mobileInDesktop #logoWarning{
+        position: relative;
+        width: 100%;
+        height: 70%;
+    }
+
+    #mobileInDesktop #logoWarning img{
+        position: absolute;
+        width: 200px;
+        margin: auto;
+        left: 0;right: 0;
+    }
+
+    #mobileInDesktop #textWarning{
+        position: relative;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        color: #8c8c8c;
+    }
+
+    #mobileInDesktop #linkWarning{
+        position: relative;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+
+    #mobileInDesktop #linkWarning a{
+        font-size: 25px;
+        font-style: italic;
+        color: #ce9549;
+    }
+
+    #mobileInDesktop #linkWarning a:visited{
+        color: #ce9549;
+    }
+/*/// END GO TO DESKTOP CLASSES ///*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
