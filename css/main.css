@@ -1517,6 +1517,27 @@ body{
 
         @media (max-width: 767px){
 
+            /*/// INIT MENU NAV ///*/
+                #menuNavWrapper{
+                    width: 90px;
+                    top: 40px;
+                    right: 30px;
+                }
+
+                #contactBox {
+                    width: 25px;
+                    height: 18px;
+                }
+
+                #burguerBox{
+                    width: 28px;
+                }
+
+                #contactBox img, #burguerBox img{
+                    width: 100%;
+                }
+            /*/// END MENU NAV ///*/
+
             /*/// INIT MENU MANDALA ///*/
                 #menuWrapper{
                     width: 400px;
@@ -1601,10 +1622,6 @@ body{
                         margin-top: 120px;
                     }
 
-                    #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
-                       height: 120%;
-                    }
-
                     .vRightLine, .vLeftLine{
                         width: 2px;
                     }
@@ -1645,6 +1662,10 @@ body{
                 /*/// END TIMELAPSE HOME ///*/
 
                 /*/// INIT QUOTES HOME ///*/
+                    #cloudOver{
+                        width: 80%;
+                        background-size: 100%;
+                    }
                     .quoteBoxCenter{
                         width: 300px;
                     }
@@ -1814,8 +1835,11 @@ body{
         /*/// MOBILE PORTRAIT STYLE///*/
 
             @media (max-width: 767px) and (orientation: portrait){
-                
-
+                /*/// INIT HOME TIMELAPSE ///*/
+                    #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
+                       height: 120%;
+                    }
+                /*/// END HOME TIMELAPSE ///*/
             }
 
         /*/// END MOBILE PORTRAIT STYLE///*/
@@ -1826,8 +1850,88 @@ body{
         /*/// MOBILE LANDSCAPE STYLE///*/
         
             @media (max-width: 767px) and (orientation: landscape){
-                
 
+                /*/// INIT MENU NAV///*/
+                    #menuWrapper{
+                        width: 65vw;
+                        height: 65vw;
+                    }
+                /*/// END MENU NAV///*/
+
+                /*/// INIT HOME LANDING STYLE///*/
+
+                    #homeWrapper{
+                        height: 600vh;
+                        min-height: 1920px;
+                    }
+
+                    #homeSection1, #homeSection4 {
+                        height: 16.67%;
+                    }
+
+                    #homeSection2, #homeSection3 {
+                        height: 33.33%;
+                    }
+
+                    #logoLanding, #logoLanding img{
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    #homeSection1 .fullHomeSection {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #landingBorderChanger{
+                        width: 220px;
+                        height: 370px;
+                    }
+
+                    .scrollDown{
+                        height: 60px;
+                    }
+                /*/// END HOME LANDING STYLE///*/
+
+                /*/// INIT HOME TIMELAPSE///*/
+                    #homeTimelapseWrapper{
+                        -webkit-clip-path: polygon(0% 40px, 100% 0%, 100% 100%, 0% 100%);
+                           -moz-clip-path: polygon(0% 40px, 100% 0%, 100% 100%, 0% 100%);
+                            -ms-clip-path: polygon(0% 40px, 100% 0%, 100% 100%, 0% 100%);
+                             -o-clip-path: polygon(0% 40px, 100% 0%, 100% 100%, 0% 100%);
+                                clip-path: polygon(0% 40px, 100% 0%, 100% 100%, 0% 100%);
+                        top: -40px;
+                    }
+
+                    #homeTimelapseInnerWrapper{
+                        margin-top: 70px;
+                    }
+
+                    #homeTimelapseLogo {
+                        width: 110px;
+                        height: 110px;
+                    }
+
+                    .quoteBoxCenter{
+                        width: 440px;
+                    }
+
+                    .quoteTextWrapper h2{
+                        font-size: 16px;
+                    }
+
+                    #homeQuoteWrapper1 .quoteTextWrapper {
+                        height: 60px;
+                    }
+
+                    #homeQuoteWrapper2 .quoteTextWrapper {
+                        height: 150px;
+                    }
+
+                    .quoteBoxCenter {
+                        height: 140px;
+                    }
+                /*/// END HOME TIMELAPSE///*/
             }
 
         /*/// END MOBILE LANDSCAPE STYLE///*/
