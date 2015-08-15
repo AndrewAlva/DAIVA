@@ -1,8 +1,28 @@
 $(document).ready(function() {
+	//// INIT LOADER FUNCTION
+		$('#homeWrapper').removeClass('limitByLoader');
+		$('#homeLoader').addClass('hideLoader');
+		setTimeout(function(){
+			$('#homeLoader').hide();
+		},800);
+	//// END LOADER FUNCTION
+
+
 	//// INIT MENU MANDALA INTERACTION
 
 		//// INIT OPEN MENU MANDALA
-			$('#burguerBox').click(function(){
+			$('#burguerBox').click(function(e){
+				e.preventDefault();
+				$('.burguerLines').toggleClass('burguerNoWidth');
+				setTimeout(function(){
+					$('#burguerLine1').toggleClass('rotateMenuLeft');
+					$('#burguerLine2').toggleClass('hidden');
+					$('#burguerLine3').toggleClass('rotateMenuRight');
+				},500);
+				setTimeout(function(){
+					$('.burguerLines').toggleClass('burguerNoWidth');
+				},1000);
+				
 				$('#windowMenuWrapper').toggleClass('hidden');
 			});
 		//// END OPEN MENU MANDALA
@@ -50,7 +70,6 @@ $(document).ready(function() {
 				}, 0);
 			}
 		//// END MANDALA MENU CLICK ANIMATION, GO TO NEXT LOCATION
-
 	//// END MENU MANDALA INTERACTION
 	
 });

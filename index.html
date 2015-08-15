@@ -22,13 +22,20 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="homeLoader">
+            <div id="loading"></div>
+        </div>
+
         <nav id="menuNavWrapper" class="noMobile">
             <ul>
                 <li id="contactBox">
                     <img src="img/vectors/mail-icon.svg" alt="Contacto DAIVA">
                 </li>
                 <li id="burguerBox">
-                    <img src="img/vectors/burguer-icon.svg" alt="Menu DAIVA">
+                    <!-- <img src="img/vectors/burguer-icon.svg" alt="Menu DAIVA"> -->
+                    <div id="burguerLine1" class="burguerLines"></div>
+                    <div id="burguerLine2" class="burguerLines"></div>
+                    <div id="burguerLine3" class="burguerLines"></div>
                 </li>
             </ul>
         </nav>
@@ -74,7 +81,7 @@
 
         <div id="windowHomeWrapper" class="noMobile">
 
-            <div id="homeWrapper">
+            <div id="homeWrapper" class="limitByLoader">
 
                 <section id="homeSection1" class="homeSections">
 
