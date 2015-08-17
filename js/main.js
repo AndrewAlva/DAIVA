@@ -5,6 +5,10 @@ $(document).ready(function() {
 		setTimeout(function(){
 			$('#homeLoader').hide();
 		},800);
+
+		setTimeout(function(){
+			$('#landingBorderChanger').removeClass('landingBorderInit');
+		},3000);
 	//// END LOADER FUNCTION
 
 

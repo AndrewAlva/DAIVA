@@ -808,9 +808,29 @@ body{
 
         #landingBorderChanger{
             position: fixed;
+            top: -50%;
+            left: -50%;
+            -webkit-transform: translate(50%,50%);
+               -moz-transform: translate(50%,50%);
+                -ms-transform: translate(50%,50%);
+                 -o-transform: translate(50%,50%);
+                    transform: translate(50%,50%);
             width: 100vw;
             height: 100vh;
             z-index: 1;
+            -webkit-transition: all 1s ease;
+               -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                    transition: all 1s ease;
+        }
+
+        /*JS Animation Class*/
+        .landingBorderInit{
+            width: 150vw !important;
+            height: 150vh !important;
+            top: -100% !important;
+            left: -100% !important;
         }
 
         
@@ -1076,6 +1096,19 @@ body{
             background-size: cover;
             background-position: top center;
             background-repeat: no-repeat;
+        }
+
+        /*JS Animation Class*/
+        .animateHomeSect1{
+            width: 200% !important;
+            height: 80% !important;
+            top: -100% !important;
+            left: -40% !important;
+            -webkit-transform: translate(100%, 40%) !important;
+               -moz-transform: translate(100%, 40%) !important;
+                -ms-transform: translate(100%, 40%) !important;
+                 -o-transform: translate(100%, 40%) !important;
+                    transform: translate(100%, 40%) !important;
         }
 
         #logoLanding{
