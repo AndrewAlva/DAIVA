@@ -79,5 +79,12 @@ $(document).ready(function() {
 			}
 		//// END MANDALA MENU CLICK ANIMATION, GO TO NEXT LOCATION
 	//// END MENU MANDALA INTERACTION
+
+
+	//// INIT HOME CHANGE QUOTES
+		$('#quotesScroll-1').click(function(){
+			$('#homeQuoteWrapper1').animate({top: '-100vh',opacity: '0'}, 1600);
+		});
+	//// END HOME CHANGE QUOTES
 	
 });
