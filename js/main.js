@@ -7,6 +7,10 @@ $(document).ready(function() {
 		},800);
 
 		setTimeout(function(){
+			$('#bgSection1').removeClass('animateBgSect1');
+		}, 2000);
+
+		setTimeout(function(){
 			$('#landingBorderChanger').removeClass('landingBorderInit');
 		},3000);
 	//// END LOADER FUNCTION
