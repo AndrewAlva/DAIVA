@@ -366,8 +366,6 @@ body{
     .burguerBoxMin{
         height: 2px !important;
     }
-
-    
 /*/// END MENU NAV ///*/
 
 
@@ -1638,18 +1636,49 @@ body{
             height: 100%;
         }
 
-        #portfolioTitleWrapper h1{
-            text-align: center;
-            font-family: 'Noto Serif';
-            font-style: italic;
-            font-weight: 400 !important;
-            color: #b2b2b2;
-        }
+        
 
 
         /*/// INIT PORTFOLIO SECTION 1 STYLE ///*/
-            #portfolioTitleWrapper{
-                background-color: white;
+            #portfolioTitle{
+                position: absolute;
+                width: 530px;
+                height: 32px;
+                margin: auto;
+                top: 0; bottom: 0; left: 0; right: 0;
+            }
+
+            #portfolioTitleWrapper h1{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 40px;
+                line-height: 32px;
+                font-family: 'Noto Serif';
+                font-style: italic;
+                font-weight: 400 !important;
+                color: #ce9549;
+            }
+
+            .portfolioRhombus{
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                     -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                border: 1px solid #ce9549;
+                margin: auto;
+                top: 0; bottom: 0;
+            }
+
+            #portfolioRhombusLeft{
+                left: 0px;
+            }
+
+            #portfolioRhombusRight{
+                right: 0px;
             }
         /*/// END PORTFOLIO SECTION 1 STYLE ///*/
 
@@ -1657,12 +1686,8 @@ body{
 
 
         /*/// INIT PORTFOLIO SECTION 2 STYLE ///*/
-            #portfolioDescriptionWrapper{
-                background-color: purple;
-            }
-
             #portfolioDescriptionWrapper .quoteTextWrapper{
-                height: 60px;
+                height: 110px;
             }
         /*/// END PORTFOLIO SECTION 2 STYLE ///*/
 
@@ -1670,8 +1695,14 @@ body{
 
 
         /*/// INIT PORTFOLIO SECTION 3 STYLE ///*/
-            #portfolioIncenseWrapper{
-                background-color: aqua;
+            #incenseAnimation{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                left: 0; right: 0;
+                bottom: 0;
+                background-color: antiquewhite;
             }
         /*/// END PORTFOLIO SECTION 3 STYLE ///*/
 
