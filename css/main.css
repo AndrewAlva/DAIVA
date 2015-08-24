@@ -163,6 +163,31 @@ Helper classes
         }
     }
 
+    /*/// INIT SECTIONS DIVISIONS HELPERS ///*/
+        .daivaSections{
+            position: relative;
+            width: 100%;
+        }
+
+        .fullHeightSection{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .halfHeightSection{
+            position: relative;
+            width: 100%;
+            height: 50%;
+        }
+
+        .thirdHeightSection{
+            position: relative;
+            width: 100%;
+            height: 33.33%;
+        }
+    /*/// END HOME SECTIONS DIVISIONS HELPERS ///*/
+
 /* ==========================================================================
 END Helper classes
 ========================================================================== */
@@ -178,7 +203,7 @@ END Helper classes
    ========================================================================== */
 
 body{
-    background-color: #202020;
+    background-color: #111111;
     
 }
 
@@ -291,9 +316,29 @@ body{
                 transition: all 0.5s ease-in;
     }
 
-    .burguerNoWidth{
-        width: 0%;
-    }
+    /*JS Animation Classes*/
+        .burguerNoWidth{
+            width: 0%;
+        }
+
+        .rotateMenuLeft{
+            bottom: 0;
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                 -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+
+        .rotateMenuRight{
+            top: 0;
+            -webkit-transform: rotate(-45deg);
+               -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                 -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+        }
+
 
     .burgerTop{
         top: 0;
@@ -322,23 +367,7 @@ body{
         height: 2px !important;
     }
 
-    .rotateMenuLeft{
-        bottom: 0;
-        -webkit-transform: rotate(45deg);
-           -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-             -o-transform: rotate(45deg);
-                transform: rotate(45deg);
-    }
-
-    .rotateMenuRight{
-        top: 0;
-        -webkit-transform: rotate(-45deg);
-           -moz-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-             -o-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-    }
+    
 /*/// END MENU NAV ///*/
 
 
@@ -359,6 +388,12 @@ body{
         background: -ms-radial-gradient(center, ellipse cover, #101010 0%,#202020 100%); /* IE10+ */
         background: radial-gradient(ellipse at center, #101010 0%,#202020 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        -webkit-transition: all 0.6s ease-in-out;
+           -moz-transition: all 0.6s ease-in-out;
+            -ms-transition: all 0.6s ease-in-out;
+             -o-transition: all 0.6s ease-in-out;
+                transition: all 0.6s ease-in-out;
     }
 
     #menuWrapper{
@@ -379,7 +414,31 @@ body{
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        margin: auto;
+        top: 0; bottom: 0; right: 0; left: 0;
+
+        -webkit-transition: all 1s ease-in-out;
+           -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
     }
+
+    /*/// INIT Animation JS Classes ///*/
+        .hideMenuWrapper{
+            opacity: 0;
+        }
+
+        .farAwayMenu{
+            -webkit-transform: scale(0,0) !important;
+               -moz-transform: scale(0,0) !important;
+                -ms-transform: scale(0,0) !important;
+                 -o-transform: scale(0,0) !important;
+                    transform: scale(0,0) !important;
+        }
+    /*/// END Animation JS Classes ///*/
+
+
 
     /*/// INIT Maqueta Anillos por Secciones ///*/
 
@@ -396,11 +455,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
 
         }
 
@@ -417,11 +476,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
         }
 
         #comienzoStage{
@@ -437,11 +496,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
         }
 
         #voidStage{
@@ -457,11 +516,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: opacity 0.6s, -webkit-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition:    opacity 0.6s, -moz-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition:     opacity 0.6s, -ms-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition:      opacity 0.6s, -o-transform 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition:         opacity 0.6s, transform 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
         }
 
     /*/// END Maqueta Anillos por Secciones ///*/
@@ -748,27 +807,22 @@ body{
         #homeWrapper{
             position: absolute;
             width: 100%;
-            height: 500vh;
-            min-height: 3000px;
-        }
-
-        .homeSections{
-            position: relative;
-            width: 100%;
+            height: 700vh;
+            min-height: 4200px;
         }
 
         #homeSection1{
-            height: 40%;
+            height: 28.6%;
         }
 
         #homeSection2{
-            height: 40%;
+            height: 28.6%;
             min-height: 1500px;
             z-index: 100;
         }
 
         #homeSection3{
-            height: 20%;
+            height: 42.8%;
             z-index: 10;
         }
 
@@ -781,25 +835,7 @@ body{
     /*/// END HOME WRAPPERS STYLE ///*/
 
 
-    /*/// INIT HOME SECTIONS DIVISIONS HELPER ///*/
-        .fullHomeSection{
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .halfHomeSection{
-            position: relative;
-            width: 100%;
-            height: 50%;
-        }
-
-        .thirdHomeSection{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-    /*/// END HOME SECTIONS DIVISIONS HELPER ///*/
+    
 
 
 
@@ -994,9 +1030,10 @@ body{
     /*INIT QUOTES BORDER CHANGER STYLE*/
 
         #quotesBorderChanger{
-            position: absolute;
+            position: fixed;
             width: 100%;
             height: 100%;
+            bottom: 0;
             z-index: 20;
         }
 
@@ -1100,11 +1137,11 @@ body{
             background-size: cover;
             background-position: top center;
             background-repeat: no-repeat;
-            -webkit-transition: all 2s ease;
-               -moz-transition: all 2s ease;
-                -ms-transition: all 2s ease;
-                 -o-transition: all 2s ease;
-                    transition: all 2s ease;
+            -webkit-transition: all 1s ease;
+               -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                    transition: all 1s ease;
         }
 
         /*JS Animation Class*/
@@ -1126,7 +1163,7 @@ body{
 
 
         #logoLanding{
-            position: absolute;
+            position: fixed;
             width: 284px;
             height: 284px;
 
@@ -1137,6 +1174,19 @@ body{
             right: 0;
 
             z-index: 10;
+        }
+
+        #logoLanding img{
+            width: 100%;
+        }
+
+        #scrollLanding{
+            position: fixed;
+            -webkit-transition: all 1s ease;
+               -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                    transition: all 1s ease;
         }
     /*/// END HOME LANDING WRAPPER ///*/
 
@@ -1302,7 +1352,6 @@ body{
             right: 0;
             left: 0;
             top: 0;
-            opacity: 0;
 
             background: url('../img/pngs/cloud.png');
             background-position: bottom;
@@ -1312,6 +1361,20 @@ body{
 
         #homeQuoteWrapper1, #homeQuoteWrapper2, #homeQuoteWrapper3{
             z-index: 30;
+        }
+
+        /*#homeQuoteWrapper2, #homeQuoteWrapper3 {
+            opacity: 0;
+        }*/
+
+        #tester{
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: auto;
+            left: 0; right: 0;
+            z-index: 1000000000000000;
         }
 
         .quoteBoxCenter{
@@ -1542,6 +1605,84 @@ body{
 
 
 
+/*/// INIT PORTFOLIO STYLE ///*/
+    /*/// INIT PORTFOLIO WRAPPERS STYLE ///*/
+        #windowPortfolioWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #portfolioWrapper{
+            position: absolute;
+            width: 100%;
+            height: 400vh;
+            min-height: 2400px;
+        }
+
+        #portfolioSection1{
+            height: 75%;
+        }
+
+        #portfolioSection2{
+            height: 25%;
+            z-index: 100;
+        }
+    /*/// END PORTFOLIO WRAPPERS STYLE ///*/
+
+
+    /*/// INIT PORTFOLIO LANDING STYLE ///*/
+        #portfolioLandingWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #portfolioTitleWrapper h1{
+            text-align: center;
+            font-family: 'Noto Serif';
+            font-style: italic;
+            font-weight: 400 !important;
+            color: #b2b2b2;
+        }
+
+
+        /*/// INIT PORTFOLIO SECTION 1 STYLE ///*/
+            #portfolioTitleWrapper{
+                background-color: white;
+            }
+        /*/// END PORTFOLIO SECTION 1 STYLE ///*/
+
+
+
+
+        /*/// INIT PORTFOLIO SECTION 2 STYLE ///*/
+            #portfolioDescriptionWrapper{
+                background-color: purple;
+            }
+
+            #portfolioDescriptionWrapper .quoteTextWrapper{
+                height: 60px;
+            }
+        /*/// END PORTFOLIO SECTION 2 STYLE ///*/
+
+
+
+
+        /*/// INIT PORTFOLIO SECTION 3 STYLE ///*/
+            #portfolioIncenseWrapper{
+                background-color: aqua;
+            }
+        /*/// END PORTFOLIO SECTION 3 STYLE ///*/
+
+
+            
+    /*/// END PORTFOLIO LANDING STYLE ///*/
+
+/*/// END PORTFOLIO STYLE ///*/
+
+
+
 
 
 
@@ -1616,6 +1757,16 @@ body{
                 margin-top: 30vw;
             }
 
+            .bottomQuoteDecoration .quoteLeftArrow{
+                right: 52%;
+                width: 250px;
+            }
+            
+            .bottomQuoteDecoration .quoteRightArrow{
+                left: 52%;
+                width: 250px;
+            }
+
         }
     /*/// END TABLET ALL STYLE///*/
 
@@ -1627,16 +1778,20 @@ body{
 
             @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait){
                 #homeWrapper{
-                    height: 320vh;
-                    min-height: 1920px;
+                    height: 520vh;
+                    min-height: 3120px;
                 }
 
                 #homeSection1{
-                    height: 40%;
+                    height: 23.1%;
                 }
 
-                #homeSection2, #homeSection3 {
-                    height: 30%;
+                #homeSection2{
+                    height: 19.2%;
+                }
+
+                #homeSection3{
+                    height: 57.7%;
                 }
 
                 .halfHomeSection{
@@ -1653,16 +1808,6 @@ body{
 
                 .quoteBoxCenter{
                     width: 530px;
-                }
-
-                .bottomQuoteDecoration .quoteLeftArrow{
-                    right: 52%;
-                    width: 250px;
-                }
-                
-                .bottomQuoteDecoration .quoteRightArrow{
-                    left: 52%;
-                    width: 250px;
                 }
 
             }
@@ -1947,7 +2092,7 @@ body{
 
             /*/// INIT GO TO MOBILE CLASSES ///*/
                 #desktopInMobile{
-                    position: absolute;
+                    position: fixed;
                     width: 320px;
                     height: 320px;
                     margin: auto;

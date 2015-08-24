@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
-        <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>DAIVA Project | HOME</title>
@@ -21,6 +21,12 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+
+        <!-- <div id="tester"
+            data-0p="top: 0%"
+            data-100p="top: 100%"
+        ></div> -->
 
         <div id="homeLoader">
             <div id="loading"></div>
@@ -41,31 +47,31 @@
         </nav>
 
 
-        <div id="windowMenuWrapper" class="noMobile hidden">
+        <div id="windowMenuWrapper" class="hideMenuWrapper noMobile hidden">
             <div id="menuWrapper">
                 <div id="Mandala">
-                    <div id="portafolioStage">
+                    <div id="portafolioStage" class="pushRing">
                         <div class="outlineRing rotationSpeed100"></div>
                         <div class="outlineRing rotationSpeed60"></div>
 
                         <div id="portafolio" class="sectionMandala rotateRight rotationSpeed100"></div>
 
                     </div>
-                    <div id="pilaresStage">
+                    <div id="pilaresStage" class="pushRing">
                         <div class="outlineRing rotationSpeed100"></div>
                         <div class="outlineRing rotationSpeed60"></div>
 
                         <div id="pilares" class="sectionMandala rotateLeft rotationSpeed40"></div>
 
                     </div>
-                    <div id="comienzoStage">
+                    <div id="comienzoStage" class="pushRing">
                         <div class="outlineRing rotationSpeed80"></div>
                         <div class="outlineRing rotationSpeed40"></div>
 
                         <div id="comienzo" class="sectionMandala rotateRight rotationSpeed40"></div>
 
                     </div>
-                    <div id="voidStage">
+                    <div id="voidStage" class="pushRing">
                         <div class="outlineRing rotationSpeed40"></div>
                         <div class="outlineRing rotationSpeed20"></div>
 
@@ -83,52 +89,86 @@
 
             <div id="homeWrapper" class="limitByLoader">
 
-                <section id="homeSection1" class="homeSections">
+                <section id="homeSection1" class="daivaSections">
 
                     <div id="landingBorderChanger" class="landingBorderInit">
-                        <div id="bgSection1" class="animateBgSect1"></div>
+                        <div id="bgSection1" class="animateBgSect1"
+                            data-0="opacity: 1"
+                            data-300=""
+                            data-500="opacity: 0.1"
+                        ></div>
 
                         <div class="topBorder">
-                            <div class="horizontalBorderLeft">
+                            <div class="horizontalBorderLeft"
+                                data-0="width: 40%; opacity: 1"
+                                data-500="width: 7.5%; opacity: 1"
+                                data-600="width: 0%; opacity: 0"
+                            >
                                 <div class="hTopLine"></div>
 
                             </div>
 
                             <div class="horizontalBoxCenter">
-                                <div class="rhombusChanger"></div>
+                                <div class="rhombusChanger"
+                                    data-0="width:18.6px; height:18.6px; opacity: 1 "
+                                    data-1000="width:0px; height:0px; opacity: 0 "
+                                ></div>
 
                             </div>
 
-                            <div class="horizontalBorderRight">
+                            <div class="horizontalBorderRight"
+                                data-0="width: 40%; opacity: 1"
+                                data-500="width: 7.5%; opacity: 1"
+                                data-600="width: 0%; opacity: 0"
+                            >
                                 <div class="hTopLine"></div>
 
                             </div>
                         </div>
 
                         <div class="bottomBorder">
-                            <div class="horizontalBorderLeft">
+                            <div class="horizontalBorderLeft"
+                                data-0="width: 40%; opacity: 1"
+                                data-500="width: 7.5%; opacity: 1"
+                                data-600="width: 0%; opacity: 0"
+                            >
                                 <div class="hBottomLine"></div>
 
                             </div>
                             
-                            <div class="horizontalBorderRight">
+                            <div class="horizontalBorderRight"
+                                data-0="width: 40%; opacity: 1"
+                                data-500="width: 7.5%; opacity: 1"
+                                data-600="width: 0%; opacity: 0"
+                            >
                                 <div class="hBottomLine"></div>
 
                             </div>
                         </div>
 
                         <div class="leftBorder">
-                            <div class="verticalBorderUp">
+                            <div class="verticalBorderUp"
+                                data-0="height: 40%; opacity: 1"
+                                data-500="height: 7%; opacity: 1"
+                                data-600="height: 0%; opacity: 0"
+                            >
                                 <div class="vLeftLine"></div>
 
                             </div>
 
                             <div class="verticalBoxCenter">
-                                <div class="rhombusChanger"></div>
+                                <div class="rhombusChanger"
+                                    data-0="width:18.6px; height:18.6px; opacity: 1 "
+                                    data-1000="width:0px; height:0px; opacity: 0 "
+                                ></div>
 
                             </div>
 
-                            <div class="verticalBorderDown">
+                            <div class="verticalBorderDown"
+                                data-0="height: 40%; opacity: 1"
+                                data-500="height: 7%; opacity: 1"
+                                data-600="height: 0%; opacity: 0"
+                            >
                                 <div class="vLeftLine"></div>
 
                             </div>
@@ -136,17 +176,28 @@
                         </div>
 
                         <div class="rightBorder">
-                            <div class="verticalBorderUp">
+                            <div class="verticalBorderUp"
+                                data-0="height: 40%; opacity: 1"
+                                data-500="height: 7%; opacity: 1"
+                                data-600="height: 0%; opacity: 0"
+                            >
                                 <div class="vRightLine"></div>
 
                             </div>
 
                             <div class="verticalBoxCenter">
-                                <div class="rhombusChanger"></div>
+                                <div class="rhombusChanger"
+                                    data-0="width:18.6px; height:18.6px; opacity: 1 "
+                                    data-1000="width:0px; height:0px; opacity: 0 "
+                                ></div>
 
                             </div>
 
-                            <div class="verticalBorderDown">
+                            <div class="verticalBorderDown"
+                                data-0="height: 40%; opacity: 1"
+                                data-500="height: 7%; opacity: 1"
+                                data-600="height: 0%; opacity: 0"
+                            >
                                 <div class="vRightLine"></div>
 
                             </div>
@@ -154,19 +205,27 @@
                         </div>
                     </div>
 
-                    <div id="homeLandingWrapper" class="halfHomeSection">
-                        <div id="logoLanding">
+                    <div id="homeLandingWrapper" class="halfHeightSection">
+                        <div id="logoLanding"
+                            data-0="width: 284px; height: 284px; opacity: 1"
+                            data-600="width: 240px; height: 240px; opacity: 0.4"
+                            data-900="width: 230px; height: 230px; opacity: 0"
+                        >
                             <img src="img/vectors/isotipo_daiva.svg" alt="DAIVA Project">
                         </div>
-                        <div id="scrollLanding" class="scrollDown">
+                        <div id="scrollLanding" class="scrollDown"
+                            data-0="opacity: 1; z-index: 1000000"
+                            data-300=""
+                            data-500="opacity: 0; z-index: 1"
+                        >
                             <img src="img/vectors/scroll-icon.svg" alt="DAIVA Scroll">
                         </div>
                     </div>
                 </section>
 
 
-                <section id="homeSection2" class="homeSections">
-                    <div id="homeTimelapseWrapper" class="fullHomeSection">
+                <section id="homeSection2" class="daivaSections">
+                    <div id="homeTimelapseWrapper" class="fullHeightSection">
 
                         <div id="homeTimelapseInnerWrapper">
 
@@ -176,7 +235,7 @@
 
                             <div id="homeTimelapseMaskWrapper">
 
-                                <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/107469289?&autoplay=0&title=0&byline=0&portrait=0&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                <!-- <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/107469289?&autoplay=0&title=0&byline=0&portrait=0&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
 
                                 <div id="homeTimelapseMask">
@@ -221,12 +280,20 @@
                 </section>
 
 
-                <section id="homeSection3" class="homeSections">
+                <section id="homeSection3" class="daivaSections">
 
-                    <div id="cloudOver"></div>
+                    <div id="cloudOver"
+                        data-0p="opacity: 0"
+                        data-200p=""
+                        data-220p="opacity: 1"
+                    ></div>
 
 
-                    <div id="quotesBorderChanger">
+                    <div id="quotesBorderChanger"
+                        data-0p="opacity: 0"
+                        data-200p=""
+                        data-201p="opacity: 1"
+                    >
             
                         <div class="leftBorder">
                             <div class="verticalBorderTop">
@@ -303,7 +370,7 @@
                         </div>
                     </div>
                     
-                    <div id="homeQuoteWrapper1" class="thirdHomeSection">
+                    <div id="homeQuoteWrapper1" class="thirdHeightSection">
                         <div class="quoteBoxCenter">
                             <div class="topQuoteDecoration">
                                 <div class="quoteLeftArrow">
@@ -348,7 +415,7 @@
                         </div>
                     </div>
 
-                    <div id="homeQuoteWrapper2" class="thirdHomeSection hidden">
+                    <div id="homeQuoteWrapper2" class="thirdHeightSection">
                         <div class="quoteBoxCenter">
                             <div class="topQuoteDecoration">
                                 <div class="quoteLeftArrow">
@@ -393,7 +460,7 @@
                         </div>
                     </div>
 
-                    <div id="homeQuoteWrapper3" class="thirdHomeSection hidden">
+                    <div id="homeQuoteWrapper3" class="thirdHeightSection">
                         <div class="quoteBoxCenter">
                             <div class="topQuoteDecoration">
                                 <div class="quoteLeftArrow">
@@ -475,23 +542,37 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         
+        <script src="js/vendor/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init({
+                edgeStrategy: 'set',
+                easing: {
+                    WTF: Math.random,
+                    inverted: function(p) {
+                        return 1-p;
+                    }
+                }
+            });
+
+        </script>
         
        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            // e.src='//www.google-analytics.com/analytics.js';
+            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            // ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
     </body>
 </html>

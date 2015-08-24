@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	//// INIT LOADER FUNCTION
 		$('#homeWrapper').removeClass('limitByLoader');
+		$('#pilarsWrapper').removeClass('limitByLoader');
+		$('#portfolioWrapper').removeClass('limitByLoader');
 		$('#homeLoader').addClass('hideLoader');
 		setTimeout(function(){
 			$('#homeLoader').hide();
@@ -8,19 +10,22 @@ $(document).ready(function() {
 
 		setTimeout(function(){
 			$('#bgSection1').removeClass('animateBgSect1');
-		}, 2000);
+		}, 1500);
 
 		setTimeout(function(){
 			$('#landingBorderChanger').removeClass('landingBorderInit');
-		},3000);
+		},2500);
 	//// END LOADER FUNCTION
 
 
 	//// INIT MENU MANDALA INTERACTION
+		var openedMenu = false;
 
 		//// INIT OPEN MENU MANDALA
 			$('#burguerBox').click(function(e){
 				e.preventDefault();
+
+				// BURGUER ANIMATION
 				$('.burguerLines').toggleClass('burguerNoWidth');
 				setTimeout(function(){
 					$('#burguerLine1').toggleClass('rotateMenuLeft');
@@ -30,8 +35,39 @@ $(document).ready(function() {
 				setTimeout(function(){
 					$('.burguerLines').toggleClass('burguerNoWidth');
 				},1000);
+
+
+
+				// RINGS ANIMATION TO OPEN
+				if(openedMenu == false){
+					$('#windowMenuWrapper').toggleClass('hidden');
+					setTimeout(function(){
+						$('#windowMenuWrapper').toggleClass('hideMenuWrapper');
+					},100);
+
+					setTimeout(function(){
+						leaveMenu('pushRing',1000,'pushRing',600,'pushRing',300);
+					},1000);
+
+					openedMenu = true;
+
+
+
+				// RINGS ANIMATION TO CLOSE
+				} else {
+					leaveMenu('pushRing',1000,'pushRing',600,'pushRing',300);
+
+					setTimeout(function(){
+						$('#windowMenuWrapper').toggleClass('hideMenuWrapper');
+					},1300);
+
+					setTimeout(function(){
+						$('#windowMenuWrapper').toggleClass('hidden');
+					},2000);
+
+					openedMenu = false;
+				}
 				
-				$('#windowMenuWrapper').toggleClass('hidden');
 			});
 		//// END OPEN MENU MANDALA
 
@@ -84,7 +120,20 @@ $(document).ready(function() {
 	//// INIT HOME CHANGE QUOTES
 		$('#quotesScroll-1').click(function(){
 			$('#homeQuoteWrapper1').animate({top: '-100vh',opacity: '0'}, 1600);
+			$('#homeQuoteWrapper2').removeClass('hidden');
+			setTimeout(function(){
+				$('#homeQuoteWrapper2').animate({opacity: '1'}, 800);
+			},1000);
+		});
+
+		$('#quotesScroll-2').click(function(){
+			$('#homeQuoteWrapper2').animate({top: '-100vh',opacity: '0'}, 1600);
+			$('#homeQuoteWrapper3').removeClass('hidden');
+			setTimeout(function(){
+				$('#homeQuoteWrapper3').animate({opacity: '1'}, 800);
+			},1000);
 		});
 	//// END HOME CHANGE QUOTES
+		// PENDIENTE
 	
 });
