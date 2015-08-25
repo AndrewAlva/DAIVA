@@ -149,6 +149,10 @@ Helper classes
         cursor: pointer;
     }
 
+    .crystal{
+        opacity: 0;
+    }
+
     @media (min-width: 768px){
         .onlyMobile{
             display: none !important;
@@ -1604,6 +1608,7 @@ body{
 
 
 /*/// INIT PORTFOLIO STYLE ///*/
+
     /*/// INIT PORTFOLIO WRAPPERS STYLE ///*/
         #windowPortfolioWrapper{
             position: absolute;
@@ -1637,8 +1642,6 @@ body{
         }
 
         
-
-
         /*/// INIT PORTFOLIO SECTION 1 STYLE ///*/
             #portfolioTitle{
                 position: absolute;
@@ -1688,6 +1691,7 @@ body{
         /*/// INIT PORTFOLIO SECTION 2 STYLE ///*/
             #portfolioDescriptionWrapper .quoteTextWrapper{
                 height: 110px;
+                color: #c6c6c6 !important;
             }
         /*/// END PORTFOLIO SECTION 2 STYLE ///*/
 
@@ -1704,11 +1708,219 @@ body{
                 bottom: 0;
                 background-color: antiquewhite;
             }
-        /*/// END PORTFOLIO SECTION 3 STYLE ///*/
-
-
-            
+        /*/// END PORTFOLIO SECTION 3 STYLE ///*/     
     /*/// END PORTFOLIO LANDING STYLE ///*/
+
+
+    /*/// INIT PORTFOLIO PROJECTS STYLE ///*/
+        #portfolioSection2{
+            overflow: scroll;
+        }
+
+        #portfolioProjectsWrapper{
+            position: absolute;
+            width: 1600%;
+            /*width: 533.33%;*/
+            /*width: 500%;*/
+            height: 100%;
+        }
+
+        .daivaProjects{
+            position: relative;
+            width: 6.25%;
+            height: 100%;
+            float: left;
+            cursor: pointer;
+            -webkit-transition: all 0.53s ease;
+               -moz-transition: all 0.53s ease;
+                -ms-transition: all 0.53s ease;
+                 -o-transition: all 0.53s ease;
+                    transition: all 0.53s ease;
+        }
+
+        .daivaProjects:hover{
+            opacity: 1 !important;
+        }
+
+        /*/// INIT PORTFOLIO PROJECTS BG's ///*/
+            #project1{
+                background: url('../img/projects/project1.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 37%;
+                opacity: 0.5;
+            }
+
+            #project2{
+                background: url('../img/projects/project2.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 50%;
+                opacity: 0.5;
+            }
+
+            #project3{
+                background: url('../img/projects/project3.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 70%;
+                opacity: 0.5;
+            }
+
+            #project4{
+                background: url('../img/projects/project4.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 28%;
+                opacity: 0.5;
+            }
+
+            #project5{
+                background: url('../img/projects/project5.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 42%;
+                opacity: 0.5;
+            }
+
+            #project6{
+                background: url('../img/projects/project6.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 79%;
+                opacity: 0.5;
+            }
+
+            #project7{
+                background: url('../img/projects/project7.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 30%;
+                opacity: 0.5;
+            }
+
+            #project8{
+                background: url('../img/projects/project8.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 72%;
+                opacity: 0.5;
+            }
+
+            #project9{
+                background: url('../img/projects/project9.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 70%;
+                opacity: 0.5;
+            }
+
+            #project10{
+                background: url('../img/projects/project10.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 60%;
+                opacity: 0.5;
+            }
+
+            #project11{
+                background: url('../img/projects/project11.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 100%;
+                opacity: 0.5;
+            }
+
+            #project12{
+                background: url('../img/projects/project12.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 51%;
+                opacity: 0.5;
+            }
+
+            #project13{
+                background: url('../img/projects/project13.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                opacity: 0.5;
+            }
+
+            #project14{
+                background: url('../img/projects/project14.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 100%;
+                opacity: 0.5;
+            }
+
+            #project15{
+                background: url('../img/projects/project15.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                opacity: 0.5;
+            }
+
+            #project16{
+                background: url('../img/projects/project16.jpg');
+                background-size: cover;
+                -webkit-background-size: cover;
+                background-position-x: 60%;
+                opacity: 0.5;
+            }
+        /*/// END PORTFOLIO PROJECTS BG's ///*/
+
+        .projectTypeBox{
+            position: absolute;
+            width: 238px;
+            height: 163px;
+            margin: auto;
+            left: 0; right: 0; bottom: 0;
+        }
+
+        .projectIcon{
+            position: relative;
+            width: 100%;
+            height: 106px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+
+        .projectIcon img{
+            position: absolute;
+            width: 119px;
+            height: 96px;
+            margin: auto;
+            right: 0; left: 0; top: 0; bottom: 0;
+        }
+
+        .projectKnowMore{
+            position: relative;
+            width: 100%;
+            height: 54px;
+        }
+
+        .projectKnowMore h2{
+            text-align: center;
+            line-height: 54px;
+            font-size: 24px;
+            font-family: 'Noto Serif';
+            font-style: italic;
+            font-weight: lighter;
+            color: #fff;
+        }
+
+        /*.daivaProjects:nth-child(even){
+            background-color: aqua;
+        }
+
+        .daivaProjects:nth-child(odd){
+            background-color: orange;
+        }*/
+
+
+
+    /*/// END PORTFOLIO PROJECTS STYLE ///*/
 
 /*/// END PORTFOLIO STYLE ///*/
 
