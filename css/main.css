@@ -1725,6 +1725,40 @@ body{
             height: 100%;
         }
 
+        #backZoom{
+            position: absolute;
+            width: 30px;
+            height: 28px;
+            top: 70px;
+            left: 60px;
+        }
+
+        .changeProject{
+            position: absolute;
+            width: 74px;
+            height: 100%;
+            background-color: #ce9549;
+            opacity: 0.5;
+        }
+
+        #backProject{
+            float: left;
+        }
+
+        #nextProject{
+            float: right;
+        }
+
+        .projectArrows{
+            position: absolute;
+            width: 14px;
+            height: 28px;
+            margin: auto;
+            top: 0; bottom: 0; left: 0; right: 0;
+        }
+
+
+
         .daivaProjects{
             position: relative;
             width: 6.25%;
