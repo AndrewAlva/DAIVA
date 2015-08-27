@@ -135,5 +135,18 @@ $(document).ready(function() {
 		});
 	//// END HOME CHANGE QUOTES
 		// PENDIENTE
+
+
+
+	//// INIT PORTFOLIO INTERACTION
+		// $('.daivaProjects').mouseenter(function(){
+		// 	$('.daivaProjects').animate({"width": "6.133%"});
+		// 	$(this).animate({"width": "8%"}, "slow");
+		// });
+
+		// $('.daivaProjects').mouseleave(function(){
+		// 	$('.daivaProjects').animate({"width": "6.25%"});
+		// });
+	//// END PORTFOLIO INTERACTION
 	
 });
