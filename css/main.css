@@ -1754,7 +1754,7 @@ body{
             height: 28px;
             top: 70px;
             left: 104px;
-            z-index: 100;
+            z-index: 1000;
             cursor: pointer;
         }
 
@@ -1825,6 +1825,11 @@ body{
         .daivaProjectsFlow:hover{
             width: 8%;
             opacity: 1;
+        }
+
+        .currentProject{
+            z-index: 100 !important;
+            left: 0% !important;
         }
 
         /*/// INIT PORTFOLIO PROJECTS BG's ///*/
@@ -2018,10 +2023,82 @@ body{
         .daivaProjects:nth-child(odd){
             background-color: orange;
         }*/
-
-
-
     /*/// END PORTFOLIO PROJECTS STYLE ///*/
+
+
+
+
+    /*/// INIT PORTFOLIO 2 PROJECTS STYLE ///*/
+        #portfolio2Section2{
+            height: 25%;
+            z-index: 100;
+            overflow: scroll;
+        }
+
+        #p2ProjectsWrapper{
+            position: absolute;
+            width: 500%;
+            height: 100%;
+
+            background-color: orange;
+        }
+
+        #backZoom2{
+            position: fixed;
+            width: 30px;
+            height: 35px;
+            top: 70px;
+            left: 104px;
+            z-index: 1000;
+            cursor: pointer;
+            background-color: #202020;
+        }
+
+        .p2Projects{
+            position: relative;
+            width: 6.25%;
+            height: 100%;
+            float: left;
+
+            -webkit-transition: all .4s ease;
+               -moz-transition: all .4s ease;
+                -ms-transition: all .4s ease;
+                 -o-transition: all .4s ease;
+                    transition: all .4s ease;
+        }
+
+        .p2Projects:nth-child(2) {
+            background-color: red !important;
+        }
+
+        .p2Projects:nth-child(even){
+            background-color: aqua;
+        }
+
+        .p2Projects:nth-child(odd){
+            background-color: navy;
+        }
+
+        .p2Projects:last-child{
+            background-color: red;
+        }
+
+
+        /*///// INIT INTERACTIVE CLASSES /////*/
+            .p2Pointer{
+                cursor: pointer;
+            }
+
+            .p2OpHover{
+                opacity: 0.5;
+            }
+            .p2OpHover:hover{
+                opacity: 1;
+            }
+        /*///// END INTERACTIVE CLASSES /////*/
+
+
+    /*/// END PORTFOLIO 2 PROJECTS STYLE ///*/
 
 /*/// END PORTFOLIO STYLE ///*/
 

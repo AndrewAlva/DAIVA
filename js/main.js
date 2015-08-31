@@ -139,24 +139,175 @@ $(document).ready(function() {
 
 
 	//// INIT PORTFOLIO INTERACTION
-		$('#project1').click(function(){
-			$('#menuNavWrapper').addClass('pushMenuNavWrapper');
-			
-			$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
-			$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
 
-			setTimeout(function(){
-				$('.project1Arrows').removeClass('hiddenArrowProjects');
+		// INIT PROJECTS CAROUSEL MOUSE POSITION
+			var windowWidth;
+			var mouseBlock;
+			var mouseCurrentBlock;
+			var mouseX;
+			var displaceXleft;
+			var leftProjectsWrapper = 0;
+
+			$('#portfolio2Section2').mousemove(function(){
+
+				if (windowWidth != $(window).width() ){
+					windowWidth = $(window).width();
+				}
+
+				mouseBlock = windowWidth / 10;
 				
-			},900);
+				mouseX = event.pageX;
 
-			setTimeout(function(){
-				$('.project1Arrows').removeClass('crystalArrowProjects');
-				$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
-			},1000);
+				if (mouseX < mouseBlock) {
+					mouseCurrentBlock = 0;
+				} else if (mouseX < mouseBlock * 2) {
+					mouseCurrentBlock = 1;
+				} else if (mouseX < mouseBlock * 3) {
+					mouseCurrentBlock = 2;
+				} else if (mouseX < mouseBlock * 4) {
+					mouseCurrentBlock = 3;
+				} else if (mouseX < mouseBlock * 6) {
+					mouseCurrentBlock = 4;
+				} else if (mouseX < mouseBlock * 7) {
+					mouseCurrentBlock = 3;
+				} else if (mouseX < mouseBlock * 8) {
+					mouseCurrentBlock = 2;
+				} else if (mouseX < mouseBlock * 9) {
+					mouseCurrentBlock = 1;
+				} else if (mouseX < mouseBlock * 10) {
+					mouseCurrentBlock = 0;
+				}
+
+				if (mouseX < mouseBlock * 5) {
+					displaceXleft = 10/(mouseCurrentBlock + 1);
+				}
+				
+				if (mouseCurrentBlock == 4) {
+					displaceXleft = 0;
+				}
+
+				if (mouseX >= mouseBlock * 5) {
+					displaceXleft = -10/(mouseCurrentBlock + 1);
+				}
+
+				leftProjectsWrapper += displaceXleft;
 
 
-		});
+				$('#p2ProjectsWrapper').css("left", leftProjectsWrapper);
+			});
+		// END PROJECTS CAROUSEL MOUSE POSITION
+
+		// INIT PROJECT 1 CLICK
+			$('#project1').click(function(){
+				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				
+				
+				$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
+				$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+
+				setTimeout(function(){
+					$('.project1Arrows').removeClass('hiddenArrowProjects');
+					
+				},900);
+
+				setTimeout(function(){
+					$('.project1Arrows').removeClass('crystalArrowProjects');
+					$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
+					$('#project1').addClass('currentProject');
+				},1000);
+
+
+			});
+		// END PROJECT 1 CLICK
+
+		// INIT PROJECT 2 CLICK
+			$('#project2').click(function(){
+				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				$('#project2').addClass('currentProject');
+				
+				$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
+				$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+
+				setTimeout(function(){
+					$('.project2Arrows').removeClass('hiddenArrowProjects');
+					
+				},900);
+
+				setTimeout(function(){
+					$('.project2Arrows').removeClass('crystalArrowProjects');
+					$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
+				},1000);
+
+
+			});
+		// END PROJECT 2 CLICK
+
+		// INIT PROJECT 3 CLICK
+			$('#project3').click(function(){
+				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				$('#project3').addClass('currentProject');
+				
+				$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
+				$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+
+				setTimeout(function(){
+					$('.project3Arrows').removeClass('hiddenArrowProjects');
+					
+				},900);
+
+				setTimeout(function(){
+					$('.project3Arrows').removeClass('crystalArrowProjects');
+					$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
+				},1000);
+
+
+			});
+		// END PROJECT 3 CLICK
+
+		// INIT PROJECT 4 CLICK
+			$('#project4').click(function(){
+				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				$('#project4').addClass('currentProject');
+				
+				$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
+				$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+
+				setTimeout(function(){
+					$('.project4Arrows').removeClass('hiddenArrowProjects');
+					
+				},900);
+
+				setTimeout(function(){
+					$('.project4Arrows').removeClass('crystalArrowProjects');
+					$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
+				},1000);
+
+
+			});
+		// END PROJECT 4 CLICK
+
+		// INIT PROJECT 5 CLICK
+			$('#project5').click(function(){
+				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				
+				
+				$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
+				$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+
+				setTimeout(function(){
+					$('.project5Arrows').removeClass('hiddenArrowProjects');
+					
+				},900);
+
+				setTimeout(function(){
+					$('.project5Arrows').removeClass('crystalArrowProjects');
+					$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
+					$('#project5').addClass('currentProject');
+				},1000);
+
+
+			});
+		// END PROJECT 5 CLICK
 
 		$('#backZoom').click(function(){
 			$('#menuNavWrapper').removeClass('pushMenuNavWrapper');
@@ -168,13 +319,39 @@ $(document).ready(function() {
 				$('.daivaProjectsStatic').removeClass('daivaProjectsStatic');
 			},1000);
 
-			// INIT REMOVE CHANGE ARROWS
+			// INIT REMOVE REPEATED CLASSES FROM ALL PROJECTS
 				$('.project1Arrows').addClass('crystalArrowProjects');
+				$('.project2Arrows').addClass('crystalArrowProjects');
+				$('.project3Arrows').addClass('crystalArrowProjects');
+				$('.project4Arrows').addClass('crystalArrowProjects');
+				$('.project5Arrows').addClass('crystalArrowProjects');
 				
 				setTimeout(function(){
 					$('.project1Arrows').addClass('hiddenArrowProjects');
+					$('.project2Arrows').addClass('hiddenArrowProjects');
+					$('.project3Arrows').addClass('hiddenArrowProjects');
+					$('.project4Arrows').addClass('hiddenArrowProjects');
+					$('.project5Arrows').addClass('hiddenArrowProjects');
 				},400);
-			// END REMOVE CHANGE ARROWS
+
+
+				$('#project1').removeClass('currentProject');
+				$('#project2').removeClass('currentProject');
+				$('#project3').removeClass('currentProject');
+				$('#project4').removeClass('currentProject');
+				$('#project5').removeClass('currentProject');
+				$('#project6').removeClass('currentProject');
+				$('#project7').removeClass('currentProject');
+				$('#project8').removeClass('currentProject');
+				$('#project9').removeClass('currentProject');
+				$('#project10').removeClass('currentProject');
+				$('#project11').removeClass('currentProject');
+				$('#project12').removeClass('currentProject');
+				$('#project13').removeClass('currentProject');
+				$('#project14').removeClass('currentProject');
+				$('#project15').removeClass('currentProject');
+				$('#project16').removeClass('currentProject');
+			// END REMOVE REPEATED CLASSES FROM ALL PROJECTS
 		});
 	//// END PORTFOLIO INTERACTION
 	
