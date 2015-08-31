@@ -139,14 +139,43 @@ $(document).ready(function() {
 
 
 	//// INIT PORTFOLIO INTERACTION
-		// $('.daivaProjects').mouseenter(function(){
-		// 	$('.daivaProjects').animate({"width": "6.133%"});
-		// 	$(this).animate({"width": "8%"}, "slow");
-		// });
+		$('#project1').click(function(){
+			$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+			
+			$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
+			$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
 
-		// $('.daivaProjects').mouseleave(function(){
-		// 	$('.daivaProjects').animate({"width": "6.25%"});
-		// });
+			setTimeout(function(){
+				$('.project1Arrows').removeClass('hiddenArrowProjects');
+				
+			},900);
+
+			setTimeout(function(){
+				$('.project1Arrows').removeClass('crystalArrowProjects');
+				$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
+			},1000);
+
+
+		});
+
+		$('#backZoom').click(function(){
+			$('#menuNavWrapper').removeClass('pushMenuNavWrapper');
+			$('#portfolioProjectsWrapper').removeClass('zoomInProjectsWrapper');
+			
+
+			setTimeout(function(){
+				$('.daivaProjectsStatic').addClass('daivaProjectsFlow');
+				$('.daivaProjectsStatic').removeClass('daivaProjectsStatic');
+			},1000);
+
+			// INIT REMOVE CHANGE ARROWS
+				$('.project1Arrows').addClass('crystalArrowProjects');
+				
+				setTimeout(function(){
+					$('.project1Arrows').addClass('hiddenArrowProjects');
+				},400);
+			// END REMOVE CHANGE ARROWS
+		});
 	//// END PORTFOLIO INTERACTION
 	
 });

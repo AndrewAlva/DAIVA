@@ -270,6 +270,16 @@ body{
         width: 110px;
         height: 29px;
         z-index: 100000000;
+
+        -webkit-transition: all .4s ease-in-out;
+           -moz-transition: all .4s ease-in-out;
+            -ms-transition: all .4s ease-in-out;
+             -o-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+    }
+
+    .pushMenuNavWrapper{
+        right: 104px !important;
     }
 
     #menuNavWrapper ul, #menuNavWrapper ul li{
@@ -1725,11 +1735,17 @@ body{
             width: 500%;
             height: 100%;
             overflow: scroll;
+
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
         }
 
         .zoomInProjectsWrapper{
             width: 100% !important;
-            overflow: hidden;
+            overflow: hidden !important;
         }
 
         #backZoom{
@@ -1749,6 +1765,7 @@ body{
             background-color: #ce9549;
             opacity: 0.2;
             z-index: 100;
+            overflow: hidden;
             cursor: pointer;
             -webkit-transition: all 0.4s ease-in-out;
                -moz-transition: all 0.4s ease-in-out;
@@ -1777,39 +1794,37 @@ body{
             display: none;
         }
 
+        .crystalArrowProjects{
+            opacity: 0 !important;
+        }
+
 
 
         .daivaProjects{
             position: absolute;
             height: 100%;
             float: left;
-            opacity: 0.5;
-            -webkit-transition: all 0.53s ease;
-               -moz-transition: all 0.53s ease;
-                -ms-transition: all 0.53s ease;
-                 -o-transition: all 0.53s ease;
-                    transition: all 0.53s ease;
+            box-shadow: 5px 0px 20px #202020;
+            -webkit-transition: all 0.4s ease;
+               -moz-transition: all 0.4s ease;
+                -ms-transition: all 0.4s ease;
+                 -o-transition: all 0.4s ease;
+                    transition: all 0.4s ease;
         }
 
-        .daivaProjects:hover{
-            opacity: 1 !important;
+        .daivaProjectsStatic{
+            width: 100vw;
         }
 
-        .daivaProjectsMin{
+        .daivaProjectsFlow{
             width: 6.25%;
+            cursor: pointer;
+            opacity: 0.5;
         }
 
-        .daivaProjectsMin:hover{
+        .daivaProjectsFlow:hover{
             width: 8%;
-        }
-
-
-        .currentProject{
-            width: 100%;
-        }
-
-        .zoomInDaivaProjects{
-            width: 0%;
+            opacity: 1;
         }
 
         /*/// INIT PORTFOLIO PROJECTS BG's ///*/
@@ -1817,107 +1832,107 @@ body{
                 background: url('../img/projects/project1.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 37%;
-                z-index: 5;
+                background-position: 37% 0%;
+                z-index: 20;
             }
 
             #project2{
                 background: url('../img/projects/project2.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 50%;
+                background-position: 50% 0%;
                 left: 6.25%;
-                z-index: 6;
+                z-index: 19;
             }
 
             #project3{
                 background: url('../img/projects/project3.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 70%;
+                background-position: 70% 0%;
                 left: 12.5%;
-                z-index: 7;
+                z-index: 18;
             }
 
             #project4{
                 background: url('../img/projects/project4.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 28%;
+                background-position: 28% 0%;
                 left: 18.75%;
-                z-index: 8;
+                z-index: 17;
             }
 
             #project5{
                 background: url('../img/projects/project5.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 42%;
+                background-position: 42% 0%;
                 left: 25%;
-                z-index: 9;
+                z-index: 16;
             }
 
             #project6{
                 background: url('../img/projects/project6.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 79%;
+                background-position: 79% 0%;
                 left: 31.25%;
-                z-index: 10;
+                z-index: 15;
             }
 
             #project7{
                 background: url('../img/projects/project7.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 30%;
+                background-position: 30% 0%;
                 left: 37.5%;
-                z-index: 11;
+                z-index: 14;
             }
 
             #project8{
                 background: url('../img/projects/project8.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 72%;
+                background-position: 72% 0%;
                 left: 43.75%;
-                z-index: 12;
+                z-index: 13;
             }
 
             #project9{
                 background: url('../img/projects/project9.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 70%;
+                background-position: 70% 0%;
                 left: 50%;
-                z-index: 13;
+                z-index: 12;
             }
 
             #project10{
                 background: url('../img/projects/project10.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 60%;
+                background-position: 60% 0%;
                 left: 56.25%;
-                z-index: 14;
+                z-index: 11;
             }
 
             #project11{
                 background: url('../img/projects/project11.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 100%;
+                background-position: 100% 0%;
                 left: 62.5%;
-                z-index: 15;
+                z-index: 10;
             }
 
             #project12{
                 background: url('../img/projects/project12.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 51%;
+                background-position: 51% 0%;
                 left: 68.75%;
-                z-index: 16;
+                z-index: 9;
             }
 
             #project13{
@@ -1925,7 +1940,7 @@ body{
                 background-size: cover;
                 -webkit-background-size: cover;
                 left: 75%;
-                z-index: 17;
+                z-index: 8;
                 
             }
 
@@ -1933,9 +1948,9 @@ body{
                 background: url('../img/projects/project14.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 100%;
+                background-position: 100% 0%;
                 left: 81.25%;
-                z-index: 18;
+                z-index: 7;
             }
 
             #project15{
@@ -1943,16 +1958,16 @@ body{
                 background-size: cover;
                 -webkit-background-size: cover;
                 left: 87.5%;
-                z-index: 19;
+                z-index: 6;
             }
 
             #project16{
                 background: url('../img/projects/project16.jpg');
                 background-size: cover;
                 -webkit-background-size: cover;
-                background-position-x: 60%;
+                background-position: 60% 0%;
                 left: 93.75%;
-                z-index: 20;
+                z-index: 5;
             }
         /*/// END PORTFOLIO PROJECTS BG's ///*/
 
