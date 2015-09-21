@@ -140,7 +140,7 @@ $(document).ready(function() {
 
 	//// INIT PORTFOLIO INTERACTION
 
-		// INIT PROJECTS CAROUSEL MOUSE POSITION
+		// INIT PROJECTS PORTFOLIO 2 (IT COULD BE 1 TOO) CAROUSEL MOUSE POSITION
 			var windowWidth;
 			var mouseBlock;
 			var mouseCurrentBlock;
@@ -148,10 +148,15 @@ $(document).ready(function() {
 			var displaceXleft;
 			var leftProjectsWrapper = 0;
 
-			$('#portfolio2Section2').mousemove(function(event){
+			var limitWidth;
+
+			
+
+			$('#portfolio2Section2').mousemove(function(){
 
 				if (windowWidth != $(window).width() ){
 					windowWidth = $(window).width();
+					limitWidth = windowWidth * 4;
 				}
 
 				mouseBlock = windowWidth / 10;
@@ -159,52 +164,63 @@ $(document).ready(function() {
 				mouseX = event.pageX;
 
 				if (mouseX < mouseBlock) {
-					mouseCurrentBlock = 0;
-				} else if (mouseX < mouseBlock * 2) {
-					mouseCurrentBlock = 1;
-				} else if (mouseX < mouseBlock * 3) {
 					mouseCurrentBlock = 2;
-				} else if (mouseX < mouseBlock * 4) {
+				} else if (mouseX <= mouseBlock * 2) {
 					mouseCurrentBlock = 3;
-				} else if (mouseX < mouseBlock * 6) {
+				}  else if (mouseX <= mouseBlock * 8) {
 					mouseCurrentBlock = 4;
-				} else if (mouseX < mouseBlock * 7) {
+				} else if (mouseX <= mouseBlock * 9) {
 					mouseCurrentBlock = 3;
-				} else if (mouseX < mouseBlock * 8) {
+				} else if (mouseX <= mouseBlock * 10) {
 					mouseCurrentBlock = 2;
-				} else if (mouseX < mouseBlock * 9) {
-					mouseCurrentBlock = 1;
-				} else if (mouseX < mouseBlock * 10) {
-					mouseCurrentBlock = 0;
 				}
 
-				if (mouseX < mouseBlock * 4) {
-					displaceXleft = 60/(mouseCurrentBlock + 1);
+				if (mouseX < mouseBlock * 2) {
+					displaceXleft = -100/(mouseCurrentBlock + 1);
 				}
-				
+
+				if (mouseX >= mouseBlock * 8) {
+					displaceXleft = 100/(mouseCurrentBlock + 1);
+				}
+
 				if (mouseCurrentBlock == 4) {
 					displaceXleft = 0;
 				}
 
-				if (mouseX >= mouseBlock * 6) {
-					displaceXleft = -60/(mouseCurrentBlock + 1);
-				}
+
 
 				leftProjectsWrapper += displaceXleft;
 
-				if(leftProjectsWrapper > 0 ){
+				if(leftProjectsWrapper <= 0 ){
 					leftProjectsWrapper = 0;
 
-				} else if (leftProjectsWrapper < windowWidth * -4){
-					leftProjectsWrapper = windowWidth * -4;
+				} else if (leftProjectsWrapper > limitWidth){
+					leftProjectsWrapper = limitWidth;
 				}
 
 
 				// $('#p2ProjectsWrapper').css("left", leftProjectsWrapper);
 				
-				$('#portfolio2Section2').scrollLeft(1000);
+				$('#portfolio2Section2').scrollLeft(leftProjectsWrapper);
+			});
+
+			$('#portfolio2Section2').scroll(function(){
+				leftProjectsWrapper = $('#portfolio2Section2').scrollLeft();
 			});
 		// END PROJECTS CAROUSEL MOUSE POSITION
+
+		// INIT PROJECT 1 PORTFOLIO 2 CLICK INTERACTION
+			$('.p2Projects').click(function(){
+				$('#p2ProjectsWrapper').addClass('openProjects2');
+				limitWidth = windowWidth * 15;
+			});
+
+
+		// END PROJECT 1 PORTFOLIO 2 CLICK INTERACTION
+			$('#backZoom2').click(function(){
+				$('#p2ProjectsWrapper').removeClass('openProjects2');
+				limitWidth = windowWidth * 4;
+			});
 
 		// INIT PROJECT 1 CLICK
 			$('#project1').click(function(){

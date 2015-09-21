@@ -2041,6 +2041,15 @@ body{
             height: 100%;
 
             background-color: orange;
+            -webkit-transition: all 1.2s ease-in-out;
+               -moz-transition: all 1.2s ease-in-out;
+                -ms-transition: all 1.2s ease-in-out;
+                 -o-transition: all 1.2s ease-in-out;
+                    transition: all 1.2s ease-in-out;
+        }
+
+        .openProjects2{
+            width: 1600% !important;
         }
 
         #backZoom2{
@@ -2680,7 +2689,7 @@ body{
 /*/// END MOBILE CSS DOCUMENT ///*/
 
 
-/*/// INIT GO TO DESKTOP CLASSES ///*/
+/*/// GO TO DESKTOP CLASSES ///*/
     #mobileInDesktop{
         position: absolute;
         width: 320px;
