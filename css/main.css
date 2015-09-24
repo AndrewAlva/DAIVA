@@ -2041,15 +2041,23 @@ body{
             height: 100%;
 
             background-color: orange;
-            -webkit-transition: all 1.2s ease-in-out;
-               -moz-transition: all 1.2s ease-in-out;
-                -ms-transition: all 1.2s ease-in-out;
-                 -o-transition: all 1.2s ease-in-out;
-                    transition: all 1.2s ease-in-out;
+            -webkit-transition: all .8s ease-in-out;
+               -moz-transition: all .8s ease-in-out;
+                -ms-transition: all .8s ease-in-out;
+                 -o-transition: all .8s ease-in-out;
+                    transition: all .8s ease-in-out;
         }
 
         .openProjects2{
-            width: 1600% !important;
+            width: 100% !important;
+        }
+
+        .notCurrentProject2{
+            width: 0px !important;
+        }
+
+        .currentProject2{
+            width: 100% !important;
         }
 
         #backZoom2{
@@ -2069,11 +2077,11 @@ body{
             height: 100%;
             float: left;
 
-            -webkit-transition: all .4s ease;
-               -moz-transition: all .4s ease;
-                -ms-transition: all .4s ease;
-                 -o-transition: all .4s ease;
-                    transition: all .4s ease;
+            -webkit-transition: all .8s ease;
+               -moz-transition: all .8s ease;
+                -ms-transition: all .8s ease;
+                 -o-transition: all .8s ease;
+                    transition: all .8s ease;
         }
 
         .p2Projects:nth-child(2) {
