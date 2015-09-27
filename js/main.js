@@ -142,52 +142,44 @@ $(document).ready(function() {
 
 		// INIT PROJECTS PORTFOLIO 2 (IT COULD BE 1 TOO) CAROUSEL MOUSE POSITION
 			var windowWidth;
-			var mouseBlock;
-			var mouseCurrentBlock;
+			var limitWidth;
+			var widthScrollDisplaceTrigger = 100; // Width in pixels
+			var scrollBackArea = widthScrollDisplaceTrigger;
+			var scrollNextArea;
 			var mouseX;
+			var displaceWidth = 5; // Displacement value on mouse position, in pixels
 			var displaceXleft;
 			var leftProjectsWrapper = 0;
+
 			var lastLeftPush;
 
-			var limitWidth;
-
-			var intervalBoolean;
-			var intervalCount = 0;
-
-
+			
 			$('#portfolio2Section2').mousemove(function(){
+				mouseX = event.pageX;
+			});
 
+			setInterval(function(event){
 				if (windowWidth != $(window).width() ){
 					windowWidth = $(window).width();
+					scrollNextArea = windowWidth - widthScrollDisplaceTrigger;
 					limitWidth = windowWidth * 4;
 				}
 
-				mouseBlock = windowWidth / 10;
-				
-				mouseX = event.pageX;
 
-				if (mouseX < mouseBlock) {
-					mouseCurrentBlock = 2;
-				} else if (mouseX <= mouseBlock * 2) {
-					mouseCurrentBlock = 3;
-				}  else if (mouseX <= mouseBlock * 8) {
-					mouseCurrentBlock = 4;
-				} else if (mouseX <= mouseBlock * 9) {
-					mouseCurrentBlock = 3;
-				} else if (mouseX <= mouseBlock * 10) {
-					mouseCurrentBlock = 2;
-				}
+				if (mouseX <= scrollBackArea) {
+					displaceXleft = displaceWidth * -1;
+					$('.p2Projects').removeClass('p2Pointer');
+					$('#portfolio2Section2').addClass('scrollingLeft');
 
-				if (mouseX < mouseBlock * 2) {
-					displaceXleft = -100/(mouseCurrentBlock + 1);
-				}
-
-				if (mouseX >= mouseBlock * 8) {
-					displaceXleft = 100/(mouseCurrentBlock + 1);
-				}
-
-				if (mouseCurrentBlock == 4) {
+				} else if (mouseX >= scrollNextArea) {
+					displaceXleft = displaceWidth;
+					$('.p2Projects').removeClass('p2Pointer');
+					$('#portfolio2Section2').addClass('scrollingRight');
+				}  else {
 					displaceXleft = 0;
+					$('.p2Projects').addClass('p2Pointer');
+					$('#portfolio2Section2').removeClass('scrollingRight');
+					$('#portfolio2Section2').removeClass('scrollingLeft');
 				}
 
 
@@ -205,7 +197,9 @@ $(document).ready(function() {
 				// $('#p2ProjectsWrapper').css("left", leftProjectsWrapper);
 				
 				$('#portfolio2Section2').scrollLeft(leftProjectsWrapper);
-			});
+				
+			},5);
+
 
 			$('#portfolio2Section2').scroll(function(){
 				leftProjectsWrapper = $('#portfolio2Section2').scrollLeft();
@@ -229,7 +223,7 @@ $(document).ready(function() {
 
 				$('#portfolio2Section2').animate({
 		        	scrollLeft: lastLeftPush
-		        }, 1200);
+		        }, 1500);
 			});
 
 			
