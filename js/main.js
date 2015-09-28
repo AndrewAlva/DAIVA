@@ -140,7 +140,7 @@ $(document).ready(function() {
 
 	//// INIT PORTFOLIO INTERACTION
 
-		// INIT PROJECTS PORTFOLIO 2 (IT COULD BE 1 TOO) CAROUSEL MOUSE POSITION
+		// INIT PROJECTS PORTFOLIO CAROUSEL MOUSE POSITION
 			var windowWidth;
 			var limitWidth;
 			var widthScrollDisplaceTrigger = 100; // Width in pixels
@@ -154,8 +154,13 @@ $(document).ready(function() {
 			var lastLeftPush;
 
 			
-			$('#portfolio2Section2').mousemove(function(){
+			$('#portfolioSection2').mousemove(function(){
 				mouseX = event.pageX;
+			});
+
+			$('#portfolioProjectsWrapper').mouseleave(function(){
+				displaceXleft = 0;
+				mouseX = widthScrollDisplaceTrigger + 1;
 			});
 
 			setInterval(function(event){
@@ -168,18 +173,18 @@ $(document).ready(function() {
 
 				if (mouseX <= scrollBackArea) {
 					displaceXleft = displaceWidth * -1;
-					$('.p2Projects').removeClass('p2Pointer');
-					$('#portfolio2Section2').addClass('scrollingLeft');
+					$('.daivaProjects').removeClass('cPointer');
+					$('#portfolioSection2').addClass('scrollingLeft');
 
 				} else if (mouseX >= scrollNextArea) {
 					displaceXleft = displaceWidth;
-					$('.p2Projects').removeClass('p2Pointer');
-					$('#portfolio2Section2').addClass('scrollingRight');
+					$('.daivaProjects').removeClass('cPointer');
+					$('#portfolioSection2').addClass('scrollingRight');
 				}  else {
 					displaceXleft = 0;
-					$('.p2Projects').addClass('p2Pointer');
-					$('#portfolio2Section2').removeClass('scrollingRight');
-					$('#portfolio2Section2').removeClass('scrollingLeft');
+					$('.daivaProjects').addClass('cPointer');
+					$('#portfolioSection2').removeClass('scrollingRight');
+					$('#portfolioSection2').removeClass('scrollingLeft');
 				}
 
 
@@ -193,199 +198,318 @@ $(document).ready(function() {
 					leftProjectsWrapper = limitWidth;
 				}
 
-
-				// $('#p2ProjectsWrapper').css("left", leftProjectsWrapper);
-				
-				$('#portfolio2Section2').scrollLeft(leftProjectsWrapper);
+				$('#portfolioSection2').scrollLeft(leftProjectsWrapper);
 				
 			},5);
 
 
-			$('#portfolio2Section2').scroll(function(){
-				leftProjectsWrapper = $('#portfolio2Section2').scrollLeft();
+			$('#portfolioSection2').scroll(function(){
+				leftProjectsWrapper = $('#portfolioSection2').scrollLeft();
 			});
 		// END PROJECTS CAROUSEL MOUSE POSITION
 
 
 		// INIT PORTFOLIO PROJECTS INTERACTION
-		 	$('.p2Projects').click(function(){
+			$('#portfolioSection2').mouseenter(function(){
+				$('.daivaProjects').addClass('otherProjects');
+			});
+
+			$('#portfolioSection2').mouseleave(function(){
+				$('.daivaProjects').removeClass('otherProjects');
+			});
+
+			$('.daivaProjects').mouseenter(function(){
+				$(this).addClass('uniqueProject');
+			});
+
+			$('.daivaProjects').mouseleave(function(){
+				$(this).removeClass('uniqueProject');
+			});
+
+
+
+		 	$('.daivaProjects').click(function(){
 		 		lastLeftPush = leftProjectsWrapper;
-				$('#p2ProjectsWrapper').addClass('openProjects2');
+				$('#portfolioProjectsWrapper').addClass('openProjects');
+				$('.daivaProjects').addClass('notCurrentProject');
+				$(this).addClass('currentProject');
 
-				$('.p2Projects').addClass('notCurrentProject2');
-				$(this).addClass('currentProject2');
+				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				// Arrows to change projects
+				$('.changeProject').removeClass('hiddenArrowProjects');
+
+				setTimeout(function(){
+					$('.changeProject').removeClass('crystalArrowProjects');
+				},500);
 			});
 
-			$('#backZoom2').click(function(){
-				$('#p2ProjectsWrapper').removeClass('openProjects2');
-				$('.p2Projects').removeClass('notCurrentProject2');
-				$('.p2Projects').removeClass('currentProject2');
 
-				$('#portfolio2Section2').animate({
-		        	scrollLeft: lastLeftPush
-		        }, 1500);
-			});
-
-			
-
-			
+			// INIT CHANGE PROJECTS LEFT/RIGHT CLICK
 				
+				// PROJECT 1 ARROWS
+					$('#backProject16').click(function(){
+						setTimeout(function(){
+							$('#project1').removeClass('currentProject');
+							$('#project16').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject2').click(function(){
+						setTimeout(function(){
+							$('#project1').removeClass('currentProject');
+							$('#project2').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 1 ARROWS
 
-			// INIT PROJECT 1 CLICK
-				$('#project1').click(function(){
-					$('#menuNavWrapper').addClass('pushMenuNavWrapper');
-					
-					
-					$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
-					$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+				// PROJECT 2 ARROWS
+					$('#backProject1').click(function(){
+						setTimeout(function(){
+							$('#project2').removeClass('currentProject');
+							$('#project1').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject3').click(function(){
+						setTimeout(function(){
+							$('#project2').removeClass('currentProject');
+							$('#project3').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 2 ARROWS
 
-					setTimeout(function(){
-						$('.project1Arrows').removeClass('hiddenArrowProjects');
-						
-					},900);
+				// PROJECT 3 ARROWS
+					$('#backProject2').click(function(){
+						setTimeout(function(){
+							$('#project3').removeClass('currentProject');
+							$('#project2').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject4').click(function(){
+						setTimeout(function(){
+							$('#project3').removeClass('currentProject');
+							$('#project4').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 3 ARROWS
 
-					setTimeout(function(){
-						$('.project1Arrows').removeClass('crystalArrowProjects');
-						$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
-						$('#project1').addClass('currentProject');
-					},1000);
+				// PROJECT 4 ARROWS
+					$('#backProject3').click(function(){
+						setTimeout(function(){
+							$('#project4').removeClass('currentProject');
+							$('#project3').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject5').click(function(){
+						setTimeout(function(){
+							$('#project4').removeClass('currentProject');
+							$('#project5').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 4 ARROWS
 
+				// PROJECT 5 ARROWS
+					$('#backProject4').click(function(){
+						setTimeout(function(){
+							$('#project5').removeClass('currentProject');
+							$('#project4').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject6').click(function(){
+						setTimeout(function(){
+							$('#project5').removeClass('currentProject');
+							$('#project6').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 5 ARROWS
 
-				});
-			// END PROJECT 1 CLICK
+				// PROJECT 6 ARROWS
+					$('#backProject5').click(function(){
+						setTimeout(function(){
+							$('#project6').removeClass('currentProject');
+							$('#project5').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject7').click(function(){
+						setTimeout(function(){
+							$('#project6').removeClass('currentProject');
+							$('#project7').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 6 ARROWS
 
-			// INIT PROJECT 2 CLICK
-				$('#project2').click(function(){
-					$('#menuNavWrapper').addClass('pushMenuNavWrapper');
-					$('#project2').addClass('currentProject');
-					
-					$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
-					$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+				// PROJECT 7 ARROWS
+					$('#backProject6').click(function(){
+						setTimeout(function(){
+							$('#project7').removeClass('currentProject');
+							$('#project6').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject8').click(function(){
+						setTimeout(function(){
+							$('#project7').removeClass('currentProject');
+							$('#project8').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 7 ARROWS
 
-					setTimeout(function(){
-						$('.project2Arrows').removeClass('hiddenArrowProjects');
-						
-					},900);
+				// PROJECT 8 ARROWS
+					$('#backProject7').click(function(){
+						setTimeout(function(){
+							$('#project8').removeClass('currentProject');
+							$('#project7').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject9').click(function(){
+						setTimeout(function(){
+							$('#project8').removeClass('currentProject');
+							$('#project9').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 8 ARROWS
 
-					setTimeout(function(){
-						$('.project2Arrows').removeClass('crystalArrowProjects');
-						$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
-					},1000);
+				// PROJECT 9 ARROWS
+					$('#backProject8').click(function(){
+						setTimeout(function(){
+							$('#project9').removeClass('currentProject');
+							$('#project8').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject10').click(function(){
+						setTimeout(function(){
+							$('#project9').removeClass('currentProject');
+							$('#project10').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 9 ARROWS
 
+				// PROJECT 10 ARROWS
+					$('#backProject9').click(function(){
+						setTimeout(function(){
+							$('#project10').removeClass('currentProject');
+							$('#project9').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject11').click(function(){
+						setTimeout(function(){
+							$('#project10').removeClass('currentProject');
+							$('#project11').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 10 ARROWS
 
-				});
-			// END PROJECT 2 CLICK
+				// PROJECT 11 ARROWS
+					$('#backProject10').click(function(){
+						setTimeout(function(){
+							$('#project11').removeClass('currentProject');
+							$('#project10').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject12').click(function(){
+						setTimeout(function(){
+							$('#project11').removeClass('currentProject');
+							$('#project12').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 11 ARROWS
 
-			// INIT PROJECT 3 CLICK
-				$('#project3').click(function(){
-					$('#menuNavWrapper').addClass('pushMenuNavWrapper');
-					$('#project3').addClass('currentProject');
-					
-					$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
-					$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+				// PROJECT 12 ARROWS
+					$('#backProject11').click(function(){
+						setTimeout(function(){
+							$('#project12').removeClass('currentProject');
+							$('#project11').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject13').click(function(){
+						setTimeout(function(){
+							$('#project12').removeClass('currentProject');
+							$('#project13').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 12 ARROWS
 
-					setTimeout(function(){
-						$('.project3Arrows').removeClass('hiddenArrowProjects');
-						
-					},900);
+				// PROJECT 13 ARROWS
+					$('#backProject12').click(function(){
+						setTimeout(function(){
+							$('#project13').removeClass('currentProject');
+							$('#project12').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject14').click(function(){
+						setTimeout(function(){
+							$('#project13').removeClass('currentProject');
+							$('#project14').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 13 ARROWS
 
-					setTimeout(function(){
-						$('.project3Arrows').removeClass('crystalArrowProjects');
-						$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
-					},1000);
+				// PROJECT 14 ARROWS
+					$('#backProject13').click(function(){
+						setTimeout(function(){
+							$('#project14').removeClass('currentProject');
+							$('#project13').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject15').click(function(){
+						setTimeout(function(){
+							$('#project14').removeClass('currentProject');
+							$('#project15').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 14 ARROWS
 
+				// PROJECT 15 ARROWS
+					$('#backProject14').click(function(){
+						setTimeout(function(){
+							$('#project15').removeClass('currentProject');
+							$('#project14').addClass('currentProject');
+						},100);
+					});
+					$('#nextProject16').click(function(){
+						setTimeout(function(){
+							$('#project15').removeClass('currentProject');
+							$('#project16').addClass('currentProject');
+						},100);
+					});
+				// END PROJECT 15 ARROWS
 
-				});
-			// END PROJECT 3 CLICK
+				// PROJECT 16 ARROWS
+					$('#backProject15').click(function(){
+						setTimeout(function(){
+							$('#project16').removeClass('currentProject');
+							$('#project15').addClass('currentProject');
+						},200);
+					});
+					$('#nextProject1').click(function(){
+						setTimeout(function(){
+							$('#project16').removeClass('currentProject');
+							$('#project1').addClass('currentProject');
+						},200);
+					});
+				// END PROJECT 16 ARROWS
 
-			// INIT PROJECT 4 CLICK
-				$('#project4').click(function(){
-					$('#menuNavWrapper').addClass('pushMenuNavWrapper');
-					$('#project4').addClass('currentProject');
-					
-					$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
-					$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
+			// END CHANGE PROJECTS LEFT/RIGHT CLICK
 
-					setTimeout(function(){
-						$('.project4Arrows').removeClass('hiddenArrowProjects');
-						
-					},900);
-
-					setTimeout(function(){
-						$('.project4Arrows').removeClass('crystalArrowProjects');
-						$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
-					},1000);
-
-
-				});
-			// END PROJECT 4 CLICK
-
-			// INIT PROJECT 5 CLICK
-				$('#project5').click(function(){
-					$('#menuNavWrapper').addClass('pushMenuNavWrapper');
-					
-					
-					$('.daivaProjectsFlow').addClass('daivaProjectsStatic');
-					$('.daivaProjectsFlow').removeClass('daivaProjectsFlow');
-
-					setTimeout(function(){
-						$('.project5Arrows').removeClass('hiddenArrowProjects');
-						
-					},900);
-
-					setTimeout(function(){
-						$('.project5Arrows').removeClass('crystalArrowProjects');
-						$('#portfolioProjectsWrapper').addClass('zoomInProjectsWrapper');
-						$('#project5').addClass('currentProject');
-					},1000);
-
-
-				});
-			// END PROJECT 5 CLICK
 
 			// INIT CLOSE PROJECTS
 				$('#backZoom').click(function(){
 					$('#menuNavWrapper').removeClass('pushMenuNavWrapper');
-					$('#portfolioProjectsWrapper').removeClass('zoomInProjectsWrapper');
+
+					$('#portfolioProjectsWrapper').removeClass('openProjects');
+					$('.daivaProjects').removeClass('notCurrentProject');
+					$('.daivaProjects').removeClass('currentProject');
+
+					$('#portfolioSection2').animate({
+			        	scrollLeft: lastLeftPush
+			        }, 1500);
 					
 
-					setTimeout(function(){
-						$('.daivaProjectsStatic').addClass('daivaProjectsFlow');
-						$('.daivaProjectsStatic').removeClass('daivaProjectsStatic');
-					},1000);
-
 					// INIT REMOVE REPEATED CLASSES FROM ALL PROJECTS
-						$('.project1Arrows').addClass('crystalArrowProjects');
-						$('.project2Arrows').addClass('crystalArrowProjects');
-						$('.project3Arrows').addClass('crystalArrowProjects');
-						$('.project4Arrows').addClass('crystalArrowProjects');
-						$('.project5Arrows').addClass('crystalArrowProjects');
+						$('.changeProject').addClass('crystalArrowProjects');
 						
 						setTimeout(function(){
-							$('.project1Arrows').addClass('hiddenArrowProjects');
-							$('.project2Arrows').addClass('hiddenArrowProjects');
-							$('.project3Arrows').addClass('hiddenArrowProjects');
-							$('.project4Arrows').addClass('hiddenArrowProjects');
-							$('.project5Arrows').addClass('hiddenArrowProjects');
+							$('.changeProject').addClass('hiddenArrowProjects');
 						},400);
 
 
-						$('#project1').removeClass('currentProject');
-						$('#project2').removeClass('currentProject');
-						$('#project3').removeClass('currentProject');
-						$('#project4').removeClass('currentProject');
-						$('#project5').removeClass('currentProject');
-						$('#project6').removeClass('currentProject');
-						$('#project7').removeClass('currentProject');
-						$('#project8').removeClass('currentProject');
-						$('#project9').removeClass('currentProject');
-						$('#project10').removeClass('currentProject');
-						$('#project11').removeClass('currentProject');
-						$('#project12').removeClass('currentProject');
-						$('#project13').removeClass('currentProject');
-						$('#project14').removeClass('currentProject');
-						$('#project15').removeClass('currentProject');
-						$('#project16').removeClass('currentProject');
 					// END REMOVE REPEATED CLASSES FROM ALL PROJECTS
 				});
 			// END CLOSE PROJECTS
