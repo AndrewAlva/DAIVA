@@ -232,15 +232,23 @@ $(document).ready(function() {
 		 		lastLeftPush = leftProjectsWrapper;
 				$('#portfolioProjectsWrapper').addClass('openProjects');
 				$('.daivaProjects').addClass('notCurrentProject');
+				$('.daivaProjects').removeClass('opFlow');
 				$(this).addClass('currentProject');
 
+				$('#backZoom').removeClass('notHere');
+				$('#backZoom').removeClass('crystal');
+
 				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
+				
 				// Arrows to change projects
 				$('.changeProject').removeClass('hiddenArrowProjects');
 
 				setTimeout(function(){
 					$('.changeProject').removeClass('crystalArrowProjects');
 				},500);
+
+				//Projects Type Box
+				$('.projectKnowMore').removeClass('crystal');
 			});
 
 
@@ -491,11 +499,17 @@ $(document).ready(function() {
 
 			// INIT CLOSE PROJECTS
 				$('#backZoom').click(function(){
+					//Projects Type Box
+					$('.projectKnowMore').addClass('crystal');
+
 					$('#menuNavWrapper').removeClass('pushMenuNavWrapper');
+					$('#backZoom').addClass('crystal');
+					$('#backZoom').removeClass('notHere');
 
 					$('#portfolioProjectsWrapper').removeClass('openProjects');
 					$('.daivaProjects').removeClass('notCurrentProject');
 					$('.daivaProjects').removeClass('currentProject');
+					$('.daivaProjects').addClass('opFlow');
 
 					$('#portfolioSection2').animate({
 			        	scrollLeft: lastLeftPush
