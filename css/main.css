@@ -1976,7 +1976,6 @@ body{
                 height: 163px;
                 margin: auto;
                 left: 0; right: 0; bottom: 0;
-                cursor: pointer;
             }
 
             .projectIcon{
@@ -1999,11 +1998,11 @@ body{
                 position: relative;
                 width: 100%;
                 height: 54px;
-                -webkit-transition: all 1.2s ease-in-out;
-                   -moz-transition: all 1.2s ease-in-out;
-                    -ms-transition: all 1.2s ease-in-out;
-                     -o-transition: all 1.2s ease-in-out;
-                        transition: all 1.2s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                   -moz-transition: all .4s ease-in-out;
+                    -ms-transition: all .4s ease-in-out;
+                     -o-transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;
             }
 
             .projectKnowMore h2{
@@ -2014,6 +2013,7 @@ body{
                 font-style: italic;
                 font-weight: lighter;
                 color: #fff;
+                cursor: pointer;
             }
         /*/// END MORE INFO ABOUT PROJECTS ///*/
 

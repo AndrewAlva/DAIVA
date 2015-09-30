@@ -235,8 +235,14 @@ $(document).ready(function() {
 				$('.daivaProjects').removeClass('opFlow');
 				$(this).addClass('currentProject');
 
+				//Projects Type Box and Back Zoom Appear/Disappear
 				$('#backZoom').removeClass('notHere');
-				$('#backZoom').removeClass('crystal');
+				$('.projectKnowMore').removeClass('notHere');
+				setTimeout(function(){
+					$('#backZoom').removeClass('crystal');
+					$('.projectKnowMore').removeClass('crystal');
+				},100);
+
 
 				$('#menuNavWrapper').addClass('pushMenuNavWrapper');
 				
@@ -247,8 +253,8 @@ $(document).ready(function() {
 					$('.changeProject').removeClass('crystalArrowProjects');
 				},500);
 
-				//Projects Type Box
-				$('.projectKnowMore').removeClass('crystal');
+
+				
 			});
 
 
@@ -499,12 +505,17 @@ $(document).ready(function() {
 
 			// INIT CLOSE PROJECTS
 				$('#backZoom').click(function(){
-					//Projects Type Box
+					//Projects Type Box and Back Zoom Appear/Disappear
+					$('#backZoom').addClass('crystal');
 					$('.projectKnowMore').addClass('crystal');
+					setTimeout(function(){
+						$('#backZoom').addClass('notHere');
+						$('.projectKnowMore').addClass('notHere');
+					},500);
 
 					$('#menuNavWrapper').removeClass('pushMenuNavWrapper');
-					$('#backZoom').addClass('crystal');
-					$('#backZoom').removeClass('notHere');
+					
+					
 
 					$('#portfolioProjectsWrapper').removeClass('openProjects');
 					$('.daivaProjects').removeClass('notCurrentProject');
