@@ -230,6 +230,11 @@ $(document).ready(function() {
 
 		 	$('.daivaProjects').click(function(){
 		 		lastLeftPush = leftProjectsWrapper;
+
+		 		$('#menuNavWrapper').addClass('onProjectsMenuNavWrapper');
+		 		$('#contactBox').addClass('onProjectsContact');
+		 		$('#burguerBox').addClass('onProjectsBurguer');
+
 				$('#portfolioProjectsWrapper').addClass('openProjects');
 				$('.daivaProjects').addClass('notCurrentProject');
 				$('.daivaProjects').removeClass('opFlow');
@@ -507,6 +512,10 @@ $(document).ready(function() {
 				$('#backZoom').click(function(){
 					//Projects Type Box and Back Zoom Appear/Disappear
 					$('#backZoom').addClass('crystal');
+					$('#menuNavWrapper').removeClass('onProjectsMenuNavWrapper');
+			 		$('#contactBox').removeClass('onProjectsContact');
+			 		$('#burguerBox').removeClass('onProjectsBurguer');
+			 		
 					$('.projectKnowMore').addClass('crystal');
 					setTimeout(function(){
 						$('#backZoom').addClass('notHere');
@@ -543,31 +552,49 @@ $(document).ready(function() {
 
 		// INIT KNOW MORE PROJECTS INTERACTION
 			$('#showData1').click(function(){
-				$('#project1').find('.bgSet').addClass('bgBlur');
-				$('#project1').find('.projectTypeBox').addClass('makeItDescriptorBox');
-				$('#project1').find('.projectIcon').addClass('fullDescriptionWrapper');
 				$('#projectTypeWrapper1').find('img').addClass('crystal');
+				$('#project1').find('.projectIcon').addClass('fullDescriptionWrapper');
 				$('#project1').find('.descriptionWrapper').removeClass('notHere');
 				$("#knowMore1").find('.descriptionClose').removeClass('notHere');
+
+				$("#knowMore1").find('h2').addClass('crystal');
+
+				setTimeout(function(){
+					$('#project1').find('.projectTypeBox').addClass('makeItDescriptorBox');
+					$('#project1').find('.bgSet').addClass('bgBlur');
+				},500);
+				
 				setTimeout(function(){
 					$('#project1').find('.descriptionWrapper').removeClass('crystal');
 					$('#knowMore1').find('.descriptionClose').removeClass('crystal');
-				},100);
-				$("#knowMore1").find('h2').addClass('crystal');
+				},600);
+				
 			});
 
 			$('#closeDescription1').click(function(){
-				$('#project1').find('.bgSet').removeClass('bgBlur');
+				
 				$('#project1').find('.projectTypeBox').removeClass('makeItDescriptorBox');
-				$('#project1').find('.projectIcon').removeClass('fullDescriptionWrapper');
-				$('#projectTypeWrapper1').find('img').removeClass('crystal');
+				
+				
 				$('#project1').find('.descriptionWrapper').addClass('crystal');
 				$('#knowMore1').find('.descriptionClose').addClass('crystal');
+
+				
 				setTimeout(function(){
+					$('#project1').find('.bgSet').removeClass('bgBlur');
+					
+				},500);
+				
+				setTimeout(function(){
+					$('#project1').find('.projectIcon').removeClass('fullDescriptionWrapper');
+
+					$('#knowMore1').find('h2').removeClass('crystal');
 					$('#project1').find('.descriptionWrapper').addClass('notHere');
 					$('#knowMore1').find('.descriptionClose').addClass('notHere');
-				},400);
-				$('#knowMore1').find('h2').removeClass('crystal');
+
+					$('#projectTypeWrapper1').find('img').removeClass('crystal');
+				},900);
+				
 			});
 		// END KNOW MORE PROJECTS INTERACTION
 	//// END PORTFOLIO INTERACTION
