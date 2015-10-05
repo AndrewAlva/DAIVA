@@ -288,12 +288,12 @@ body{
     .onProjectsMenuNavWrapper{
         width: 130px !important;
         height: 43px !important;
-        background-color: rgba(20,20,20,0.6) !important;
+        background-color: rgba(20,20,20,0.3) !important;
         border: 1px solid #ce9549 !important;
     }
 
     .onProjectsMenuNavWrapper:hover{
-        background-color: rgba(0,0,0,1) !important;
+        background-color: rgba(0,0,0,0.6) !important;
     }
 
 
@@ -1786,7 +1786,7 @@ body{
             left: 104px;
             padding: 5px 5px;
             z-index: 1000;
-            background-color: rgba(20,20,20,0.6);
+            background-color: rgba(20,20,20,0.3);
             border: 1px solid #ce9549;
             cursor: pointer;
             -webkit-transition: all .4s ease-in-out;
@@ -1797,7 +1797,7 @@ body{
         }
 
         #backZoom:hover{
-            background-color: rgba(0,0,0,1);
+            background-color: rgba(0,0,0,0.6);
         }
 
         .changeProject{
