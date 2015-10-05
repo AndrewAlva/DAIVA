@@ -542,18 +542,18 @@ $(document).ready(function() {
 
 
 		// INIT KNOW MORE PROJECTS INTERACTION
-			$('#knowMore1').click(function(){
+			$('#showData1').click(function(){
 				$('#project1').find('.bgSet').addClass('bgBlur');
 				$('#project1').find('.projectTypeBox').addClass('makeItDescriptorBox');
 				$('#project1').find('.projectIcon').addClass('fullDescriptionWrapper');
 				$('#projectTypeWrapper1').find('img').addClass('crystal');
 				$('#project1').find('.descriptionWrapper').removeClass('notHere');
-				$(this).find('.descriptionClose').removeClass('notHere');
+				$("#knowMore1").find('.descriptionClose').removeClass('notHere');
 				setTimeout(function(){
 					$('#project1').find('.descriptionWrapper').removeClass('crystal');
 					$('#knowMore1').find('.descriptionClose').removeClass('crystal');
 				},100);
-				$(this).find('h2').addClass('crystal');
+				$("#knowMore1").find('h2').addClass('crystal');
 			});
 
 			$('#closeDescription1').click(function(){

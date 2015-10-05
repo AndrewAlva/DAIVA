@@ -1749,12 +1749,15 @@ body{
 
         #backZoom{
             position: fixed;
-            width: 30px;
-            height: 28px;
+            width: 32px;
+            height: 33px;
             top: 70px;
             left: 104px;
+            padding: 5px 5px;
             z-index: 1000;
             opacity: 1;
+            background-color: rgba(20,20,20,0.8);
+            border: 1px solid #ce9549;
             cursor: pointer;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
