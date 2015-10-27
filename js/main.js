@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+	// GENERAL VARIABLES
+		var windowWidth = $(window).width();
+		var windowHeight = $(window).height();
+
+		var halfWindowWidth = windowWidth / 2;
+		var halfWindowHeight = windowHeight / 2;
+
+	// END GENERAL VARIABLES
 	//// INIT LOADER FUNCTION
 		$('#homeWrapper').removeClass('limitByLoader');
 		$('#pilarsWrapper').removeClass('limitByLoader');
@@ -122,8 +131,8 @@ $(document).ready(function() {
 		// HOME SCROLLERS
 			$('#homeScrollLanding').click(function(){
 				$('html, body').animate({
-			    	scrollTop: $("#homeSection2").offset().top
-			    }, 1200);
+			    	scrollTop: $("#homeTimelapseMask").offset().top
+			    }, 3200);
 			});
 
 			$('#homeScrollTimelapse').click(function(){
@@ -168,6 +177,150 @@ $(document).ready(function() {
 			// PENDIENTE
 
 
+		// ANIMATION FROM HOME TO PILLARS
+			$(document).click(function(){
+				$('#homeSection4').removeClass('hidden');
+
+				setTimeout(function(){
+					$('#homePortalWrapper').removeClass('closedMask');
+				},100);
+
+				setTimeout(function(){
+					$('#homePortalWrapper').removeClass('smallMask');
+				},2000);
+
+				// FALLING INK SPOTS TRANSITION
+					window.requestAnimFrame = (function(callback) {
+				        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+				        function(callback) {
+				          window.setTimeout(callback, 1000 / 60);
+				        };
+				    })();
+
+				    function drawCircleBG(myCircle, context) {
+				        context.beginPath();
+				        context.arc(myCircle.x, myCircle.y, myCircle.radius, myCircle.startAngle, myCircle.endAngle);
+				        context.fillStyle = '#FFF';
+				        context.fill();
+				    }
+
+				    function drawCircle(myCircle, context) {
+				        context.beginPath();
+				        context.arc(myCircle.x, myCircle.y, myCircle.radius, myCircle.startAngle, myCircle.endAngle);
+				        context.fillStyle = '#202020';
+				        context.fill();
+				        context.lineWidth = myCircle.borderWidth;
+				        context.strokeStyle = '#202020';
+				        context.stroke();
+				    }
+
+				    function animate(myCircle, canvas, context, startTime) {
+				        // update
+				        var time = (new Date()).getTime() - startTime;
+
+				        var linearSpeed = 500;
+				        // pixels / second
+				        var newRadius = linearSpeed * time / 1000;
+
+				        var bgLimit = 3000;
+
+				        if (myCircleBG.radius < bgLimit){
+				        	myCircleBG.radius += 200;
+				        }
+
+				        if(newRadius < canvas.width - myCircle.radius - myCircle.borderWidth / 2) {
+				          myCircle.radius = newRadius;
+				          myCircle2.radius = newRadius;
+				          myCircle3.radius = newRadius;
+				          myCircle4.radius = newRadius;
+
+				          console.log("This is the newRadius: " + newRadius);
+				        }
+
+				        
+				        
+
+				        // clear
+				        context.clearRect(0, 0, canvas.width, canvas.height);
+
+				        drawCircleBG(myCircleBG, context);
+				        drawCircle(myCircle, context);
+				        drawCircle(myCircle2, context);
+				        drawCircle(myCircle3, context);
+				        drawCircle(myCircle4, context);
+
+				        // request new frame
+				        requestAnimFrame(function() {
+				          animate(myCircle, canvas, context, startTime);
+				        });
+				    }
+
+				    var canvas = document.getElementById('spotsCanvas');
+				    var context = canvas.getContext('2d');
+
+				    var myCircleBG = {
+				        x: 1000,
+				        y: 1000,
+				        radius: 19,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI
+				    };
+
+				    var myCircle = {
+				        x: 1000,
+				        y: 1000,
+				        radius: 10,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 5
+				    };
+
+				    var myCircle2 = {
+				        x: 1005,
+				        y: 995,
+				        radius: 5,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 5
+				    };
+
+				    var myCircle3 = {
+				        x: 1000,
+				        y: 1005,
+				        radius: 5,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 5
+				    };
+
+				    var myCircle4 = {
+				        x: 500,
+				        y: 400,
+				        radius: 1,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 5
+				    };
+
+
+				    drawCircleBG(myCircleBG, context);
+				    drawCircle(myCircle, context);
+				    drawCircle(myCircle2, context);
+				    drawCircle(myCircle3, context);
+				    drawCircle(myCircle4, context);
+				    
+
+				    // wait four second before starting animation
+				    setTimeout(function() {
+				        var startTime = (new Date()).getTime();
+				        animate(myCircle, canvas, context, startTime);
+				    }, 3000);
+				// END INK SPOTS TRANSITION
+
+			});
+		// END ANIMATION FROM HOME TO PILLARS
+
+
 	//END HOME INTERACTION
 
 
@@ -195,7 +348,6 @@ $(document).ready(function() {
 		// END PORTFOLIO SCROLLERS
 
 		// INIT PROJECTS PORTFOLIO CAROUSEL MOUSE POSITION
-			var windowWidth;
 			var limitWidth;
 			var widthScrollDisplaceTrigger = 100; // Width in pixels
 			var scrollBackArea = widthScrollDisplaceTrigger;
@@ -220,8 +372,15 @@ $(document).ready(function() {
 			setInterval(function(event){
 				if (windowWidth != $(window).width() ){
 					windowWidth = $(window).width();
+					var halfWindowWidth = windowWidth / 2;
+					
 					scrollNextArea = windowWidth - widthScrollDisplaceTrigger;
 					limitWidth = windowWidth * 4;
+				}
+
+				if (windowHeight != $(window).height() ){
+					var windowHeight = $(window).height();
+					var halfWindowHeight = windowHeight / 2;
 				}
 
 
