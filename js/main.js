@@ -218,21 +218,13 @@ $(document).ready(function() {
 				        // update
 				        var time = (new Date()).getTime() - startTime;
 
-				        var linearSpeed = 500;
+				        var linearSpeed = 800;
 				        // pixels / second
 				        var newRadius = linearSpeed * time / 1000;
 
-				        var bgLimit = 3000;
-
-				        if (myCircleBG.radius < bgLimit){
-				        	myCircleBG.radius += 200;
-				        }
-
-				        if(newRadius < canvas.width - myCircle.radius - myCircle.borderWidth / 2) {
+				        // if(newRadius < canvas.width - myCircle.radius - myCircle.borderWidth / 2) {
+				        if(newRadius < 2000) {
 				          myCircle.radius = newRadius;
-				          myCircle2.radius = newRadius;
-				          myCircle3.radius = newRadius;
-				          myCircle4.radius = newRadius;
 
 				          console.log("This is the newRadius: " + newRadius);
 				        }
@@ -243,17 +235,81 @@ $(document).ready(function() {
 				        // clear
 				        context.clearRect(0, 0, canvas.width, canvas.height);
 
-				        drawCircleBG(myCircleBG, context);
+				        drawCircleBG(myFinalCircleBG, context);
 				        drawCircle(myCircle, context);
-				        drawCircle(myCircle2, context);
-				        drawCircle(myCircle3, context);
-				        drawCircle(myCircle4, context);
 
 				        // request new frame
 				        requestAnimFrame(function() {
 				          animate(myCircle, canvas, context, startTime);
 				        });
 				    }
+
+
+				    function animateBG(myCircleBG, canvas, context, startTime) {
+				        // update
+				        var time = (new Date()).getTime() - startTime;
+
+				        var linearSpeed = 200;
+				        // pixels / second
+				        var newRadius = linearSpeed * time / 1000;
+
+				        var bgLimit = 5000;
+
+				        if (newRadius <= bgLimit){
+				        	myCircleBG.radius += 20;
+				        }
+
+				       
+				        // clear
+				        context.clearRect(0, 0, canvas.width, canvas.height);
+
+				        drawCircleBG(myCircleBG, context);
+
+
+				        // request new frame
+				        requestAnimFrame(function() {
+				          animateBG(myCircleBG, canvas, context, startTime);
+				        });
+				    }
+
+				    function animateSequence(myCircle, canvas, context, startTime) {
+				        // update
+				        var time = (new Date()).getTime() - startTime;
+
+				        var linearSpeed = 800;
+				        // pixels / second
+				        var newRadius = linearSpeed * time / 1000;
+
+				        // if(newRadius < canvas.width - myCircle.radius - myCircle.borderWidth / 2) {
+				        if(newRadius < 2000) {
+				          myCircle.radius += 20;
+				          myCircle2.radius += 20;
+				          myCircle3.radius += 20;
+				          myCircle4.radius += 20;
+				          myCircle5.radius += 20;
+				          console.log("This is the newRadius: " + newRadius);
+				        }
+
+				        
+				        
+
+				        // clear
+				        context.clearRect(0, 0, canvas.width, canvas.height);
+
+				        drawCircleBG(myFinalCircleBG, context);
+				        drawCircle(myCircle, context);
+				        drawCircle(myCircle2, context);
+				        drawCircle(myCircle3, context);
+				        drawCircle(myCircle4, context);
+				        drawCircle(myCircle5, context);
+				       	
+
+				        // request new frame
+				        requestAnimFrame(function() {
+				          animateSequence(myCircle, canvas, context, startTime);
+				        });
+				    }
+
 
 				    var canvas = document.getElementById('spotsCanvas');
 				    var context = canvas.getContext('2d');
@@ -262,6 +318,14 @@ $(document).ready(function() {
 				        x: 1000,
 				        y: 1000,
 				        radius: 19,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI
+				    };
+
+				    var myFinalCircleBG = {
+				        x: 1000,
+				        y: 1000,
+				        radius: 2000,
 				        startAngle: 0,
 				        endAngle: 2*Math.PI
 				    };
@@ -276,18 +340,18 @@ $(document).ready(function() {
 				    };
 
 				    var myCircle2 = {
-				        x: 1005,
-				        y: 995,
-				        radius: 5,
+				        x: 500,
+				        y: 900,
+				        radius: 100,
 				        startAngle: 0,
 				        endAngle: 2*Math.PI,
-				        borderWidth: 5
+				        borderWidth: 1
 				    };
 
 				    var myCircle3 = {
-				        x: 1000,
-				        y: 1005,
-				        radius: 5,
+				        x: 1500,
+				        y: 1300,
+				        radius: 50,
 				        startAngle: 0,
 				        endAngle: 2*Math.PI,
 				        borderWidth: 5
@@ -295,26 +359,46 @@ $(document).ready(function() {
 
 				    var myCircle4 = {
 				        x: 500,
-				        y: 400,
+				        y: 1500,
 				        radius: 1,
 				        startAngle: 0,
 				        endAngle: 2*Math.PI,
-				        borderWidth: 5
+				        borderWidth: 3
+				    };
+
+				    var myCircle5 = {
+				        x: 1500,
+				        y: 500,
+				        radius: 1,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 1
 				    };
 
 
 				    drawCircleBG(myCircleBG, context);
-				    drawCircle(myCircle, context);
-				    drawCircle(myCircle2, context);
-				    drawCircle(myCircle3, context);
-				    drawCircle(myCircle4, context);
 				    
 
-				    // wait four second before starting animation
+				    
+
+				    // wait three seconds before starting animation
+				    setTimeout(function() {
+				    	$('#spotsCanvas').removeClass('circleMask');
+				        var startTime = (new Date()).getTime();
+				        animateBG(myCircleBG, canvas, context, startTime);
+				    }, 4000);
+
+				    // wait seven seconds before starting animation
 				    setTimeout(function() {
 				        var startTime = (new Date()).getTime();
-				        animate(myCircle, canvas, context, startTime);
-				    }, 3000);
+				        animateSequence(myCircle, canvas, context, startTime);
+				    }, 7000);
+
+				    setTimeout(function(){
+				    	$('#spotsCanvas').addClass('crystal');
+				    	$('.portalRings').removeClass('hidden');
+				    },10000);
+
 				// END INK SPOTS TRANSITION
 
 			});
