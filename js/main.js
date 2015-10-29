@@ -399,6 +399,32 @@ $(document).ready(function() {
 				    	$('.portalRings').removeClass('hidden');
 				    },10000);
 
+				    setTimeout(function(){
+				    	$('#spotsCanvas').remove();
+				    },12000);
+
+				    setTimeout(function(){
+				    	$('#portalRing1').addClass('zoomPortal');
+				    },13000);
+				    setTimeout(function(){
+				    	$('#portalRing2').addClass('zoomPortal');
+				    },14000);
+				    setTimeout(function(){
+				    	$('#portalRing3').addClass('zoomPortal');
+				    },15000);
+				    setTimeout(function(){
+				    	$('#portalRing4').addClass('zoomPortal');
+				    },16000);
+				    setTimeout(function(){
+				    	$('#portalRing5').addClass('zoomPortal');
+				    },17000);
+				    setTimeout(function(){
+				    	$('#portalRing6').addClass('zoomPortal');
+				    },18000);
+				    setTimeout(function(){
+				    	$('#portalRing7').addClass('zoomPortal');
+				    },19000);
+
 				// END INK SPOTS TRANSITION
 
 			});
