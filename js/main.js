@@ -178,7 +178,7 @@ $(document).ready(function() {
 
 
 		// ANIMATION FROM HOME TO PILLARS
-			$(document).click(function(){
+			$('#homeQuotesScroll-3').click(function(){
 				$('#homeSection4').removeClass('hidden');
 
 				setTimeout(function(){
@@ -207,10 +207,10 @@ $(document).ready(function() {
 				    function drawCircle(myCircle, context) {
 				        context.beginPath();
 				        context.arc(myCircle.x, myCircle.y, myCircle.radius, myCircle.startAngle, myCircle.endAngle);
-				        context.fillStyle = '#202020';
+				        context.fillStyle = '#1d1d1b';
 				        context.fill();
 				        context.lineWidth = myCircle.borderWidth;
-				        context.strokeStyle = '#202020';
+				        context.strokeStyle = '#1d1d1b';
 				        context.stroke();
 				    }
 
@@ -264,6 +264,14 @@ $(document).ready(function() {
 				        context.clearRect(0, 0, canvas.width, canvas.height);
 
 				        drawCircleBG(myCircleBG, context);
+				        drawCircle(myCircle,context);
+				        drawCircle(myCircle2, context);
+				        drawCircle(myCircle3, context);
+				        drawCircle(myCircle4, context);
+				        drawCircle(myCircle5, context);
+				        drawCircle(myCircle6, context);
+				        drawCircle(myCircle7, context);
+				        drawCircle(myCircle8, context);
 
 
 				        // request new frame
@@ -282,11 +290,14 @@ $(document).ready(function() {
 
 				        // if(newRadius < canvas.width - myCircle.radius - myCircle.borderWidth / 2) {
 				        if(newRadius < 2000) {
-				          myCircle.radius += 20;
-				          myCircle2.radius += 20;
-				          myCircle3.radius += 20;
-				          myCircle4.radius += 20;
-				          myCircle5.radius += 20;
+				          myCircle.radius += 30;
+				          myCircle2.radius += 30;
+				          myCircle3.radius += 30;
+				          myCircle4.radius += 30;
+				          myCircle5.radius += 30;
+				          myCircle6.radius += 30;
+				          myCircle7.radius += 30;
+				          myCircle8.radius += 30;
 				          console.log("This is the newRadius: " + newRadius);
 				        }
 
@@ -302,6 +313,9 @@ $(document).ready(function() {
 				        drawCircle(myCircle3, context);
 				        drawCircle(myCircle4, context);
 				        drawCircle(myCircle5, context);
+				        drawCircle(myCircle6, context);
+				        drawCircle(myCircle7, context);
+				        drawCircle(myCircle8, context);
 				       	
 
 				        // request new frame
@@ -375,8 +389,36 @@ $(document).ready(function() {
 				        borderWidth: 1
 				    };
 
+				    var myCircle6 = {
+				        x: 1500,
+				        y: 900,
+				        radius: 1,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 1
+				    };
+
+				    var myCircle7 = {
+				        x: 0,
+				        y: 1000,
+				        radius: 1,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 1
+				    };
+
+				    var myCircle8 = {
+				        x: 2000,
+				        y: 1200,
+				        radius: 1,
+				        startAngle: 0,
+				        endAngle: 2*Math.PI,
+				        borderWidth: 1
+				    };
+
 
 				    drawCircleBG(myCircleBG, context);
+				    drawCircle(myCircle, context);
 				    
 
 				    
@@ -408,22 +450,22 @@ $(document).ready(function() {
 				    },13000);
 				    setTimeout(function(){
 				    	$('#portalRing2').addClass('zoomPortal');
-				    },14000);
+				    },13500);
 				    setTimeout(function(){
 				    	$('#portalRing3').addClass('zoomPortal');
-				    },15000);
+				    },14000);
 				    setTimeout(function(){
 				    	$('#portalRing4').addClass('zoomPortal');
-				    },16000);
+				    },14500);
 				    setTimeout(function(){
 				    	$('#portalRing5').addClass('zoomPortal');
-				    },17000);
+				    },15000);
 				    setTimeout(function(){
 				    	$('#portalRing6').addClass('zoomPortal');
-				    },18000);
+				    },15500);
 				    setTimeout(function(){
 				    	$('#portalRing7').addClass('zoomPortal');
-				    },19000);
+				    },16000);
 
 				// END INK SPOTS TRANSITION
 
