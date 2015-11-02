@@ -2454,8 +2454,8 @@ body{
                 }
 
                 #contactBox {
-                    width: 25px;
-                    height: 18px;
+                    width: 28px;
+                    height: 26px;
                 }
 
                 #burguerBox{
@@ -2598,7 +2598,7 @@ body{
                         width: 100%;
                     }
 
-                    #scrollTimelapse{
+                    #homeScrollTimelapse{
                         top: 30px;
                     }
                 /*/// END TIMELAPSE HOME ///*/
@@ -2638,7 +2638,7 @@ body{
 
 
                     #quotesBorderChanger{
-                        
+                        position: absolute;
                     }
 
                     #quotesBorderChanger2{

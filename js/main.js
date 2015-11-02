@@ -153,6 +153,12 @@ $(document).ready(function() {
 			    }, 1200);
 			});
 
+			$('#homeQuotesScroll-2-mob').click(function(){
+				$('html, body').animate({
+			    	scrollTop: $("#homePortalWrapper").offset().top
+			    }, 1200);
+			});
+
 
 		// END HOME SCROLLERS
 
