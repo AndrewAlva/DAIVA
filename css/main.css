@@ -2505,6 +2505,11 @@ body{
                         height: 480px;
                         margin: auto;
                         top: 0;right: 0;bottom: 0;left: 0;
+                        -webkit-transform: translate(0,0);
+                           -moz-transform: translate(0,0);
+                            -ms-transform: translate(0,0);
+                             -o-transform: translate(0,0);
+                                transform: translate(0,0);
                     }
 
                     .topBorder{
@@ -2524,12 +2529,20 @@ body{
                         height: 10px;
                     }
 
+                    #logoLanding{
+                        position: absolute;
+                    }
+
                     #logoLanding img{
                         position: absolute;
                         width: 251px;
                         height: 251px;
                         margin: auto;
                         top: 0;right: 0;bottom: 0;left: 0;
+                    }
+
+                    #homeScrollLanding{
+                        position: absolute;
                     }
                 /*/// END LANDING HOME ///*/
 
@@ -2593,7 +2606,10 @@ body{
                 /*/// INIT QUOTES HOME ///*/
                     #cloudOver{
                         width: 80%;
+                        height: 30%;
                         background-size: 100%;
+                        background-position: center center;
+                        opacity: .5;
                     }
                     .quoteBoxCenter{
                         width: 300px;
@@ -2622,7 +2638,7 @@ body{
 
 
                     #quotesBorderChanger{
-                        height: 50%;
+                        
                     }
 
                     #quotesBorderChanger2{
@@ -2634,8 +2650,8 @@ body{
                     }
 
                     .rhombusChangerBig{
-                        width: 16px;
-                        height: 16px;
+                        width: 12px;
+                        height: 12px;
                     }
 
                     .rhombusChangerSmall{
@@ -2643,12 +2659,20 @@ body{
                         height: 7px;
                     }
 
+                    .rightBorder .rhombusChangerSmall{
+                        left: -3px;
+                    }
+
+                    .leftBorder .rhombusChangerSmall{
+                        right: -3px;
+                    }
+
                     .rightBorder .rhombusChangerBig{
-                        left: -7px;
+                        left: -5px;
                     }
 
                     .leftBorder .rhombusChangerBig{
-                        right: -7px;
+                        right: -5px;
                     }
 
                     #quotesBorderChanger2 .verticalBorderTop, #quotesBorderChanger2 .verticalBorderBottom{
@@ -2689,6 +2713,10 @@ body{
                         bottom: 22.5%;
                         width: 100%;
                         height: 3.5%;
+                    }
+
+                    .verticalBoxCenter{
+                        height: 4%;
                     }
 
                 /*/// END QUOTES HOME ///*/
