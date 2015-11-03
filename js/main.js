@@ -6,8 +6,9 @@ $(document).ready(function() {
 
 		var halfWindowWidth = windowWidth / 2;
 		var halfWindowHeight = windowHeight / 2;
-
 	// END GENERAL VARIABLES
+
+
 	//// INIT LOADER FUNCTION
 		$('#homeWrapper').removeClass('limitByLoader');
 		$('#pilarsWrapper').removeClass('limitByLoader');
@@ -477,8 +478,6 @@ $(document).ready(function() {
 
 			});
 		// END ANIMATION FROM HOME TO PILLARS
-
-
 	//END HOME INTERACTION
 
 

@@ -2540,8 +2540,8 @@ body{
 
                     #logoLanding img{
                         position: absolute;
-                        width: 251px;
-                        height: 251px;
+                        width: 150px;
+                        height: 150px;
                         margin: auto;
                         top: 0;right: 0;bottom: 0;left: 0;
                     }
@@ -2616,8 +2616,6 @@ body{
                         height: 30%;
                         background-size: 100%;
                         background-position: center center;
-                        opacity: .5;
-                        background-color: aqua;
                     }
                     .quoteBoxCenter{
                         width: 300px;
@@ -2729,15 +2727,10 @@ body{
                 /*/// END QUOTES HOME ///*/
 
 
-                /*/// INIT PORTAL HOME ///*/
-                    #homeSection4{
-                        z-index: 1;
-                    }
 
-                    .portalRings:last-child{
-                        position: fixed;
-                        z-index: 0;
-                    }
+                /*/// INIT PORTAL HOME ///*/
+
+
                 /*/// END PORTAL HOME ///*/
 
 
@@ -2813,6 +2806,17 @@ body{
         /*/// MOBILE PORTRAIT STYLE///*/
 
             @media (max-width: 767px) and (orientation: portrait){
+                /*/// INIT HOME LANDING ///*/
+                    .topBorder{
+                        height: 140px;
+                    }
+
+                    #landingBorderChanger{
+                        width: 220px;
+                    }
+                /*/// END HOME LANDING ///*/
+                
+
                 /*/// INIT HOME TIMELAPSE ///*/
                     #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
                        height: 120%;
