@@ -28,37 +28,40 @@
                     <img src="../img/vectors/mail-icon.svg" alt="Contacto DAIVA">
                 </li>
                 <li id="burguerBox">
-                    <img src="../img/vectors/burguer-icon.svg" alt="Menu DAIVA">
+                    <!-- <img src="../img/vectors/burguer-icon.svg" alt="Menu DAIVA"> -->
+                    <div id="burguerLine1" class="burguerLines"></div>
+                    <div id="burguerLine2" class="burguerLines"></div>
+                    <div id="burguerLine3" class="burguerLines"></div>
                 </li>
             </ul>
         </nav>
 
 
-        <div id="windowMenuWrapper" class="onlyMobile hidden">
+        <div id="windowMenuWrapper" class="hideMenuWrapper onlyMobile hidden">
             <div id="menuWrapper">
                 <div id="Mandala">
-                    <div id="portafolioStage">
+                    <div id="portafolioStage" class="pushRing layer" data-depth="0.49">
                         <div class="outlineRing rotationSpeed100"></div>
                         <div class="outlineRing rotationSpeed60"></div>
 
                         <div id="portafolio" class="sectionMandala rotateRight rotationSpeed100"></div>
 
                     </div>
-                    <div id="pilaresStage">
+                    <div id="pilaresStage" class="pushRing layer" data-depth="0.41">
                         <div class="outlineRing rotationSpeed100"></div>
                         <div class="outlineRing rotationSpeed60"></div>
 
                         <div id="pilares" class="sectionMandala rotateLeft rotationSpeed40"></div>
 
                     </div>
-                    <div id="comienzoStage">
+                    <div id="comienzoStage" class="pushRing layer" data-depth="0.33">
                         <div class="outlineRing rotationSpeed80"></div>
                         <div class="outlineRing rotationSpeed40"></div>
 
                         <div id="comienzo" class="sectionMandala rotateRight rotationSpeed40"></div>
 
                     </div>
-                    <div id="voidStage">
+                    <div id="voidStage" class="pushRing layer" data-depth="0.25">
                         <div class="outlineRing rotationSpeed40"></div>
                         <div class="outlineRing rotationSpeed20"></div>
 
@@ -399,15 +402,15 @@
                 </section>
 
                 <section id="homeSection4" class="daivaSections">
-                    <div id="homePortalWrapper">
+                    <div id="homePortalWrapper" class="scene">
+                        <div class="portalRings layer" data-depth="0.65"></div>
+                        <div class="portalRings layer" data-depth="0.57"></div>
+                        <div class="portalRings layer" data-depth="0.49"></div>
+                        <div class="portalRings layer" data-depth="0.41"></div>
+                        <div class="portalRings layer" data-depth="0.33"></div>
+                        <div class="portalRings layer" data-depth="0.25"></div>
                         <div class="portalRings"></div>
-                        <div class="portalRings"></div>
-                        <div class="portalRings"></div>
-                        <div class="portalRings"></div>
-                        <div class="portalRings"></div>
-                        <div class="portalRings"></div>
-                        <div class="portalRings"></div>
-                        <div class="portalRings"></div>
+                        <div class="portalRings layer" data-depth="0.73"></div>
                     </div>
                 </section>
             </div>
@@ -440,8 +443,19 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../js/vendor/parallax.min.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
+
+        <script>
+
+            var scene = document.getElementById('homePortalWrapper');
+            var parallax = new Parallax(scene);
+
+            var scene2 = document.getElementById('Mandala');
+            var parallax2 = new Parallax(scene2);
+
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

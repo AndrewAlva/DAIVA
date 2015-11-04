@@ -2454,13 +2454,17 @@ body{
                 }
 
                 #contactBox {
-                    width: 28px;
+                    width: 33px;
                     height: 26px;
                 }
 
                 #burguerBox{
                     width: 28px;
+                    height: 20px;
                 }
+
+
+                
 
                 #contactBox img, #burguerBox img{
                     width: 100%;
@@ -2471,6 +2475,12 @@ body{
                 #menuWrapper{
                     width: 400px;
                     height: 400px;
+                }
+
+                #Mandala .layer{
+                    -webkit-transition: all .15s ease-in-out;
+                         -o-transition: all .15s ease-in-out;
+                            transition: all .15s ease-in-out;
                 }
             /*/// END MENU MANDALA ///*/
 
@@ -2729,12 +2739,15 @@ body{
 
 
                 /*/// INIT PORTAL HOME ///*/
-
+                    .portalRings{
+                        -webkit-transition: all 0.1s ease-in-out;
+                           -moz-transition: all 0.1s ease-in-out;
+                            -ms-transition: all 0.1s ease-in-out;
+                             -o-transition: all 0.1s ease-in-out;
+                                transition: all 0.1s ease-in-out;
+                    }
 
                 /*/// END PORTAL HOME ///*/
-
-
-
             /*/// END HOME STYLES ///*/
 
 
@@ -2822,6 +2835,27 @@ body{
                        height: 120%;
                     }
                 /*/// END HOME TIMELAPSE ///*/
+
+
+                /*/// INIT HOME QUOTES ///*/
+
+                    #homeQuoteWrapper1 .quoteTextWrapper{
+                        height: 120px;
+                    }
+                    
+                    #homeQuoteWrapper2 .quoteTextWrapper{
+                        height: 200px;
+                    }
+
+                    #homeSection3 .quoteTextWrapper h2{
+                        font-size: 18px;
+                    }
+                /*/// END HOME QUOTES ///*/
+
+
+                /*/// INIT HOME PORTALS ///*/
+
+                /*/// END HOME PORTALS ///*/
             }
 
         /*/// END MOBILE PORTRAIT STYLE///*/
