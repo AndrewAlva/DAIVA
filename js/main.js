@@ -159,8 +159,6 @@ $(document).ready(function() {
 			    	scrollTop: $("#homePortalWrapper").offset().top
 			    }, 1200);
 			});
-
-
 		// END HOME SCROLLERS
 
 
@@ -194,7 +192,7 @@ $(document).ready(function() {
 
 				setTimeout(function(){
 					$('#homePortalWrapper').removeClass('smallMask');
-				},2000);
+				},1000);
 
 				// FALLING INK SPOTS TRANSITION
 					window.requestAnimFrame = (function(callback) {
@@ -263,7 +261,7 @@ $(document).ready(function() {
 				        var bgLimit = 5000;
 
 				        if (newRadius <= bgLimit){
-				        	myCircleBG.radius += 20;
+				        	myCircleBG.radius += 10;
 				        }
 
 				       
@@ -297,14 +295,14 @@ $(document).ready(function() {
 
 				        // if(newRadius < canvas.width - myCircle.radius - myCircle.borderWidth / 2) {
 				        if(newRadius < 2000) {
-				          myCircle.radius += 30;
-				          myCircle2.radius += 30;
-				          myCircle3.radius += 30;
-				          myCircle4.radius += 30;
-				          myCircle5.radius += 30;
-				          myCircle6.radius += 30;
-				          myCircle7.radius += 30;
-				          myCircle8.radius += 30;
+				          myCircle.radius += 10;
+				          myCircle2.radius += 10;
+				          myCircle3.radius += 10;
+				          myCircle4.radius += 10;
+				          myCircle5.radius += 10;
+				          myCircle6.radius += 10;
+				          myCircle7.radius += 10;
+				          myCircle8.radius += 10;
 				          console.log("This is the newRadius: " + newRadius);
 				        }
 
@@ -435,46 +433,47 @@ $(document).ready(function() {
 				    	$('#spotsCanvas').removeClass('circleMask');
 				        var startTime = (new Date()).getTime();
 				        animateBG(myCircleBG, canvas, context, startTime);
-				    }, 4000);
+				    }, 1600);
 
 				    // wait seven seconds before starting animation
 				    setTimeout(function() {
 				        var startTime = (new Date()).getTime();
 				        animateSequence(myCircle, canvas, context, startTime);
-				    }, 7000);
+				    }, 4000);
+				// END INK SPOTS TRANSITION
 
-				    setTimeout(function(){
+				// INIT AFTER INK SHOW PORTALS
+					setTimeout(function(){
 				    	$('#spotsCanvas').addClass('crystal');
 				    	$('.portalRings').removeClass('hidden');
-				    },10000);
+				    },5000);
 
-				    setTimeout(function(){
-				    	$('#spotsCanvas').remove();
-				    },12000);
+				    // setTimeout(function(){
+				    // 	$('#spotsCanvas').remove();
+				    // },6000);
 
 				    setTimeout(function(){
 				    	$('#portalRing1').addClass('zoomPortal');
-				    },13000);
+				    },5500);
 				    setTimeout(function(){
 				    	$('#portalRing2').addClass('zoomPortal');
-				    },13500);
+				    },5800);
 				    setTimeout(function(){
 				    	$('#portalRing3').addClass('zoomPortal');
-				    },14000);
+				    },6100);
 				    setTimeout(function(){
 				    	$('#portalRing4').addClass('zoomPortal');
-				    },14500);
+				    },6400);
 				    setTimeout(function(){
 				    	$('#portalRing5').addClass('zoomPortal');
-				    },15000);
+				    },6700);
 				    setTimeout(function(){
 				    	$('#portalRing6').addClass('zoomPortal');
-				    },15500);
+				    },7000);
 				    setTimeout(function(){
 				    	$('#portalRing7').addClass('zoomPortal');
-				    },16000);
-
-				// END INK SPOTS TRANSITION
+				    },7300);
+				// END AFTER INK PORTALS
 
 			});
 		// END ANIMATION FROM HOME TO PILLARS
