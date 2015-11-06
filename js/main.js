@@ -446,7 +446,7 @@ $(document).ready(function() {
 					setTimeout(function(){
 				    	$('#spotsCanvas').addClass('crystal');
 				    	$('.portalRings').removeClass('hidden');
-				    },5000);
+				    },5500);
 
 				    // setTimeout(function(){
 				    // 	$('#spotsCanvas').remove();
@@ -454,25 +454,25 @@ $(document).ready(function() {
 
 				    setTimeout(function(){
 				    	$('#portalRing1').addClass('zoomPortal');
-				    },5500);
+				    },6000);
 				    setTimeout(function(){
 				    	$('#portalRing2').addClass('zoomPortal');
-				    },5800);
+				    },6300);
 				    setTimeout(function(){
 				    	$('#portalRing3').addClass('zoomPortal');
-				    },6100);
+				    },6600);
 				    setTimeout(function(){
 				    	$('#portalRing4').addClass('zoomPortal');
-				    },6400);
+				    },6900);
 				    setTimeout(function(){
 				    	$('#portalRing5').addClass('zoomPortal');
-				    },6700);
+				    },7200);
 				    setTimeout(function(){
 				    	$('#portalRing6').addClass('zoomPortal');
-				    },7000);
+				    },7500);
 				    setTimeout(function(){
 				    	$('#portalRing7').addClass('zoomPortal');
-				    },7300);
+				    },7800);
 				// END AFTER INK PORTALS
 
 			});
