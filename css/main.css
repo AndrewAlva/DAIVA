@@ -1044,7 +1044,7 @@ body{
                 top: 0;
                 bottom: 0;
                 width: 100%;
-                height: 3.5%;
+                height: 31px;
             }
 
             .leftBorder .rhombusChanger{
@@ -1894,8 +1894,8 @@ body{
             position: absolute;
             width: 74px;
             height: 100%;
-            background-color: #ce9549;
-            opacity: 0.2;
+            background-color: rgba(206,149,73,0.5);
+            opacity: 0.6;
             z-index: 100;
             overflow: hidden;
             -webkit-transition: all 0.4s ease-in-out;
@@ -1906,7 +1906,7 @@ body{
         }
 
         .changeProject:hover{
-            opacity: 0.6;
+            opacity: 1;
         }
 
         .projectArrows{
@@ -2385,41 +2385,63 @@ body{
 
         /*/// TABLET PORTRAIT STYLE///*/
 
+                
+
             @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait){
-                #homeWrapper{
-                    height: 520vh;
-                    min-height: 3120px;
-                }
 
-                #homeSection1{
-                    height: 23.1%;
-                }
+                /*/// HOME STYLE///*/
 
-                #homeSection2{
-                    height: 19.2%;
-                }
+                    #homeWrapper{
+                        height: 520vh;
+                        min-height: 3120px;
+                    }
 
-                #homeSection3{
-                    height: 57.7%;
-                }
+                    #homeSection1{
+                        height: 23.1%;
+                    }
 
-                .halfHomeSection{
-                    height: 78%;
-                }
+                    #homeSection2{
+                        height: 19.2%;
+                    }
 
-                .horizontalBorderLeft, .horizontalBorderRight{
-                    width: 38%;
-                }
+                    #homeSection3{
+                        height: 57.7%;
+                    }
 
-                #homeTimelapseInnerWrapper{
-                    margin-top: 45vw;
-                }
+                    .halfHomeSection{
+                        height: 78%;
+                    }
 
-                .quoteBoxCenter{
-                    width: 530px;
-                }
+                    .horizontalBorderLeft, .horizontalBorderRight{
+                        width: 38%;
+                    }
 
+                    #homeTimelapseInnerWrapper{
+                        margin-top: 45vw;
+                    }
+
+                    .quoteBoxCenter{
+                        width: 530px;
+                    }
+                /*/// END HOME STYLE///*/
+
+                /*/// PORTFOLIO STYLE///*/
+
+                    #portfolioProjectsWrapper{
+                        width: 720%;
+                    }
+
+                    .otherProjects{
+                        width: 6.25% !important;
+                    }
+
+                    .projectTypeBox{
+                        width: 165px;
+                    }
+                /*/// END PORTFOLIO STYLE///*/
             }
+
+                
 
         /*/// END TABLET PORTRAIT STYLE///*/
 
@@ -2428,9 +2450,13 @@ body{
 
         /*/// TABLET LANDSCAPE STYLE///*/
         
-            @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape){
-
-
+            @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+                
+                /*/// PORTFOLIO STYLE///*/
+                    .otherProjects{
+                        width: 6.25% !important;
+                    }
+                /*/// END PORTFOLIO STYLE///*/
             }
 
         /*/// END TABLET LANDSCAPE STYLE///*/
@@ -2445,6 +2471,24 @@ body{
     /*/// MOBILE ALL STYLE///*/
 
         @media (max-width: 767px){
+            /*/// INIT UI STYLES ///*/
+                #loading{
+                    width: 100px;
+                    height: 100px;
+                }
+
+                /*.scrollDown{
+                    height: 20px;
+                    overflow: hidden;
+                }
+
+                .scrollDown img{
+                    position: absolute;
+                    bottom: 0;
+                }*/
+
+
+            /*/// END UI STYLES ///*/
 
             /*/// INIT MENU NAV ///*/
                 #menuNavWrapper{
@@ -2750,6 +2794,107 @@ body{
                 /*/// END PORTAL HOME ///*/
             /*/// END HOME STYLES ///*/
 
+            /*/// INIT PORTFOLIO STYLES ///*/
+                #portfolioWrapper{
+                    height: 300vh;
+                    min-height: 960px;
+                }
+
+                #portfolioSection1{
+                    height: 66.66%;
+                }
+
+                #portfolioSection2{
+                    height: 33.33%;
+                }
+
+                #portfolioTitle{
+                    width: 290px;
+                }
+
+                #portfolioTitle h1{
+                    font-size: 28px;
+                }
+
+                .topQuoteDecoration{
+                    width: 300px;
+                }
+
+                .topQuoteDecoration .quoteRightArrow, .topQuoteDecoration .quoteLeftArrow{
+                    width: 80px;
+                }
+
+                #portfolioDescriptionWrapper .quoteTextWrapper{
+                    height: 200px;
+                }
+
+                #portfolioDescriptionWrapper .quoteTextWrapper h2{
+                    font-size: 16px;
+                }
+
+                .otherProjects{
+                    width: 6.25% !important;
+                }
+
+                .notCurrentProject{
+                    width: 0 !important;
+                }
+
+                .currentProject{
+                    width: 100% !important;
+                }
+
+                .changeProject{
+                    opacity: 1;
+                }
+
+                .projectTypeBox{
+                    width: 70px;
+                    height: 113px;
+                }
+
+                .uniqueTypeBoxProject{
+                    width: 170px !important;
+                }
+
+                .projectIcon{
+                    height: 66px;
+                }
+
+                .projectIcon img{
+                    width: 69px;
+                    height: 65px;
+                }
+
+                .changeProject{
+                    width: 35px;
+                }
+
+                .projectKnowMore h2{
+                    font-size: 18px;
+                    line-height: 34px;
+                }
+
+                #backZoom{
+                    top: 40px;
+                    left: 44px;
+                }
+
+                .pushMenuNavWrapper{
+                    right: 44px !important;
+                }
+
+                .makeItDescriptorBox{
+                    width: 250px !important;
+                    bottom: 20%;
+                }
+
+                .descriptionText{
+                    height: 80%;
+                    font-size: 15px;
+                }
+            /*/// END PORTFOLIO STYLES ///*/
+
 
 
 
@@ -2819,43 +2964,47 @@ body{
         /*/// MOBILE PORTRAIT STYLE///*/
 
             @media (max-width: 767px) and (orientation: portrait){
-                /*/// INIT HOME LANDING ///*/
-                    .topBorder{
-                        height: 140px;
-                    }
+                /*/// INIT HOME STYLING ///*/
+                    /*/// INIT HOME LANDING ///*/
+                        .topBorder{
+                            height: 140px;
+                        }
 
-                    #landingBorderChanger{
-                        width: 220px;
-                    }
-                /*/// END HOME LANDING ///*/
-                
-
-                /*/// INIT HOME TIMELAPSE ///*/
-                    #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
-                       height: 120%;
-                    }
-                /*/// END HOME TIMELAPSE ///*/
-
-
-                /*/// INIT HOME QUOTES ///*/
-
-                    #homeQuoteWrapper1 .quoteTextWrapper{
-                        height: 120px;
-                    }
+                        #landingBorderChanger{
+                            width: 220px;
+                        }
+                    /*/// END HOME LANDING ///*/
                     
-                    #homeQuoteWrapper2 .quoteTextWrapper{
-                        height: 200px;
-                    }
 
-                    #homeSection3 .quoteTextWrapper h2{
-                        font-size: 18px;
-                    }
-                /*/// END HOME QUOTES ///*/
+                    /*/// INIT HOME TIMELAPSE ///*/
+                        #homeTimelapseWrapper .leftBorder, #homeTimelapseWrapper .rightBorder{
+                           height: 120%;
+                        }
+                    /*/// END HOME TIMELAPSE ///*/
 
 
-                /*/// INIT HOME PORTALS ///*/
+                    /*/// INIT HOME QUOTES ///*/
 
-                /*/// END HOME PORTALS ///*/
+                        #homeQuoteWrapper1 .quoteTextWrapper{
+                            height: 120px;
+                        }
+                        
+                        #homeQuoteWrapper2 .quoteTextWrapper{
+                            height: 200px;
+                        }
+
+                        #homeSection3 .quoteTextWrapper h2{
+                            font-size: 18px;
+                        }
+                    /*/// END HOME QUOTES ///*/
+
+
+                    /*/// INIT HOME PORTALS ///*/
+
+                    /*/// END HOME PORTALS ///*/
+                /*/// END HOME STYLING ///*/
+
+
             }
 
         /*/// END MOBILE PORTRAIT STYLE///*/
@@ -2929,8 +3078,6 @@ body{
                     }
                 /*/// END HOME TIMELAPSE///*/
 
-
-
                 /*/// HOME QUOTES///*/
                     .quoteBoxCenter{
                         width: 440px;
@@ -2957,6 +3104,22 @@ body{
                         bottom: 50%;
                     }
                 /*/// END HOME QUOTES///*/
+
+
+                /*/// INIT PORTFOLIO STYLING ///*/
+
+                    #portfolioWrapper .scrollDown{
+                        height: 30px;
+                    }
+                    
+                    #portfolioDescriptionWrapper .quoteBoxCenter{
+                        height: 190px;
+                    }
+
+                    #portfolioDescriptionWrapper .quoteTextWrapper{
+                        height: 132px;
+                    }
+                /*/// END PORTFOLIO STYLING ///*/
 
 
             }

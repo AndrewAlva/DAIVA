@@ -496,6 +496,12 @@ $(document).ready(function() {
 			    }, 800);
 			});
 
+			$('#mob-scrollPortfolioDescription').click(function(){
+				$('html, body').animate({
+			    	scrollTop: $("#portfolioSection2").offset().top
+			    }, 800);
+			});
+
 			$('#scrollPortfolioIncense').click(function(){
 				$('html, body').animate({
 			    	scrollTop: $("#portfolioSection2").offset().top
@@ -504,16 +510,17 @@ $(document).ready(function() {
 		// END PORTFOLIO SCROLLERS
 
 		// INIT PROJECTS PORTFOLIO CAROUSEL MOUSE POSITION
-			var limitWidth;
+			var limitWidth = windowWidth * 4;
 			var widthScrollDisplaceTrigger = 100; // Width in pixels
 			var scrollBackArea = widthScrollDisplaceTrigger;
-			var scrollNextArea;
+			var scrollNextArea = windowWidth - widthScrollDisplaceTrigger;
 			var mouseX;
 			var displaceWidth = 5; // Displacement value on mouse position, in pixels
 			var displaceXleft;
 			var leftProjectsWrapper = 0;
 
 			var lastLeftPush;
+
 
 			
 			$('#portfolioSection2').mousemove(function(){
@@ -628,6 +635,11 @@ $(document).ready(function() {
 				},500);
 
 
+				// MOBILE TYPEBOX AUGMENT
+					if(windowWidth < 768){
+						$('.projectTypeBox').addClass('uniqueTypeBoxProject');
+					}
+				// END MOBILE AUGMENT
 				
 			});
 
@@ -879,6 +891,7 @@ $(document).ready(function() {
 				// HIDE DATA SHOWED DATA OF ALL PROJECTS
 					$('.changeProject').click(function(){
 						hideShowedData();
+						
 					});
 				// END HIDE DATA SHOWED DATA OF ALL PROJECTS
 
@@ -928,6 +941,12 @@ $(document).ready(function() {
 
 
 					// END REMOVE REPEATED CLASSES FROM ALL PROJECTS
+
+					// MOBILE TYPEBOX AUGMENT
+						
+						$('.projectTypeBox').removeClass('uniqueTypeBoxProject');
+						
+					// END MOBILE AUGMENT
 				});
 			// END CLOSE PROJECTS
 		// END PORTFOLIO PROJECTS INTERACTION
