@@ -157,7 +157,7 @@ Helper classes
         display: none;
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 1025px){
         .onlyMobile{
             display: none !important;
             visibility: hidden;
@@ -2357,7 +2357,7 @@ body{
 /*/// END LAPTOP AND SMALL SCREENS CSS DOCUMENT ///*/
 
 
-/*/// TABLET CSS DOCUMENT ///*/
+/*/// INIT TABLET CSS DAIVA.MX DOCUMENT ///*/
 
     /*/// TABLET ALL STYLE///*/
 
@@ -2427,10 +2427,6 @@ body{
 
                 /*/// PORTFOLIO STYLE///*/
 
-                    #portfolioProjectsWrapper{
-                        width: 720%;
-                    }
-
                     .otherProjects{
                         width: 6.25% !important;
                     }
@@ -2461,16 +2457,14 @@ body{
 
         /*/// END TABLET LANDSCAPE STYLE///*/
     /*/// END TABLET ORIENTATION STYLE///*/
-/*/// END TABLET CSS DOCUMENT ///*/
-
-
+/*/// END  TABLET CSS DAIVA.MX DOCUMENT ///*/
 
 
 /*/// MOBILE CSS DOCUMENT ///*/
 
     /*/// MOBILE ALL STYLE///*/
 
-        @media (max-width: 767px){
+        @media (max-width: 1024px){
             /*/// INIT UI STYLES ///*/
                 #loading{
                     width: 100px;
@@ -2486,8 +2480,6 @@ body{
                     position: absolute;
                     bottom: 0;
                 }*/
-
-
             /*/// END UI STYLES ///*/
 
             /*/// INIT MENU NAV ///*/
@@ -2893,6 +2885,10 @@ body{
                     height: 80%;
                     font-size: 15px;
                 }
+
+                .opFlow{
+                    opacity: 0.8;
+                }
             /*/// END PORTFOLIO STYLES ///*/
 
 
@@ -2963,7 +2959,7 @@ body{
 
         /*/// MOBILE PORTRAIT STYLE///*/
 
-            @media (max-width: 767px) and (orientation: portrait){
+            @media (max-width: 1024px) and (orientation: portrait){
                 /*/// INIT HOME STYLING ///*/
                     /*/// INIT HOME LANDING ///*/
                         .topBorder{
@@ -3014,7 +3010,7 @@ body{
 
         /*/// MOBILE LANDSCAPE STYLE///*/
         
-            @media (max-width: 767px) and (orientation: landscape){
+            @media (max-width: 1024px) and (orientation: landscape){
 
                 /*/// INIT MENU NAV///*/
                     #menuWrapper{
@@ -3127,6 +3123,141 @@ body{
         /*/// END MOBILE LANDSCAPE STYLE///*/
     /*/// END MOBILE ORIENTATION STYLES ///*/
 /*/// END MOBILE CSS DOCUMENT ///*/
+
+
+/*/// INIT TABLET CSS DAIVA.MX/MOB DOCUMENT ///*/
+    @media (min-width: 768px) and (max-width: 1024px){
+
+        #menuWrapper{
+            width: 800px;
+            height: 800px;
+        }
+
+        /*/// INIT HOME STYLING ///*/
+            #loading{
+                width: 220px;
+                height: 220px;
+            }
+
+            #logoLanding, #logoLanding img{
+                width: 300px;
+                height: 300px;
+            }
+
+            #landingBorderChanger{
+                width: 440px;
+                height: 460px;
+            }
+
+            .topBorder{
+                height: 30px;
+            }
+
+            .rhombusChanger{
+                width: 15px;
+                height: 15px;
+            }
+
+
+            #homeTimelapseLogo{
+                width: 132px;
+                height: 132px;
+            }
+
+            #homeTimelapseSvg{
+                width: 480px;
+                height: 25px;
+            }
+
+            #homeTimelapseSvg #leftArrow{
+                width: 200px;
+                right: 270px;
+            }
+
+            #homeTimelapseSvg #rightArrow{
+                width: 200px;
+                left: 270px;
+            }
+
+            #homeTimelapseProject{
+                width: 340px;
+                height: 67px;
+            }
+
+            #homeTimelapseRombo{
+                width: 25px;
+                height: 25px;
+            }
+
+
+
+            #homeQuoteWrapper1 .quoteTextWrapper{
+                height: 80px;
+            }
+
+            .quoteBoxCenter{
+                width: 650px;
+                height: 185px;
+            }
+
+            #homeSection3 .quoteTextWrapper h2{
+                font-size: 20px;
+            }
+
+            .bottomQuoteDecoration .quoteLeftArrow{
+                right: 56%;
+            }
+
+            .bottomQuoteDecoration .quoteRightArrow{
+                left: 56%;
+            }
+        /*/// END HOME STYLING ///*/
+
+
+        /*/// INIT PORTFOLIO STYLING ///*/
+            #portfolioDescriptionWrapper .quoteTextWrapper{
+                height: 100px;
+            }
+
+            .projectTypeBox{
+                width: 170px;
+                height: 183px;
+            }
+
+            .projectIcon{
+                height: 96px;
+            }
+
+            .projectIcon img{
+                width: 100px;
+                height: 100px;
+            }
+
+            .projectKnowMore h2{
+                font-size: 22px;
+            }
+
+            .makeItDescriptorBox{
+                width: 470px !important;
+            }
+
+            .descriptionText{
+                height: 130px;
+                font-size: 18px;
+            }
+
+            .changeProject{
+                width: 55px;
+            }
+
+            .opFlow{
+                opacity: 1;
+            }
+        /*/// END  PORTFOLIO STYLING ///*/
+    }
+/*/// END  TABLET CSS DAIVA.MX/MOB DOCUMENT ///*/
+
+
 
 
 /*/// GO TO DESKTOP CLASSES ///*/
