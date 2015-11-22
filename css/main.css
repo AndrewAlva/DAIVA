@@ -1736,6 +1736,88 @@ body{
     /*/// END HOME PORTAL WRAPPER ///*/
 /*/// END HOME STYLE ///*/
 
+/*/// INIT PILARES STYLE ///*/
+    /*/// INIT PILARES WRAPPERS STYLE ///*/
+        #windowPilaresWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #pilaresWrapper{
+            position: absolute;
+            width: 100%;
+            height: 700vh;
+            min-height: 4200px;
+        }
+    /*/// END PILARES WRAPPERS STYLE ///*/
+    
+    /*/// INIT PILARES BACKGROUND ///*/
+        #bgStars{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #00010F;
+        }
+
+        .stars{
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: .7;
+            -webkit-transform: scale(0.7,0.7);
+               -moz-transform: scale(0.7,0.7);
+                -ms-transform: scale(0.7,0.7);
+                 -o-transform: scale(0.7,0.7);
+                    transform: scale(0.7,0.7);
+        }
+
+            .stars:nth-child(even){
+                width: 1px;
+                height: 1px;
+            }
+
+            .stars:nth-child(odd){
+                width: 2px;
+                height: 2px;
+            }
+
+
+
+            .blueStars:nth-child(even){
+                box-shadow: 1px 1px 5px #0000ff;
+                border: 1px solid rgba(0,0,255,0.2);
+            }
+
+            .blueStars:nth-child(odd){
+                box-shadow: -1px 1px 5px #0000ff;
+                border: 1px solid rgba(0,0,255,0.2);
+            }
+
+            .redStars:nth-child(even){
+                box-shadow: 1px 1px 5px #ff0000;
+                border: 1px solid rgba(255,0,0,0.2);
+            }
+
+            .redStars:nth-child(odd){
+                box-shadow: -1px 1px 5px #ff0000;
+                border: 1px solid rgba(255,0,0,0.2);
+            }
+
+            .yellowStars:nth-child(even){
+                box-shadow: 1px 1px 5px #ffff00;
+                border: 1px solid rgba(255,255,0.2);
+            }
+
+            .yellowStars:nth-child(odd){
+                box-shadow: -1px 1px 5px #ffff00;
+                border: 1px solid rgba(255,255,0.2);
+            }
+    /*/// END PILARES BACKGROUND ///*/
+
+/*/// END PILARES STYLE ///*/
+
 
 
 /*/// INIT PORTFOLIO STYLE ///*/

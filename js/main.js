@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	//// INIT LOADER FUNCTION
 		$('#homeWrapper').removeClass('limitByLoader');
-		$('#pilarsWrapper').removeClass('limitByLoader');
+		$('#pilaresWrapper').removeClass('limitByLoader');
 		$('#portfolioWrapper').removeClass('limitByLoader');
 		$('#homeLoader').addClass('hideLoader');
 		setTimeout(function(){
@@ -479,7 +479,30 @@ $(document).ready(function() {
 		// END ANIMATION FROM HOME TO PILLARS
 	//END HOME INTERACTION
 
+	// INIT PILARES INTERACTION
+		// INIT BG ANIMATION
+			var randomTop;
+			var randomLeft;
 
+			function setStarsPos(starChild){
+
+				randomTop = Math.random()*windowHeight;
+				randomLeft = Math.random()*windowWidth;
+
+				$(starChild).css({
+					top: randomTop,
+					left: randomLeft
+				});
+			}
+
+			for (var i = 1; i <= 150; i++) {
+				setStarsPos('.stars:nth-child(' + i + ')');
+				console.log('Iteration cycle: ' + i);
+			};
+
+			// console.log('Testing Star random position. Top: ' + randomTop + ', Left: ' + randomLeft );
+		// END BG ANIMATION
+	// END PILARES INTERACTION
 
 	//// INIT PORTFOLIO INTERACTION
 
