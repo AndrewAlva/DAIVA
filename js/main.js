@@ -497,10 +497,8 @@ $(document).ready(function() {
 
 			for (var i = 1; i <= 150; i++) {
 				setStarsPos('.stars:nth-child(' + i + ')');
-				console.log('Iteration cycle: ' + i);
 			};
 
-			// console.log('Testing Star random position. Top: ' + randomTop + ', Left: ' + randomLeft );
 		// END BG ANIMATION
 	// END PILARES INTERACTION
 

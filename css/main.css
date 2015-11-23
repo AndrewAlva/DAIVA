@@ -194,6 +194,18 @@ Helper classes
             width: 100%;
             height: 33.33%;
         }
+
+        .quarterHeightSection{
+            position: relative;
+            width: 100%;
+            height: 25%;
+        }
+
+        .fifthHeightSection{
+            position: relative;
+            width: 100%;
+            height: 20%;
+        }
     /*/// END HOME SECTIONS DIVISIONS HELPERS ///*/
 
 
@@ -503,11 +515,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
 
         }
 
@@ -524,11 +536,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
         }
 
         #comienzoStage{
@@ -544,11 +556,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
         }
 
         #voidStage{
@@ -564,11 +576,11 @@ body{
 
             border-radius: 50%;
 
-            -webkit-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-               -moz-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                -ms-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                 -o-transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
-                    transition: all 0.6s cubic-bezier(.5,-1,.5,1.3);
+            -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
         }
 
     /*/// END Maqueta Anillos por Secciones ///*/
@@ -1747,12 +1759,37 @@ body{
         #pilaresWrapper{
             position: absolute;
             width: 100%;
-            height: 700vh;
-            min-height: 4200px;
+            height: 1900vh;
+            min-height: 11400px;
+        }
+
+        .pilarSection{
+            position: relative;
+            width: 100%;
+        }
+
+        #pilarVerbo{
+            height: 21.05%;
+        }
+
+        #pilarPensamiento{
+            height: 21.05%;
+        }
+
+        #pilarElementos{
+            height: 26.31%;
+        }
+
+        #pilarSabiduria{
+            height: 26.31%;
+        }
+
+        #pilarFinal{
+            height: 5.26%;
         }
     /*/// END PILARES WRAPPERS STYLE ///*/
     
-    /*/// INIT PILARES BACKGROUND ///*/
+    /*/// INIT PILARES STARS BACKGROUND ///*/
         #bgStars{
             position: fixed;
             width: 100%;
@@ -1814,7 +1851,469 @@ body{
                 box-shadow: -1px 1px 5px #ffff00;
                 border: 1px solid rgba(255,255,0.2);
             }
-    /*/// END PILARES BACKGROUND ///*/
+    /*/// END PILARES STARS BACKGROUND ///*/
+
+    /*/// INIT RING LETTERS ///*/
+        #pilaresWrapper .ringLettersWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            background-color: gray;
+        }
+
+        /*/// INIT BG RING LETTERS ///*/
+            .bgLetters{
+                position: absolute;
+                width: 900px;
+                height: 900px;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                   -moz-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                     -o-transform: translate(-50%,-50%);
+                        transform: translate(-50%,-50%);
+            }
+
+            #pilaresWrapper .ringOutline{
+                background: url('../img/pillars/letters/out-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringA{
+                background: url('../img/pillars/letters/A-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringB{
+                background: url('../img/pillars/letters/B-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringC{
+                background: url('../img/pillars/letters/C-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringE{
+                background: url('../img/pillars/letters/E-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringH{
+                background: url('../img/pillars/letters/H-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringI{
+                background: url('../img/pillars/letters/I-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringL{
+                background: url('../img/pillars/letters/L-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringM{
+                background: url('../img/pillars/letters/M-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringN{
+                background: url('../img/pillars/letters/N-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringO{
+                background: url('../img/pillars/letters/O-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringP{
+                background: url('../img/pillars/letters/P-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringQ{
+                background: url('../img/pillars/letters/Q-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringR{
+                background: url('../img/pillars/letters/R-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringS{
+                background: url('../img/pillars/letters/S-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringU{
+                background: url('../img/pillars/letters/U-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            #pilaresWrapper .ringX{
+                background: url('../img/pillars/letters/X-ring.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        /*/// END BG RING LETTERS ///*/
+
+
+        #pilaresWrapper .rotatingRings{
+            position: absolute;
+            margin: auto;
+            top: 0; right: 0; bottom: 0; left: 0;
+            /*animation goes here*/
+        }
+    /*/// END RING LETTERS ///*/
+
+    /*/// INIT INTRO PILARES ///*/
+        .introPilares{
+            position: absolute;
+            width: 900px;
+            height: 900px;
+            margin: auto;
+            top: 0; bottom: 0; right: 0; left: 0;
+            background-color:  black;
+        }
+
+        /*INIT BACKGROUNDS*/
+            .introPilares .outlineMandala{
+                background: url('../img/pillars/out-pilares.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .inlineMandala{
+                background: url('../img/pillars/in-pilares.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .doubleOutline{
+                background: url('../img/pillars/double-pilares.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .singleOutline{
+                background: url('../img/pillars/single-pilares.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .singleInnerOutline{
+                background: url('../img/pillars/single-pilares-inner.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .sabiduria-l{
+                background: url('../img/pillars/sabiduria-l.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .introPilares .sabiduria-s{
+                background: url('../img/pillars/sabiduria-s.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .elementos-l{
+                background: url('../img/pillars/elementos-l.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .introPilares .elementos-s{
+                background: url('../img/pillars/elementos-s.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .pensamiento-l{
+                background: url('../img/pillars/pensamiento-l.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .introPilares .pensamiento-s{
+                background: url('../img/pillars/pensamiento-s.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .introPilares .verbo-l{
+                background: url('../img/pillars/verbo-l.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .introPilares .verbo-s{
+                background: url('../img/pillars/verbo-s.svg');
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        /*END BACKGROUNDS*/
+
+    /*/// END INTRO PILARES ///*/
+
+
+
+    /*/// INIT PILAR VERBO ///*/
+
+        /*RINGS LETTERS SIZE*/
+            #pilarVerbo .ringLettersWrapper .rotatingRings:first-child{
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(2){
+                width: 96%;
+                height: 96%;
+                opacity: .95;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(3){
+                width: 90%;
+                height: 90%;
+                opacity: .9;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(4){
+                width: 86.5%;
+                height: 86.5%;
+                opacity: .85;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(5){
+                width: 81%;
+                height: 81%;
+                opacity: .80;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(6){
+                width: 77.5%;
+                height: 77.5%;
+                opacity: .75;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(7){
+                width: 72.5%;
+                height: 72.5%;
+                opacity: .70;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(8){
+                width: 69%;
+                height: 69%;
+                opacity: .65;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(9){
+                width: 64%;
+                height: 64%;
+                opacity: .60;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(10){
+                width: 60.5%;
+                height: 60.5%;
+                opacity: .55;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(11){
+                width: 56%;
+                height: 56%;
+                opacity: .50;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(12){
+                width: 53%;
+                height: 53%;
+                opacity: .45;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(13){
+                width: 49.5%;
+                height: 49.5%;
+                opacity: .40;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(14){
+                width: 48%;
+                height: 48%;
+                opacity: .35;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(15){
+                width: 45%;
+                height: 45%;
+                opacity: .30;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(16){
+                width: 43%;
+                height: 43%;
+                opacity: .25;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(17){
+                width: 40%;
+                height: 40%;
+                opacity: .20;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(18){
+                width: 38%;
+                height: 38%;
+                opacity: .15;
+            }
+
+            #pilarVerbo .ringLettersWrapper .rotatingRings:last-child{
+                width: 35%;
+                height: 35%;
+                opacity: .10;
+            }
+        /*END RINGS LETTERS SIZE*/
+        
+        /*INTRO MANDALA VERBO*/
+            #pilarVerbo .introPilares .rotatingRings:first-child{
+                width: 100%;
+                height: 100%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(2){
+                width: 83%;
+                height: 83%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(3){
+                width: 78%;
+                height: 78%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(4){
+                width: 72%;
+                height: 72%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(5){
+                width: 67.5%;
+                height: 67.5%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(6){
+                width: 60%;
+                height: 60%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(7){
+                width: 56%;
+                height: 56%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(8){
+                width: 48%;
+                height: 48%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(9){
+                width: 40%;
+                height: 40%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:nth-child(10){
+                width: 23%;
+                height: 23%;
+            }
+            #pilarVerbo .introPilares .rotatingRings:last-child{
+                width: 17%;
+                height: 17%;
+            }
+        /*END MANDALA VERBO*/
+    /*/// END PILAR VERBO ///*/
+
+    /*/// INIT PILAR PENSAMIENTO ///*/
+    /*/// END PILAR PENSAMIENTO ///*/
+
+    /*/// INIT PILAR ELEMENTOS ///*/
+    /*/// END PILAR ELEMENTOS ///*/
+
+    /*/// INIT PILAR SABIDURÍA ///*/
+    /*/// END PILAR SABIDURÍA ///*/
+
+
 
 /*/// END PILARES STYLE ///*/
 
