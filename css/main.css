@@ -2168,7 +2168,7 @@ body{
             position: absolute;
             margin: auto;
             width: auto;
-            height: 100%;
+            height: 95%;
             right: 0; left: 0;
         }
 
@@ -2484,6 +2484,7 @@ body{
         /*END QUOTES SIZE*/
     /*/// END PILAR VERBO ///*/
 
+
     /*/// INIT PILAR PENSAMIENTO ///*/
         /*RINGS LETTERS SIZE*/
             #pilarPensamiento .ringLettersWrapper .rotatingRings:first-child{
@@ -2612,9 +2613,196 @@ body{
                 opacity: .20;
             }
         /*END RINGS LETTERS SIZE*/
+
+        /*INTRO MANDALA PENSAMIENTO*/
+            #pilarPensamiento .introPilares .rotatingRings:first-child{
+                width: 100%;
+                height: 100%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(2){
+                width: 83%;
+                height: 83%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(3){
+                width: 78%;
+                height: 78%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(4){
+                width: 72%;
+                height: 72%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(5){
+                width: 67.5%;
+                height: 67.5%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(6){
+                width: 60%;
+                height: 60%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(7){
+                width: 52%;
+                height: 52%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(8){
+                width: 34%;
+                height: 34%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(9){
+                width: 28%;
+                height: 28%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:nth-child(10){
+                width: 20%;
+                height: 20%;
+            }
+            #pilarPensamiento .introPilares .rotatingRings:last-child{
+                width: 15%;
+                height: 15%;
+            }
+        /*END MANDALA PENSAMIENTO*/
+
+        /*QUOTES SIZE*/
+            #pilaresWrapper #pilarPensamiento .qp1 p{
+                height: 130px;
+            }
+
+            #pilaresWrapper #pilarPensamiento .qp2 p{
+                height: 100px;
+            }
+        /*END QUOTES SIZE*/
     /*/// END PILAR PENSAMIENTO ///*/
 
+
     /*/// INIT PILAR ELEMENTOS ///*/
+        /*RINGS LETTERS SIZE*/
+            #pilarElementos .ringLettersWrapper .rotatingRings:first-child{
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(2){
+                width: 96%;
+                height: 96%;
+                opacity: .96;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(3){
+                width: 90%;
+                height: 90%;
+                opacity: .92;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(4){
+                width: 85%;
+                height: 85%;
+                opacity: .88;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(5){
+                width: 79%;
+                height: 79%;
+                opacity: .84;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(6){
+                width: 76%;
+                height: 76%;
+                opacity: .80;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(7){
+                width: 71%;
+                height: 71%;
+                opacity: .76;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(8){
+                width: 68.2%;
+                height: 68.2%;
+                opacity: .72;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(9){
+                width: 64%;
+                height: 64%;
+                opacity: .68;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(10){
+                width: 61%;
+                height: 61%;
+                opacity: .64;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(11){
+                width: 56.5%;
+                height: 56.5%;
+                opacity: .60;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(12){
+                width: 54.3%;
+                height: 54.3%;
+                opacity: .56;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(13){
+                width: 51%;
+                height: 51%;
+                opacity: .52;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(14){
+                width: 48%;
+                height: 48%;
+                opacity: .48;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(15){
+                width: 44%;
+                height: 44%;
+                opacity: .44;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(16){
+                width: 41%;
+                height: 41%;
+                opacity: .40;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(17){
+                width: 38%;
+                height: 38%;
+                opacity: .36;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(18){
+                width: 36.2%;
+                height: 36.2%;
+                opacity: .32;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(19){
+                width: 34%;
+                height: 34%;
+                opacity: .28;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(20){
+                width: 32.3%;
+                height: 32.3%;
+                opacity: .24;
+            }
+
+            #pilarElementos .ringLettersWrapper .rotatingRings:last-child{
+                width: 30%;
+                height: 30%;
+                opacity: .20;
+            }
+        /*END RINGS LETTERS SIZE*/
+
+
     /*/// END PILAR ELEMENTOS ///*/
 
     /*/// INIT PILAR SABIDURÍA ///*/
