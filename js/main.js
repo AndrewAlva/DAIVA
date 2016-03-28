@@ -475,6 +475,12 @@ $(document).ready(function() {
 				    },7800);
 				// END AFTER INK PORTALS
 
+				// INIT AFTER ENTER SPACE THROUGH PORTALS
+					setTimeout(function(){
+						window.location.assign("../pilares/");
+					},8300);
+				// END AFTER ENTER INTO SPACE 
+
 			});
 		// END ANIMATION FROM HOME TO PILLARS
 	//END HOME INTERACTION
