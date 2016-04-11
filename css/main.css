@@ -519,6 +519,7 @@ body{
             opacity: 0.6;
 
             border-radius: 50%;
+            cursor:pointer;
 
             -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
                -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
@@ -540,6 +541,7 @@ body{
             opacity: 0.5;
 
             border-radius: 50%;
+            cursor:pointer;
 
             -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
                -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
@@ -560,6 +562,7 @@ body{
             opacity: 0.3;
 
             border-radius: 50%;
+            cursor:pointer;
 
             -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
                -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
@@ -2027,19 +2030,19 @@ body{
         }
 
         #pilaresWrapper .rotatingRings:nth-child(even){
-            -webkit-animation: rotateLeft linear infinite;
-               -moz-animation: rotateLeft linear infinite;
-                -ms-animation: rotateLeft linear infinite;
-                 -o-animation: rotateLeft linear infinite;
-                    animation: rotateLeft linear infinite;
-        }
-
-        #pilaresWrapper .rotatingRings:nth-child(odd){
             -webkit-animation: rotateRight linear infinite;
                -moz-animation: rotateRight linear infinite;
                 -ms-animation: rotateRight linear infinite;
                  -o-animation: rotateRight linear infinite;
                     animation: rotateRight linear infinite;
+        }
+
+        #pilaresWrapper .rotatingRings:nth-child(odd){
+            -webkit-animation: rotateLeft linear infinite;
+               -moz-animation: rotateLeft linear infinite;
+                -ms-animation: rotateLeft linear infinite;
+                 -o-animation: rotateLeft linear infinite;
+                    animation: rotateLeft linear infinite;
         }  
     /*/// END RING LETTERS ///*/
 
@@ -2379,11 +2382,11 @@ body{
                 width: 81%;
                 height: 81%;
                 opacity: .80;
-                -webkit-animation-duration: 35s;
-                   -moz-animation-duration: 35s;
-                    -ms-animation-duration: 35s;
-                     -o-animation-duration: 35s;
-                        animation-duration: 35s;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
 
             #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(6){
@@ -2434,11 +2437,11 @@ body{
                 width: 60.5%;
                 height: 60.5%;
                 opacity: .55;
-                -webkit-animation-duration: 15s;
-                   -moz-animation-duration: 15s;
-                    -ms-animation-duration: 15s;
-                     -o-animation-duration: 15s;
-                        animation-duration: 15s;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
 
             #pilarVerbo .ringLettersWrapper .rotatingRings:nth-child(11){
@@ -2545,46 +2548,101 @@ body{
             #pilarVerbo .introPilares .rotatingRings:first-child{
                 width: 100%;
                 height: 100%;
+                -webkit-animation-duration: 40s;
+                   -moz-animation-duration: 40s;
+                    -ms-animation-duration: 40s;
+                     -o-animation-duration: 40s;
+                        animation-duration: 40s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(2){
                 width: 83%;
                 height: 83%;
+                -webkit-animation-duration: 48s;
+                   -moz-animation-duration: 48s;
+                    -ms-animation-duration: 48s;
+                     -o-animation-duration: 48s;
+                        animation-duration: 48s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(3){
                 width: 78%;
                 height: 78%;
+                -webkit-animation-duration: 56s;
+                   -moz-animation-duration: 56s;
+                    -ms-animation-duration: 56s;
+                     -o-animation-duration: 56s;
+                        animation-duration: 56s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(4){
                 width: 72%;
                 height: 72%;
+                -webkit-animation-duration: 64s;
+                   -moz-animation-duration: 64s;
+                    -ms-animation-duration: 64s;
+                     -o-animation-duration: 64s;
+                        animation-duration: 64s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(5){
                 width: 67.5%;
                 height: 67.5%;
+                -webkit-animation-duration: 72s;
+                   -moz-animation-duration: 72s;
+                    -ms-animation-duration: 72s;
+                     -o-animation-duration: 72s;
+                        animation-duration: 72s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(6){
                 width: 60%;
                 height: 60%;
+                -webkit-animation-duration: 40s;
+                   -moz-animation-duration: 40s;
+                    -ms-animation-duration: 40s;
+                     -o-animation-duration: 40s;
+                        animation-duration: 40s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(7){
                 width: 56%;
                 height: 56%;
+                -webkit-animation-duration: 48s;
+                   -moz-animation-duration: 48s;
+                    -ms-animation-duration: 48s;
+                     -o-animation-duration: 48s;
+                        animation-duration: 48s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(8){
                 width: 48%;
                 height: 48%;
+                -webkit-animation-duration: 56s;
+                   -moz-animation-duration: 56s;
+                    -ms-animation-duration: 56s;
+                     -o-animation-duration: 56s;
+                        animation-duration: 56s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(9){
                 width: 40%;
                 height: 40%;
+                -webkit-animation-duration: 64s;
+                   -moz-animation-duration: 64s;
+                    -ms-animation-duration: 64s;
+                     -o-animation-duration: 64s;
+                        animation-duration: 64s;
             }
             #pilarVerbo .introPilares .rotatingRings:nth-child(10){
                 width: 23%;
                 height: 23%;
+                -webkit-animation-duration: 72s;
+                   -moz-animation-duration: 72s;
+                    -ms-animation-duration: 72s;
+                     -o-animation-duration: 72s;
+                        animation-duration: 72s;
             }
             #pilarVerbo .introPilares .rotatingRings:last-child{
                 width: 17%;
                 height: 17%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
         /*END MANDALA VERBO*/
 
@@ -2606,126 +2664,252 @@ body{
                 width: 100%;
                 height: 100%;
                 opacity: 1;
+
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(2){
                 width: 96%;
                 height: 96%;
                 opacity: .96;
+
+                -webkit-animation-duration: 78s;
+                   -moz-animation-duration: 78s;
+                    -ms-animation-duration: 78s;
+                     -o-animation-duration: 78s;
+                        animation-duration: 78s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(3){
                 width: 90%;
                 height: 90%;
                 opacity: .92;
+
+                -webkit-animation-duration: 86s;
+                   -moz-animation-duration: 86s;
+                    -ms-animation-duration: 86s;
+                     -o-animation-duration: 86s;
+                        animation-duration: 86s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(4){
                 width: 86.5%;
                 height: 86.5%;
                 opacity: .88;
+
+                -webkit-animation-duration: 94s;
+                   -moz-animation-duration: 94s;
+                    -ms-animation-duration: 94s;
+                     -o-animation-duration: 94s;
+                        animation-duration: 94s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(5){
                 width: 81.5%;
                 height: 81.5%;
                 opacity: .84;
+
+                -webkit-animation-duration: 102s;
+                   -moz-animation-duration: 102s;
+                    -ms-animation-duration: 102s;
+                     -o-animation-duration: 102s;
+                        animation-duration: 102s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(6){
                 width: 77.5%;
                 height: 77.5%;
                 opacity: .80;
+
+                -webkit-animation-duration: 110s;
+                   -moz-animation-duration: 110s;
+                    -ms-animation-duration: 110s;
+                     -o-animation-duration: 110s;
+                        animation-duration: 110s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(7){
                 width: 72%;
                 height: 72%;
                 opacity: .76;
+
+                -webkit-animation-duration: 118s;
+                   -moz-animation-duration: 118s;
+                    -ms-animation-duration: 118s;
+                     -o-animation-duration: 118s;
+                        animation-duration: 118s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(8){
                 width: 69.2%;
                 height: 69.2%;
                 opacity: .72;
+
+                -webkit-animation-duration: 126s;
+                   -moz-animation-duration: 126s;
+                    -ms-animation-duration: 126s;
+                     -o-animation-duration: 126s;
+                        animation-duration: 126s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(9){
                 width: 64.5%;
                 height: 64.5%;
                 opacity: .68;
+
+                -webkit-animation-duration: 134s;
+                   -moz-animation-duration: 134s;
+                    -ms-animation-duration: 134s;
+                     -o-animation-duration: 134s;
+                        animation-duration: 134s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(10){
                 width: 61%;
                 height: 61%;
                 opacity: .64;
+
+                -webkit-animation-duration: 142s;
+                   -moz-animation-duration: 142s;
+                    -ms-animation-duration: 142s;
+                     -o-animation-duration: 142s;
+                        animation-duration: 142s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(11){
                 width: 56.5%;
                 height: 56.5%;
                 opacity: .60;
+
+                -webkit-animation-duration: 150s;
+                   -moz-animation-duration: 150s;
+                    -ms-animation-duration: 150s;
+                     -o-animation-duration: 150s;
+                        animation-duration: 150s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(12){
                 width: 54.5%;
                 height: 54.5%;
                 opacity: .56;
+
+                -webkit-animation-duration: 158s;
+                   -moz-animation-duration: 158s;
+                    -ms-animation-duration: 158s;
+                     -o-animation-duration: 158s;
+                        animation-duration: 158s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(13){
                 width: 51%;
                 height: 51%;
                 opacity: .52;
+
+                -webkit-animation-duration: 166s;
+                   -moz-animation-duration: 166s;
+                    -ms-animation-duration: 166s;
+                     -o-animation-duration: 166s;
+                        animation-duration: 166s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(14){
                 width: 49%;
                 height: 49%;
                 opacity: .48;
+
+                -webkit-animation-duration: 174s;
+                   -moz-animation-duration: 174s;
+                    -ms-animation-duration: 174s;
+                     -o-animation-duration: 174s;
+                        animation-duration: 174s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(15){
                 width: 46%;
                 height: 46%;
                 opacity: .44;
+
+                -webkit-animation-duration: 182s;
+                   -moz-animation-duration: 182s;
+                    -ms-animation-duration: 182s;
+                     -o-animation-duration: 182s;
+                        animation-duration: 182s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(16){
                 width: 44%;
                 height: 44%;
                 opacity: .40;
+
+                -webkit-animation-duration: 190s;
+                   -moz-animation-duration: 190s;
+                    -ms-animation-duration: 190s;
+                     -o-animation-duration: 190s;
+                        animation-duration: 190s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(17){
                 width: 41%;
                 height: 41%;
                 opacity: .36;
+
+                -webkit-animation-duration: 198s;
+                   -moz-animation-duration: 198s;
+                    -ms-animation-duration: 198s;
+                     -o-animation-duration: 198s;
+                        animation-duration: 198s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(18){
                 width: 39%;
                 height: 39%;
                 opacity: .32;
+
+                -webkit-animation-duration: 206s;
+                   -moz-animation-duration: 206s;
+                    -ms-animation-duration: 206s;
+                     -o-animation-duration: 206s;
+                        animation-duration: 206s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(19){
                 width: 36%;
                 height: 36%;
                 opacity: .28;
+
+                -webkit-animation-duration: 214s;
+                   -moz-animation-duration: 214s;
+                    -ms-animation-duration: 214s;
+                     -o-animation-duration: 214s;
+                        animation-duration: 214s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:nth-child(20){
                 width: 33.5%;
                 height: 33.5%;
                 opacity: .24;
+
+                -webkit-animation-duration: 222s;
+                   -moz-animation-duration: 222s;
+                    -ms-animation-duration: 222s;
+                     -o-animation-duration: 222s;
+                        animation-duration: 222s;
             }
 
             #pilarPensamiento .ringLettersWrapper .rotatingRings:last-child{
                 width: 31%;
                 height: 31%;
                 opacity: .20;
+
+                -webkit-animation-duration: 230s;
+                   -moz-animation-duration: 230s;
+                    -ms-animation-duration: 230s;
+                     -o-animation-duration: 230s;
+                        animation-duration: 230s;
             }
         /*END RINGS LETTERS SIZE*/
 
@@ -2733,46 +2917,112 @@ body{
             #pilarPensamiento .introPilares .rotatingRings:first-child{
                 width: 100%;
                 height: 100%;
+
+                -webkit-animation-duration: 50s;
+                   -moz-animation-duration: 50s;
+                    -ms-animation-duration: 50s;
+                     -o-animation-duration: 50s;
+                        animation-duration: 50s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(2){
                 width: 83%;
                 height: 83%;
+
+                -webkit-animation-duration: 59s;
+                   -moz-animation-duration: 59s;
+                    -ms-animation-duration: 59s;
+                     -o-animation-duration: 59s;
+                        animation-duration: 59s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(3){
                 width: 78%;
                 height: 78%;
+
+                -webkit-animation-duration: 68s;
+                   -moz-animation-duration: 68s;
+                    -ms-animation-duration: 68s;
+                     -o-animation-duration: 68s;
+                        animation-duration: 68s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(4){
                 width: 72%;
                 height: 72%;
+
+                -webkit-animation-duration: 77s;
+                   -moz-animation-duration: 77s;
+                    -ms-animation-duration: 77s;
+                     -o-animation-duration: 77s;
+                        animation-duration: 77s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(5){
                 width: 67.5%;
                 height: 67.5%;
+
+                -webkit-animation-duration: 86s;
+                   -moz-animation-duration: 86s;
+                    -ms-animation-duration: 86s;
+                     -o-animation-duration: 86s;
+                        animation-duration: 86s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(6){
                 width: 60%;
                 height: 60%;
+
+                -webkit-animation-duration: 95s;
+                   -moz-animation-duration: 95s;
+                    -ms-animation-duration: 95s;
+                     -o-animation-duration: 95s;
+                        animation-duration: 95s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(7){
                 width: 52%;
                 height: 52%;
+
+                -webkit-animation-duration: 104s;
+                   -moz-animation-duration: 104s;
+                    -ms-animation-duration: 104s;
+                     -o-animation-duration: 104s;
+                        animation-duration: 104s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(8){
                 width: 34%;
                 height: 34%;
+
+                -webkit-animation-duration: 113s;
+                   -moz-animation-duration: 113s;
+                    -ms-animation-duration: 113s;
+                     -o-animation-duration: 113s;
+                        animation-duration: 113s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(9){
                 width: 28%;
                 height: 28%;
+
+                -webkit-animation-duration: 122s;
+                   -moz-animation-duration: 122s;
+                    -ms-animation-duration: 122s;
+                     -o-animation-duration: 122s;
+                        animation-duration: 122s;
             }
             #pilarPensamiento .introPilares .rotatingRings:nth-child(10){
                 width: 20%;
                 height: 20%;
+
+                -webkit-animation-duration: 131s;
+                   -moz-animation-duration: 131s;
+                    -ms-animation-duration: 131s;
+                     -o-animation-duration: 131s;
+                        animation-duration: 131s;
             }
             #pilarPensamiento .introPilares .rotatingRings:last-child{
                 width: 15%;
                 height: 15%;
+
+                -webkit-animation-duration: 140s;
+                   -moz-animation-duration: 140s;
+                    -ms-animation-duration: 140s;
+                     -o-animation-duration: 140s;
+                        animation-duration: 140s;
             }
         /*END MANDALA PENSAMIENTO*/
 
@@ -2794,126 +3044,252 @@ body{
                 width: 100%;
                 height: 100%;
                 opacity: 1;
+
+                -webkit-animation-duration: 40s;
+                   -moz-animation-duration: 40s;
+                    -ms-animation-duration: 40s;
+                     -o-animation-duration: 40s;
+                        animation-duration: 40s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(2){
                 width: 96%;
                 height: 96%;
                 opacity: .96;
+
+                -webkit-animation-duration: 48s;
+                   -moz-animation-duration: 48s;
+                    -ms-animation-duration: 48s;
+                     -o-animation-duration: 48s;
+                        animation-duration: 48s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(3){
                 width: 90%;
                 height: 90%;
                 opacity: .92;
+
+                -webkit-animation-duration: 56s;
+                   -moz-animation-duration: 56s;
+                    -ms-animation-duration: 56s;
+                     -o-animation-duration: 56s;
+                        animation-duration: 56s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(4){
                 width: 85%;
                 height: 85%;
                 opacity: .88;
+
+                -webkit-animation-duration: 64s;
+                   -moz-animation-duration: 64s;
+                    -ms-animation-duration: 64s;
+                     -o-animation-duration: 64s;
+                        animation-duration: 64s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(5){
                 width: 79%;
                 height: 79%;
                 opacity: .84;
+
+                -webkit-animation-duration: 72s;
+                   -moz-animation-duration: 72s;
+                    -ms-animation-duration: 72s;
+                     -o-animation-duration: 72s;
+                        animation-duration: 72s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(6){
                 width: 76%;
                 height: 76%;
                 opacity: .80;
+
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(7){
                 width: 71%;
                 height: 71%;
                 opacity: .76;
+
+                -webkit-animation-duration: 40s;
+                   -moz-animation-duration: 40s;
+                    -ms-animation-duration: 40s;
+                     -o-animation-duration: 40s;
+                        animation-duration: 40s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(8){
                 width: 68.2%;
                 height: 68.2%;
                 opacity: .72;
+
+                -webkit-animation-duration: 48s;
+                   -moz-animation-duration: 48s;
+                    -ms-animation-duration: 48s;
+                     -o-animation-duration: 48s;
+                        animation-duration: 48s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(9){
                 width: 64%;
                 height: 64%;
                 opacity: .68;
+
+                -webkit-animation-duration: 56s;
+                   -moz-animation-duration: 56s;
+                    -ms-animation-duration: 56s;
+                     -o-animation-duration: 56s;
+                        animation-duration: 56s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(10){
                 width: 61%;
                 height: 61%;
                 opacity: .64;
+
+                -webkit-animation-duration: 64s;
+                   -moz-animation-duration: 64s;
+                    -ms-animation-duration: 64s;
+                     -o-animation-duration: 64s;
+                        animation-duration: 64s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(11){
                 width: 56.5%;
                 height: 56.5%;
                 opacity: .60;
+
+                -webkit-animation-duration: 72s;
+                   -moz-animation-duration: 72s;
+                    -ms-animation-duration: 72s;
+                     -o-animation-duration: 72s;
+                        animation-duration: 72s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(12){
                 width: 54.3%;
                 height: 54.3%;
                 opacity: .56;
+
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(13){
                 width: 51%;
                 height: 51%;
                 opacity: .52;
+
+                -webkit-animation-duration: 40s;
+                   -moz-animation-duration: 40s;
+                    -ms-animation-duration: 40s;
+                     -o-animation-duration: 40s;
+                        animation-duration: 40s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(14){
                 width: 48%;
                 height: 48%;
                 opacity: .48;
+
+                -webkit-animation-duration: 48s;
+                   -moz-animation-duration: 48s;
+                    -ms-animation-duration: 48s;
+                     -o-animation-duration: 48s;
+                        animation-duration: 48s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(15){
                 width: 44%;
                 height: 44%;
                 opacity: .44;
+
+                -webkit-animation-duration: 56s;
+                   -moz-animation-duration: 56s;
+                    -ms-animation-duration: 56s;
+                     -o-animation-duration: 56s;
+                        animation-duration: 56s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(16){
                 width: 41%;
                 height: 41%;
                 opacity: .40;
+
+                -webkit-animation-duration: 64s;
+                   -moz-animation-duration: 64s;
+                    -ms-animation-duration: 64s;
+                     -o-animation-duration: 64s;
+                        animation-duration: 64s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(17){
                 width: 38%;
                 height: 38%;
                 opacity: .36;
+
+                -webkit-animation-duration: 72s;
+                   -moz-animation-duration: 72s;
+                    -ms-animation-duration: 72s;
+                     -o-animation-duration: 72s;
+                        animation-duration: 72s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(18){
                 width: 36.2%;
                 height: 36.2%;
                 opacity: .32;
+
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(19){
                 width: 34%;
                 height: 34%;
                 opacity: .28;
+
+                -webkit-animation-duration: 40s;
+                   -moz-animation-duration: 40s;
+                    -ms-animation-duration: 40s;
+                     -o-animation-duration: 40s;
+                        animation-duration: 40s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:nth-child(20){
                 width: 32.3%;
                 height: 32.3%;
                 opacity: .24;
+
+                -webkit-animation-duration: 48s;
+                   -moz-animation-duration: 48s;
+                    -ms-animation-duration: 48s;
+                     -o-animation-duration: 48s;
+                        animation-duration: 48s;
             }
 
             #pilarElementos .ringLettersWrapper .rotatingRings:last-child{
                 width: 30%;
                 height: 30%;
                 opacity: .20;
+
+                -webkit-animation-duration: 56s;
+                   -moz-animation-duration: 56s;
+                    -ms-animation-duration: 56s;
+                     -o-animation-duration: 56s;
+                        animation-duration: 56s;
             }
         /*END RINGS LETTERS SIZE*/
 
@@ -2922,46 +3298,101 @@ body{
             #pilarElementos .introPilares .rotatingRings:first-child{
                 width: 100%;
                 height: 100%;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(2){
                 width: 83%;
                 height: 83%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(3){
                 width: 78%;
                 height: 78%;
+                -webkit-animation-duration: 90s;
+                   -moz-animation-duration: 90s;
+                    -ms-animation-duration: 90s;
+                     -o-animation-duration: 90s;
+                        animation-duration: 90s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(4){
                 width: 70%;
                 height: 70%;
+                -webkit-animation-duration: 100s;
+                   -moz-animation-duration: 100s;
+                    -ms-animation-duration: 100s;
+                     -o-animation-duration: 100s;
+                        animation-duration: 100s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(5){
                 width: 61.5%;
                 height: 61.5%;
+                -webkit-animation-duration: 110s;
+                   -moz-animation-duration: 110s;
+                    -ms-animation-duration: 110s;
+                     -o-animation-duration: 110s;
+                        animation-duration: 110s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(6){
                 width: 45%;
                 height: 45%;
+                -webkit-animation-duration: 90s;
+                   -moz-animation-duration: 90s;
+                    -ms-animation-duration: 90s;
+                     -o-animation-duration: 90s;
+                        animation-duration: 90s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(7){
                 width: 41%;
                 height: 41%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(8){
                 width: 34.3%;
                 height: 34.3%;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(9){
                 width: 31%;
                 height: 31%;
+                -webkit-animation-duration: 110s;
+                   -moz-animation-duration: 110s;
+                    -ms-animation-duration: 110s;
+                     -o-animation-duration: 110s;
+                        animation-duration: 110s;
             }
             #pilarElementos .introPilares .rotatingRings:nth-child(10){
                 width: 23%;
                 height: 23%;
+                -webkit-animation-duration: 100s;
+                   -moz-animation-duration: 100s;
+                    -ms-animation-duration: 100s;
+                     -o-animation-duration: 100s;
+                        animation-duration: 100s;
             }
             #pilarElementos .introPilares .rotatingRings:last-child{
                 width: 17%;
                 height: 17%;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
         /*END MANDALA VERBO*/
 
@@ -2987,108 +3418,216 @@ body{
                 width: 100%;
                 height: 100%;
                 opacity: 1;
+
+                -webkit-animation-duration: 60s;
+                   -moz-animation-duration: 60s;
+                    -ms-animation-duration: 60s;
+                     -o-animation-duration: 60s;
+                        animation-duration: 60s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(2){
                 width: 96%;
                 height: 96%;
                 opacity: .96;
+
+                -webkit-animation-duration: 68s;
+                   -moz-animation-duration: 68s;
+                    -ms-animation-duration: 68s;
+                     -o-animation-duration: 68s;
+                        animation-duration: 68s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(3){
                 width: 90%;
                 height: 90%;
                 opacity: .92;
+
+                -webkit-animation-duration: 76s;
+                   -moz-animation-duration: 76s;
+                    -ms-animation-duration: 76s;
+                     -o-animation-duration: 76s;
+                        animation-duration: 76s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(4){
                 width: 86%;
                 height: 86%;
                 opacity: .88;
+
+                -webkit-animation-duration: 84s;
+                   -moz-animation-duration: 84s;
+                    -ms-animation-duration: 84s;
+                     -o-animation-duration: 84s;
+                        animation-duration: 84s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(5){
                 width: 80%;
                 height: 80%;
                 opacity: .84;
+
+                -webkit-animation-duration: 92s;
+                   -moz-animation-duration: 92s;
+                    -ms-animation-duration: 92s;
+                     -o-animation-duration: 92s;
+                        animation-duration: 92s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(6){
                 width: 76.5%;
                 height: 76.5%;
                 opacity: .80;
+
+                -webkit-animation-duration: 100s;
+                   -moz-animation-duration: 100s;
+                    -ms-animation-duration: 100s;
+                     -o-animation-duration: 100s;
+                        animation-duration: 100s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(7){
                 width: 71.5%;
                 height: 71.5%;
                 opacity: .76;
+
+                -webkit-animation-duration: 108s;
+                   -moz-animation-duration: 108s;
+                    -ms-animation-duration: 108s;
+                     -o-animation-duration: 108s;
+                        animation-duration: 108s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(8){
                 width: 68.5%;
                 height: 68.5%;
                 opacity: .72;
+
+                -webkit-animation-duration: 116s;
+                   -moz-animation-duration: 116s;
+                    -ms-animation-duration: 116s;
+                     -o-animation-duration: 116s;
+                        animation-duration: 116s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(9){
                 width: 64%;
                 height: 64%;
                 opacity: .68;
+
+                -webkit-animation-duration: 124s;
+                   -moz-animation-duration: 124s;
+                    -ms-animation-duration: 124s;
+                     -o-animation-duration: 124s;
+                        animation-duration: 124s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(10){
                 width: 61%;
                 height: 61%;
                 opacity: .64;
+
+                -webkit-animation-duration: 132s;
+                   -moz-animation-duration: 132s;
+                    -ms-animation-duration: 132s;
+                     -o-animation-duration: 132s;
+                        animation-duration: 132s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(11){
                 width: 57%;
                 height: 57%;
                 opacity: .60;
+
+                -webkit-animation-duration: 140s;
+                   -moz-animation-duration: 140s;
+                    -ms-animation-duration: 140s;
+                     -o-animation-duration: 140s;
+                        animation-duration: 140s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(12){
                 width: 54.3%;
                 height: 54.3%;
                 opacity: .56;
+
+                -webkit-animation-duration: 60s;
+                   -moz-animation-duration: 60s;
+                    -ms-animation-duration: 60s;
+                     -o-animation-duration: 60s;
+                        animation-duration: 60s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(13){
                 width: 51%;
                 height: 51%;
                 opacity: .52;
+
+                -webkit-animation-duration: 68s;
+                   -moz-animation-duration: 68s;
+                    -ms-animation-duration: 68s;
+                     -o-animation-duration: 68s;
+                        animation-duration: 68s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(14){
                 width: 48%;
                 height: 48%;
                 opacity: .48;
+
+                -webkit-animation-duration: 76s;
+                   -moz-animation-duration: 76s;
+                    -ms-animation-duration: 76s;
+                     -o-animation-duration: 76s;
+                        animation-duration: 76s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(15){
                 width: 44%;
                 height: 44%;
                 opacity: .44;
+
+                -webkit-animation-duration: 84s;
+                   -moz-animation-duration: 84s;
+                    -ms-animation-duration: 84s;
+                     -o-animation-duration: 84s;
+                        animation-duration: 84s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(16){
                 width: 41.5%;
                 height: 41.5%;
                 opacity: .40;
+
+                -webkit-animation-duration: 92s;
+                   -moz-animation-duration: 92s;
+                    -ms-animation-duration: 92s;
+                     -o-animation-duration: 92s;
+                        animation-duration: 92s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:nth-child(17){
                 width: 38%;
                 height: 38%;
                 opacity: .36;
+
+                -webkit-animation-duration: 100s;
+                   -moz-animation-duration: 100s;
+                    -ms-animation-duration: 100s;
+                     -o-animation-duration: 100s;
+                        animation-duration: 100s;
             }
 
             #pilarSabiduria .ringLettersWrapper .rotatingRings:last-child{
                 width: 37.5%;
                 height: 37.5%;
                 opacity: .32;
+
+                -webkit-animation-duration: 108s;
+                   -moz-animation-duration: 108s;
+                    -ms-animation-duration: 108s;
+                     -o-animation-duration: 108s;
+                        animation-duration: 108s;
             }
         /*END RINGS LETTERS SIZE*/
 
@@ -3097,46 +3636,101 @@ body{
             #pilarSabiduria .introPilares .rotatingRings:first-child{
                 width: 100%;
                 height: 100%;
+                -webkit-animation-duration: 50s;
+                   -moz-animation-duration: 50s;
+                    -ms-animation-duration: 50s;
+                     -o-animation-duration: 50s;
+                        animation-duration: 50s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(2){
                 width: 83%;
                 height: 83%;
+                -webkit-animation-duration: 60s;
+                   -moz-animation-duration: 60s;
+                    -ms-animation-duration: 60s;
+                     -o-animation-duration: 60s;
+                        animation-duration: 60s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(3){
                 width: 77%;
                 height: 77%;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(4){
                 width: 58%;
                 height: 58%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(5){
                 width: 52.5%;
                 height: 52.5%;
+                -webkit-animation-duration: 90s;
+                   -moz-animation-duration: 90s;
+                    -ms-animation-duration: 90s;
+                     -o-animation-duration: 90s;
+                        animation-duration: 90s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(6){
                 width: 45%;
                 height: 45%;
+                -webkit-animation-duration: 90s;
+                   -moz-animation-duration: 90s;
+                    -ms-animation-duration: 90s;
+                     -o-animation-duration: 90s;
+                        animation-duration: 90s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(7){
                 width: 41%;
                 height: 41%;
+                -webkit-animation-duration: 50s;
+                   -moz-animation-duration: 50s;
+                    -ms-animation-duration: 50s;
+                     -o-animation-duration: 50s;
+                        animation-duration: 50s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(8){
                 width: 34.3%;
                 height: 34.3%;
+                -webkit-animation-duration: 60s;
+                   -moz-animation-duration: 60s;
+                    -ms-animation-duration: 60s;
+                     -o-animation-duration: 60s;
+                        animation-duration: 60s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(9){
                 width: 31%;
                 height: 31%;
+                -webkit-animation-duration: 70s;
+                   -moz-animation-duration: 70s;
+                    -ms-animation-duration: 70s;
+                     -o-animation-duration: 70s;
+                        animation-duration: 70s;
             }
             #pilarSabiduria .introPilares .rotatingRings:nth-child(10){
                 width: 23%;
                 height: 23%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
             #pilarSabiduria .introPilares .rotatingRings:last-child{
                 width: 17%;
                 height: 17%;
+                -webkit-animation-duration: 100s;
+                   -moz-animation-duration: 100s;
+                    -ms-animation-duration: 100s;
+                     -o-animation-duration: 100s;
+                        animation-duration: 100s;
             }
         /*END MANDALA SABIDURÍA*/
 
@@ -3168,46 +3762,101 @@ body{
             #pilarFinal .introPilares .rotatingRings:first-child{
                 width: 90%;
                 height: 90%;
+                -webkit-animation-duration: 65s;
+                   -moz-animation-duration: 65s;
+                    -ms-animation-duration: 65s;
+                     -o-animation-duration: 65s;
+                        animation-duration: 65s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(2){
                 width: 73%;
                 height: 73%;
+                -webkit-animation-duration: 50s;
+                   -moz-animation-duration: 50s;
+                    -ms-animation-duration: 50s;
+                     -o-animation-duration: 50s;
+                        animation-duration: 50s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(3){
                 width: 66%;
                 height: 66%;
+                -webkit-animation-duration: 50s;
+                   -moz-animation-duration: 50s;
+                    -ms-animation-duration: 50s;
+                     -o-animation-duration: 50s;
+                        animation-duration: 50s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(4){
                 width: 58%;
                 height: 58%;
+                -webkit-animation-duration: 65s;
+                   -moz-animation-duration: 65s;
+                    -ms-animation-duration: 65s;
+                     -o-animation-duration: 65s;
+                        animation-duration: 65s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(5){
                 width: 52.5%;
                 height: 52.5%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(6){
                 width: 45%;
                 height: 45%;
+                -webkit-animation-duration: 95s;
+                   -moz-animation-duration: 95s;
+                    -ms-animation-duration: 95s;
+                     -o-animation-duration: 95s;
+                        animation-duration: 95s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(7){
                 width: 41%;
                 height: 41%;
+                -webkit-animation-duration: 95s;
+                   -moz-animation-duration: 95s;
+                    -ms-animation-duration: 95s;
+                     -o-animation-duration: 95s;
+                        animation-duration: 95s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(8){
                 width: 34.3%;
                 height: 34.3%;
+                -webkit-animation-duration: 80s;
+                   -moz-animation-duration: 80s;
+                    -ms-animation-duration: 80s;
+                     -o-animation-duration: 80s;
+                        animation-duration: 80s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(9){
                 width: 31%;
                 height: 31%;
+                -webkit-animation-duration: 65s;
+                   -moz-animation-duration: 65s;
+                    -ms-animation-duration: 65s;
+                     -o-animation-duration: 65s;
+                        animation-duration: 65s;
             }
             #pilarFinal .introPilares .rotatingRings:nth-child(10){
                 width: 23%;
                 height: 23%;
+                -webkit-animation-duration: 50s;
+                   -moz-animation-duration: 50s;
+                    -ms-animation-duration: 50s;
+                     -o-animation-duration: 50s;
+                        animation-duration: 50s;
             }
             #pilarFinal .introPilares .rotatingRings:last-child{
                 width: 17%;
                 height: 17%;
+                -webkit-animation-duration: 35s;
+                   -moz-animation-duration: 35s;
+                    -ms-animation-duration: 35s;
+                     -o-animation-duration: 35s;
+                        animation-duration: 35s;
             }
         /*END MANDALA SABIDURÍA*/
     /*/// END PILAR FINAL ///*/
