@@ -2053,6 +2053,7 @@ body{
             height: 900px;
             margin: auto;
             top: 0; bottom: 0; right: 0; left: 0;
+            overflow: hidden;
             /*background-color: black;*/
         }
 
@@ -4417,6 +4418,14 @@ body{
 
     /*/// END PORTFOLIO PROJECTS STYLE ///*/
 /*/// END PORTFOLIO STYLE ///*/
+
+
+
+/*/// SKROLLR HELPERS ///*/
+    .skrollrFix{
+        position: fixed !important;
+    }
+/*/// END SKROLLR HELPERS ///*/
 
 
 
