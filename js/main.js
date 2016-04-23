@@ -518,17 +518,11 @@ $(document).ready(function() {
 
 			$('#scrollPortfolioDescription').click(function(){
 				$('html, body').animate({
-			    	scrollTop: $("#portfolioIncenseWrapper").offset().top
-			    }, 800);
-			});
-
-			$('#mob-scrollPortfolioDescription').click(function(){
-				$('html, body').animate({
 			    	scrollTop: $("#portfolioSection2").offset().top
 			    }, 800);
 			});
 
-			$('#scrollPortfolioIncense').click(function(){
+			$('#mob-scrollPortfolioDescription').click(function(){
 				$('html, body').animate({
 			    	scrollTop: $("#portfolioSection2").offset().top
 			    }, 800);
