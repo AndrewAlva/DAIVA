@@ -209,6 +209,17 @@ Helper classes
     /*/// END HOME SECTIONS DIVISIONS HELPERS ///*/
 
 
+    /*/// TRANSITION STYLING ///*/
+        .transitionBounce{
+            -webkit-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+               -moz-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                -ms-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                 -o-transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+                    transition: all 0.7s cubic-bezier(.5,-1,.5,1.3);
+        }
+    /*/// END TRANSITION STYLING ///*/
+
+
 /* ==========================================================================
 END Helper classes
 ========================================================================== */
@@ -4424,6 +4435,7 @@ body{
 /*/// SKROLLR HELPERS ///*/
     .skrollrFix{
         position: fixed !important;
+        top: 0;
     }
 /*/// END SKROLLR HELPERS ///*/
 
