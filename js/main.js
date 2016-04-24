@@ -492,8 +492,8 @@ $(document).ready(function() {
 
 			function setStarsPos(starChild){
 
-				randomTop = Math.random()*windowHeight;
-				randomLeft = Math.random()*windowWidth;
+				randomTop = Math.random()*2000;
+				randomLeft = Math.random()*2000;
 
 				$(starChild).css({
 					top: randomTop,
