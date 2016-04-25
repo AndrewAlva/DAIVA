@@ -5038,8 +5038,53 @@ body{
                 }
             /*/// END PORTFOLIO STYLES ///*/
 
+            /*/// INIT PILARES STYLE ///*/
+                /* INIT WRAPPERS */
+                    #windowPilaresWrapper{
+                        overflow-x: hidden;
+                    }
 
+                        #pilaresWrapper{
+                            min-height: 6080px;
+                        }
+                /* END WRAPPERS */
 
+                /* RINGS STYLING */
+                    .introPilares{
+                        width: 100vw;
+                        height: 100vw;
+                    }
+
+                    .homePilares{
+                        width: 320px;
+                        height: 320px;
+                    }
+
+                        .pilarSymbol{
+                            width: 140px;
+                            height: 160px;
+                        }
+
+                            .divisor{
+                                width: 280px;
+                                height: 20px;
+                            }
+
+                                .divisor .leftArrow, .divisor .rightArrow{
+                                    width: 120px;
+                                    height: 20px;
+                                }
+
+                                .pilarTitle{
+                                    font-size: 12px;
+                                    letter-spacing: 8px;
+                                }
+                                    .pilarDescriptor h2{
+                                        font-size: 15px;
+                                    }
+                /* END RINGS */
+            /*/// END PILARES STYLE ///*/
+            
 
 
             /*/// INIT GO TO MOBILE CLASSES ///*/
