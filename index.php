@@ -5,8 +5,8 @@
 	 
 	// Any mobile device (phones or tablets).
 	if ( $detect->isMobile() ) {
-		header("Location: http://m.daiva.mx/home/index.html");
+		header("Location: http://www.daiva.mx/m/home/");
 	} else {
-		header("Location: http://www.daiva.mx/home/index.html");
+		header("Location: http://www.daiva.mx/home/");
 	}
 ?>

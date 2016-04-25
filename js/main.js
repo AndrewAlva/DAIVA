@@ -85,23 +85,23 @@ $(document).ready(function() {
 
 			$('#portafolioStage').click(function () {
 				leaveMenu('pullRing',2000,'pushRing',800,'pushRing',400);
-				// setTimeout(function(){
-				// 	window.location.assign("http://www.w3schools.com");
-				// },2000);
+				setTimeout(function(){
+					window.location.assign("../portafolio/");
+				},2000);
 			});
 
 			$('#pilaresStage').click(function () {
 				leaveMenu('pushRing',800,'pullRing',2000,'pushRing',400);
-				// setTimeout(function(){
-				// 	window.location.assign("http://www.w3schools.com");
-				// },2000);
+				setTimeout(function(){
+					window.location.assign("../pilares/");
+				},2000);
 			});
 
 			$('#comienzoStage').click(function () {
 				leaveMenu('pushRing',800,'pushRing',400,'pullRing',2000);
-				// setTimeout(function(){
-				// 	window.location.assign("http://www.w3schools.com");
-				// },2000);
+				setTimeout(function(){
+					window.location.assign("../home/");
+				},2000);
 			});
 
 
